@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2018 Midterm"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of 12 characters, where each character is an element of the set $\{a,b,c,d,e\}$.
+			The positions in such strings are numbered as $1,2,3,\dots,12$. <br>
+			
+			How many such strings have the property that
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					each even position contains an element of $\{a,b,c\}$, and
+				</li>
+				<li>
+					each odd position contains an element of $\{d,e\}$?
+				</li>
+			</ul>
+		]]>
+		</question>
+		<answer correct="correct">$6^6$</answer>
+		<answer>$5^{12}$</answer>
+		<answer>$6^3 \cdot 6^2$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of 12 characters, where each character is an element of the set $\{a,b,c,d,e\}$.
+			The positions in such strings are numbered as $1,2,3,\dots,12$. <br>
+			
+			How many such strings have the property that
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					each even position contains an element of $\{a, b, c\}$, or
+				</li>
+				<li>
+					each odd position contains an element of $\{d,e\}$?
+				</li>
+			</ul>
+		]]>
+		</question>
+		<answer>$6^{3} \cdot 6^{5} + 6^{2} \cdot 6^{5}$</answer>
+		<answer>$3^{6} \cdot 5^{6} + 2^{6} \cdot 5^{6}$</answer>
+		<answer correct="correct">$3^{6} \cdot 5^{6} + 2^{5} \cdot 5^{6} - 2^{6} \cdot 3^{6}$</answer>
+		<answer>$6^{3} \cdot 6^{5} + 6^{2} \cdot 6^{5} - 6^{2} \cdot 6^{3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of 12 characters, where each character is an element of the set $\{a,b,c,d,e\}$.
+			The positions in such strings are numbered as $1,2,3,\dots,12$. <br>
+			
+			How many such strings contain at least two $a$'s?
+		]]>
+		</question>
+		<answer correct="correct">$5^{12} - 4^{12} - 12 \cdot 4^{11}$</answer>
+		<answer>$5^{12} - 4^{12} - 12 \cdot 4^{12}$</answer>
+		<answer>$12^{5} - 12^{4} - 12 \cdot 11^{4}$</answer>
+		<answer>$12^{5} - 12^{4} - 12 \cdot 12^{4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $b \geq 1$ and $c \geq 1$ be integers. Elisa Kazan's neighborhood pub serves $b$ different types
+			of beer and $c$ different types of cider. Elisa invites 6 friends to this pub and orders 7 drinks,
+			one drink (beer or cider) for each friend, and one cider for herself. Different people may get the
+			same type of beer or cider. <br>
+			
+			In how many ways can Elisa place these orders, such that exactly 4 people get a beer?
+		]]>
+		</question>
+		<answer>${6 \choose 4} \cdot b^{4} \cdot c^{2}$</answer>
+		<answer correct="correct">${6 \choose 4} \cdot b^{4} \cdot c^{3}$</answer>
+		<answer>${7 \choose 4} \cdot b^{4} \cdot c^{3}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In a group of 100 people,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					60 do not like Donald Trump and do not like Kim Jong Un, and
+				</li>
+				<li>
+					25 like Kim Jong Un.
+				</li>
+			</ul>
+			How many people in this group like Donald Trump and do not like Kim Jong Un?
+		]]>
+		</question>
+		<answer>10</answer>
+		<answer correct="correct">15</answer>
+		<answer>20</answer>
+		<answer>25</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In the city of <em>ShortLastName</em>, every person has a last name consisting of one uppercase letter,
+			followed by two lowercase letters. No two letters in a last name can be equal. Thus, <em>Lin</em>
+			is a valid last name, whereas <em>Xax</em> is not a valid last name. <br>
+			
+			What is the minimum size of the population of <em>ShortLastName</em>, such that there must be at least two people
+			who have the same last name?
+		]]>
+		</question>
+		<answer>$1 + 26!$</answer>
+		<answer>$1 + 26^{3}$</answer>
+		<answer>$1 + \frac{24 \cdot 25 \cdot 26}{3!}$</answer>
+		<answer correct="correct">$1 + 24 \cdot 25 \cdot 26$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an even integer. What does
+			$$
+				\sum_{k=0}^{\left. (n-2) \middle/ 2 \right.} {{n}\choose{2k+1}}
+			$$
+			count?
+		]]>
+		</question>
+		<answer>The number of bitstrings of length $n$.</answer>
+		<answer>The number of bitstrings of length $\left. (n-2) \middle/ 2 \right.$.</answer>
+		<answer correct="correct">The number of bitstrings of length $n$ having an odd number of 0's.</answer>
+		<answer>
+			The number of bitstrings of length $n$ in which the number of 0's plus the number of 1's is at most $\left. (n-1) \middle/ 2 \right.$.
+		</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $m \geq 34$ be an even integer, let $n \geq 1$ be an integer, and consider the two sets
+			$$
+				A = \{1,2,\dots,m\}
+			$$
+			and
+			$$
+				B = \{m+1,m+2,\dots,m+n\}.
+			$$
+			Let $k$ be an integer with $17 \leq k \leq n+17$. <br>
+			
+			Consider subsets $X$ of $A \cup B$, such that $|X| = k, |X \cap A| = 17$, and all elements of $X \cap A$ are even. <br>
+			
+			How many such subsets $X$ are there?
+		]]>
+		</question>
+		<answer correct="correct">${m/2 \choose 17} \cdot {n \choose k-17}$</answer>
+		<answer>${m \choose 17} \cdot {n \choose k-17}$</answer>
+		<answer>${m+n \choose 17} \cdot {n \choose k-17}$</answer>
+		<answer>${m/2+n \choose 17} \cdot {n \choose k-17}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider the equation
+			$$
+				x_1 + x_2 + x_3 + x_4 = 33,
+			$$
+			where $x_1 \geq 0$, $x_2 \geq 0$, $x_3 \geq 0$, $x_4 \geq 0$ are integers. How many solutions does this
+			equation have?
+		]]>
+		</question>
+		<answer>${36 \choose 4}$</answer>
+		<answer correct="correct">${36 \choose 3}$</answer>
+		<answer>${37 \choose 4}$</answer>
+		<answer>${37 \choose 3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			As you all know, Nick has been dreaming to be like Spiderman. Spiderman can climb up the outside of a building;
+			if he is at a particular floor, then, in one step, Spiderman can move up several floors. <br>
+			
+			Since having finished marking assignment 2, Nick has been working hard to improve his Spiderman-skills:
+			In one step, Nick can move up either two floors or three floors. (Nick lost his ability to move up one floor in one step.) <br>
+			
+			Let $n \geq 2$ be an integer and consider a building with $n$ floors, numbered $1,2,\dots,n$. (The first floor has number 1;
+			this is not the ground floor.) Nick is standing in front of this building, at the ground level. <br>
+			
+			Let $N_n$ be the number of different ways in which Nick can climb to the $n$-th floor.
+			Which of the following is true for any $n \geq 5$?
+		]]>
+		</question>
+		<answer>$N_n = N_{n-1} + N_{n-2} + N_{n-3}$</answer>
+		<answer>$N_n = N_{n-1} + N_{n-2}$</answer>
+		<answer>$N_n = N_{n-1} + N_{n-3}$</answer>
+		<answer correct="correct">$N_n = N_{n-2} + N_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+			<![CDATA[
+				A bitstring is called 00-<em>free</em>, if it does not contain two 0's next to each other.
+				In class, we have seen that for any $m \geq 1$,
+				the number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number $f_{m+2}$. <br>
+				
+				What is the number of 00-free bitstrings of length 55 that have 0 at position 9, and 1 at position 40?
+				(The positions are numbered $1,2,\dots,55$.)
+			]]>
+			</question>
+			<answer>$f_7 \cdot f_{29} \cdot f_{15}$</answer>
+			<answer>$f_8 \cdot f_{30} \cdot f_{16}$</answer>
+			<answer correct="correct">$f_9 \cdot f_{31} \cdot f_{17}$</answer>
+			<answer>$f_{10} \cdot f_{32} \cdot f_{18}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The functions $f: \mathbb{N} \rightarrow \mathbb{N}$ and $g: \mathbb{N} \rightarrow \mathbb{N}$ are
+			recursively defined as follows:
+			$$
+				\begin{alignat}{2}
+				f(0) &= 0, \\
+				f(n) &= 2 + f(n - 1)\ \; &\mathrm{if}\ n \geq 1, \\
+				g(0) &= 1, \\
+				g(n) &= 7 \cdot g(n - 1)\ \; &\mathrm{if}\ n \geq 1.
+				\end{alignat}
+			$$
+			For any integer $n \geq 0$, what is $g(f(n))$?
+		]]>
+		</question>
+		<answer correct="correct">$7^{2n}$</answer>
+		<answer>$7^{n}$</answer>
+		<answer>$(2n)^{7}$</answer>
+		<answer>$n^{7}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of characters, where each character is an element of the set $\{a,b,c\}$.
+			Such a string is called <em>ccc-free</em>, if it does not contain <em>ccc</em>. <br>
+			
+			For any integer $n \geq 4$, let $B_n$ be the number of <em>ccc</em>-free bitstrings of length $n$.
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>$B_n = B_{n-1} + B_{n-2} + B_{n-3}$</answer>
+		<answer correct="correct">$B_n = 2 \cdot B_{n-1} + 2 \cdot B_{n-2} + 2 \cdot B_{n-3}$</answer>
+		<answer>$B_n = 2 \cdot B_{n-1} + 2 \cdot B_{n-2} + B_{n-3}$</answer>
+		<answer>$B_n = B_{n-1} + B_{n-2} + 2 \cdot B_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\IFeelLikeSinging}{{\rm IF {\scriptsize EEL} L {\scriptsize IKE} S {\scriptsize INGING}}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+			</div>
+			
+			Consider the recursive algorithm $\IFeelLikeSinging$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \IFeelLikeSinging(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ \mathrm{sing}\ {\it O\ Canada}$ <br>
+				$\mathbf{else}\ \mathbf{if}\ n\ \text{is odd}$ <br>
+				$\elsesp \mathbf{then}\ \IFeelLikeSinging(n + 1)$ <br>
+				$\elsesp \mathbf{else}\ \IFeelLikeSinging(\frac{n}{2});$ <br>
+				$\elsesp \elsesp \IFeelLikeSinging(\frac{n}{2} - 1)$ <br>
+				$\elsesp \mathbf{endif};$ <br>
+				$\mathbf{endif}$
+			</p>
+			
+			If you run algorithm $\IFeelLikeSinging(9)$, how many times do you sing <em>O Canada</em>?
+		]]>
+		</question>
+		<answer>6</answer>
+		<answer>7</answer>
+		<answer correct="correct">8</answer>
+		<answer>9</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given a fair die and roll it 12 times. Define the event
+			[defs]
+			  A = "there are exactly two 6's in the sequence of 12 rolls".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer correct="correct">${12 \choose 2} \cdot \left. 5^{10} \middle/ 6^{12} \right.$</answer>
+		<answer>$12^{2} \cdot \left. 5^{10} \middle/ 6^{12} \right.$</answer>
+		<answer>${12 \choose 2} \cdot \left. 5^{12} \middle/ 6^{12} \right.$</answer>
+		<answer>$12^{2} \cdot \left. 5^{12} \middle/ 6^{12} \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In the fall term of 2015, Nick took COMP 2804. Nick was always sitting in the back of the classroom
+			and spent most of his time eating bananas. <br>
+			
+			Nick buys 25 bananas at Alexa's Banana Emporium (ABE) and 30 bananas at Shelly's Fruit Market (SFM).
+			Nick chooses, uniformly at random, a 15-element subset of these bananas. Define the event
+			[defs]
+			  A = "the subset chosen by Nick contains exactly 7 bananas from ABE".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$\frac{{25 \choose 8} + {30 \choose 7}}{55 \choose 15}$</answer>
+		<answer>$\frac{{25 \choose 8} \cdot {30 \choose 7}}{55 \choose 15}$</answer>
+		<answer>$\frac{{25 \choose 7} + {30 \choose 8}}{55 \choose 15}$</answer>
+		<answer correct="correct">$\frac{{25 \choose 7} \cdot {30 \choose 8}}{55 \choose 15}$</answer>
+	</multiple-choice>
+</quiz>

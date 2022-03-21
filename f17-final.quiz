@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Fall 2017 Final"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given 20 beer bottles $B_1,B_2,\dots,B_{20}$ and 30 cider bottles $C_1,C_2,\dots,C_{30}$.
+			Assume you arrange these 50 bottles on a horizontal line such that
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					the leftmost 10 bottles are all beer bottles, and
+				</li>
+				<li>
+					the rightmost 10 bottles are all cider bottles.
+				</li>
+			</ul>
+			How many such arrangements are there? (The order of the bottles matters.)
+		]]>
+		</question>
+		<answer>${20 \choose 10} \cdot {30 \choose 10} \cdot 30!$</answer>
+		<answer correct="correct">${20 \choose 10} \cdot 10! \cdot {30 \choose 10} \cdot 10! \cdot 30!$</answer>
+		<answer>${20 \choose 10} \cdot 10! \cdot {30 \choose 10} \cdot 10!$</answer>
+		<answer>$50!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an even integer. A permutation $a_1,a_2,\dots,a_n$ of the set $\{1,2,\dots,n\}$ is
+			called <em>awesome</em> if $a_2 = 2 \cdot a_1$. <br>
+			
+			For example, if $n = 6$, then the permutation $3,6,4,1,5,2$ is awesome, whereas the permutation
+			$3,5,4,1,6,2$ is not awesome. <br>
+			
+			How many awesome permutations of the set $\{1,2,\dots,n\}$ are there?
+		]]>
+		</question>
+		<answer>$n \cdot (n-1)!$</answer>
+		<answer>$n \cdot (n-2)!$</answer>
+		<answer>${\frac{n}{2}} \cdot (n-1)!$</answer>
+		<answer correct="correct">${\frac{n}{2}} \cdot (n-2)!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of 40 characters, where each character is one of the letters $a$, $b$, and
+			$c$. Such a string is called <em>cool</em> if
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					it contains exactly 8 many $a$'s
+				</li>
+			</ul>
+			or
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					it contains exactly 7 many $b$'s.
+				</li>
+			</ul>
+			How many cool strings are there?
+		]]>
+		</question>
+		<answer>${{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33}}$</answer>
+		<answer>${{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33} - {40 \choose 15} \cdot {15 \choose 8} \cdot 2^{25}}$</answer>
+		<answer correct="correct">${{40 \choose 8} \cdot 2^{32} + {40 \choose 7} \cdot 2^{33} - {40 \choose 15} \cdot {15 \choose 8}}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of 40 characters, where each character is one of the letters $a$, $b$, and
+			$c$. How many such strings contain at least three $a$'s?
+		]]>
+		</question>
+		<answer>${40 \choose 3}$</answer>
+		<answer>$3^{40} - 1 - 40 \cdot 3^{39} - {40 \choose 2} \cdot 3^{38}$</answer>
+		<answer correct="correct">$3^{40} - 2^{40} - 40 \cdot 2^{39} - {40 \choose 2} \cdot 2^{38}$</answer>
+		<answer>$3^{40} - 2^{40} - 40 \cdot 2^{39} - {40 \choose 2} \cdot 2^{38}\ -$ $ {40 \choose 3} \cdot 2^{37}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 3$ and $m \geq 3$ be integers. What does
+			$$
+			{n \choose 3} + {m \choose 3} + n \cdot {m \choose 2} + m \cdot {n \choose 2}
+			$$
+			count?
+		]]>
+		</question>
+		<answer correct="correct">The number of subsets having size 3 of a set consisting of $n$ positive numbers and $m$ negative numbers.</answer>
+		<answer>The number of subsets having size at most 3 of a set consisting of $n$ positive numbers and $m$ negative numbers.</answer>
+		<answer>The number of subsets having size 2 or 3 of a set consisting of $n$ positive numbers and $m$ negative numbers.</answer>
+		<answer>The number of subsets having size 2 and 3 of a set consisting of $n$ positive numbers and $m$ negative numbers.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a group of 100 students. In this group,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					13 students like Donald Trump,
+				</li>
+				<li>
+					25 students like Justin Bieber, and
+				</li>
+				<li>
+					8 students like Donald Trump and like Justin Bieber.
+				</li>
+			</ul>
+			How many students do not like Donald Trump and do not like Justin Bieber?
+		]]>
+		</question>
+		<answer>69</answer>
+		<answer correct="correct">70</answer>
+		<answer>71</answer>
+		<answer>72</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many strings can be obtained by rearranging the letters of the word
+			<p style="text-align: center;">
+				BOOKKEEPER
+			</p>
+		]]>
+		</question>
+		<answer>$2! \cdot 2! \cdot 3!$</answer>
+		<answer correct="correct">${10 \choose 2} \cdot {8 \choose 2} \cdot {6 \choose 3} \cdot 3 \cdot 2$</answer>
+		<answer>${10 \choose 2} \cdot {8 \choose 2} \cdot {6 \choose 3} \cdot {3 \choose 2}$</answer>
+		<answer>${10 \choose 2} \cdot {8 \choose 2} \cdot {5 \choose 3} \cdot 3 \cdot 2$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of characters, where each character is one of the letters $a$, $b$, and
+			$c$. <br>
+			
+			For any integer $n \geq 1$, let $E_n$ be the number of such strings of length $n$ that contain an even
+			number of $c$'s, and let $O_n$ be the number of such strings of length $n$ that contain an odd
+			number of $c$'s. (Remember that 0 is an even number.) <br>
+			
+			Which of the following is true for any integer $n \geq 2$?
+		]]>
+		</question>
+		<answer correct="correct">$E_n = 2 \cdot E_{n-1} + O_{n-1}$</answer>
+		<answer>$E_n = 2 \cdot E_{n-1} + E_{n-1}$</answer>
+		<answer>$E_n = 2 \cdot O_{n-1} + O_{n-1}$</answer>
+		<answer>$E_n = 2 \cdot O_{n-1} + E_{n-1}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider bitstrings that do not contain 110. Let $S_n$ be the number of such strings having length
+			$n$. Which of the following is true for any $n \geq 4$?
+		]]>
+		</question>
+		<answer>$S_n = S_{n-1} + S_{n-2} + S_{n-3}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + 2^{n-2}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + 2^{n-3}$</answer>
+		<answer correct="correct">$S_n = S_{n-1} + S_{n-2} + 1$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\IFeelLikeSinging}{{\rm IF {\scriptsize EEL} L {\scriptsize IKE} S {\scriptsize INGING}}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+			</div>
+			
+			Consider the recursive algorithm $\IFeelLikeSinging$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \IFeelLikeSinging(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ \mathrm{sing}\ {\it O\ Canada}$ <br>
+				$\mathbf{else}\ \mathbf{if}\ n\ \text{is odd}$ <br>
+				$\elsesp \mathbf{then}\ \IFeelLikeSinging(n + 1)$ <br>
+				$\elsesp \mathbf{else}\ \IFeelLikeSinging(\frac{n}{2});$ <br>
+				$\elsesp \elsesp \IFeelLikeSinging(\frac{n}{2} - 1)$ <br>
+				$\elsesp \mathbf{endif};$ <br>
+				$\mathbf{endif}$
+			</p>
+			
+			If you run algorithm $\IFeelLikeSinging(9)$, how many times do you sing <em>O Canada</em>?
+		]]>
+		</question>
+		<answer>6</answer>
+		<answer>7</answer>
+		<answer correct="correct">8</answer>
+		<answer>9</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Assume you write a multiple-choice exam that has 25 questions. For each question, four options are given
+			to you, and exactly one of these options is the correct answer. <br>
+			
+			Assume that you answer each question uniformly at random, where the choices for different questions are
+			independent of each other. <br>
+			
+			What is the probability that you have exactly 17 correct answers?
+		]]>
+		</question>
+		<answer>${25 \choose 17} \cdot \left( 1 \middle/ 4 \right)^{17}$</answer>
+		<answer>${25 \choose 17} \cdot \left( 3 \middle/ 4 \right)^{17}$</answer>
+		<answer correct="correct">
+			${25 \choose 17} \cdot \left( 1 \middle/ 4 \right)^{17} \cdot \left( 3 \middle/ 4 \right)^8$
+		</answer>
+		<answer>
+			${25 \choose 17} \cdot \left( 1 \middle/ 4 \right)^8 \cdot \left( 3 \middle/ 4 \right)^{17}$
+		</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bitstring $b_1b_2{\dots}b_n$ of length $n$ is called a <em>palindrome</em> if
+			$$
+				b_1b_2{\dots}b_{n-1}b_n = b_nb_{n-1}{\dots}b_2b_1,
+			$$
+			i.e., reading the string from left to right <span class="sticky">gives the</span> same result as reading the string from right
+			to left. <br>
+			
+			Let $n \geq 2$ be an even integer. You are given a uniformly random bitstring of length $n$. What is
+			the probability that this bitstring is a palindrome?
+		]]>
+		</question>
+		<answer>$(1/2)^{n}$</answer>
+		<answer correct="correct">$(1/2)^{n/2}$</answer>
+		<answer>$(1/2)^{2n}$</answer>
+		<answer>$1/2$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $X = \{1,2,3,\dots,10\}$. Let $Y$ be a uniformly random subset of $X$. Define the events
+			[defs]
+			  A = "$Y$ contains at least 4 elements",
+			  B = "all elements of $Y$ are even".
+			[/defs]
+			What is $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer correct="correct">3/16</answer>
+		<answer>4/16</answer>
+		<answer>5/16</answer>
+		<answer>6/16</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer. You are given two bitstrings $a_1,a_2,\dots,a_n$ and $b_1,b_2,\dots,b_n$ of
+			length $n$. In both bitstrings, each bit is 0 with probability 1/2, and 1 with probability 1/2
+			(independent of all other bits). <br>
+			
+			Consider the string
+			$$
+				a_1 + b_1,a_2 + b_2,\dots,a_n + b_n.
+			$$
+			What is the probability that each element in this string is non-zero?
+		]]>
+		</question>
+		<answer>$1 - (1/4)^{n}$</answer>
+		<answer>$1 - (3/4)^{n}$</answer>
+		<answer>$(1/4)^{n}$</answer>
+		<answer correct="correct">$(3/4)^{n}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin three times; these three flips are independent. Define the events
+			[defs]
+			  A = "the first two flips both result in heads",
+			  B = "there are at least two heads in the sequence of three flips".
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>The events $A$ and $B$ are independent.</answer>
+		<answer correct="correct">The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You choose a uniformly random element, say $x$, from the set $\{1,2,3\}$, and you choose a uniformly
+			random element, say $y$, from the same set $\{1,2,3\}$. ($x$ and $y$ are chosen independently of
+			each other.) Define the events
+			[defs]
+			  A = "$x$ is odd",
+			  B = "$x + y$ is odd".
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>The events $A$ and $B$ are independent.</answer>
+		<answer correct="correct">The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $X = \{1,2,\dots,100\}$. Let $Y$ be a uniformly random 7-element subset of $X$. Define the event
+			[defs]
+			  A = "the set $Y$ contains at least one even number".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$1 - (1/2)^{7}$</answer>
+		<answer>$(1/2)^{7}$</answer>
+		<answer correct="correct">$1 - \frac{{50 \choose 7}}{{100 \choose 7}}$</answer>
+		<answer>$\frac{{50 \choose 7}}{{100 \choose 7}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair red coin once, and you flip a fair blue coin once, independently of each other.
+			Define the random variables
+			
+			<!-- yes, i'm aware of the cases environment. the strings are sufficiently long i need them to word wrap on mobile -->
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td rowspan="2">$X = \bigg\{$</td>
+						<td>$1\ $</td>
+						<td>if the red coin flip resulted in heads$,$</td>
+					</tr>
+					<tr>
+						<td>$0\ $</td>
+						<td>if the red coin flip resulted in tails$,$</td>
+					</tr>
+					<tr>
+						<td rowspan="2">$Y = \bigg\{$</td>
+						<td>$1\ $</td>
+						<td>if the blue coin flip resulted in heads$,$</td>
+					</tr>
+					<tr>
+						<td>$0\ $</td>
+						<td>if the blue coin flip resulted in tails$,$</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			and
+			[defs]
+			  Z = $\max(X,Y).$
+			[/defs]
+			What is the expected value $\mathbb{E}(Z)$ of the random variable $Z$?
+		]]>
+		</question>
+		<answer>1/4</answer>
+		<answer>1/2</answer>
+		<answer correct="correct">3/4</answer>
+		<answer>1</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. Consider a bitstring $b_1,b_2,\dots,b_n$ of length $n$, in which each
+			bit $b_i$ is 0 with probability 1/2, and 1 with probability 1/2 (independent of all other bits). <br>
+			
+			Define the random variable $X$ to be the number of indices $i$ with $1 \leq i < n$ for which $b_i \neq b_{i+1}$. <br>
+			
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer correct="correct">$\frac{n-1}{2}$</answer>
+		<answer>$\frac{n}{2}$</answer>
+		<answer>$\frac{n+1}{2}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You choose a uniformly random element, say $a$, from the set $\{1,2,\dots,100\}$, and you choose a
+			uniformly random element, say $b$, from the same set $\{1,2,\dots,100\}$. ($a$ and $b$ are chosen
+			independently of each other.) Define the random variable $X$ to be
+			[defs]
+			X = $\max(a,b)$.
+			[/defs]
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+		]]>
+		</question>
+		<answer>${\sum_{k=1}^{100}} k \cdot \frac{k^{2}}{100^{2}}$</answer>
+		<answer>${\sum_{k=1}^{100}} k \cdot \frac{k(k-1)}{100^{2}}$</answer>
+		<answer>${\sum_{k=1}^{100}} k \cdot \frac{2k}{100^{2}}$</answer>
+		<answer correct="correct">${\sum_{k=1}^{100}} k \cdot \left( \frac{1+2(k-1)}{100^{2}} \right)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given a fair red die and a fair blue die. You roll each die once, independently of each
+			other. Let $(i,j)$ be the outcome, where $i$ is the result of the red die and $j$ is the result of
+			the blue die. Define the random variables
+			$$
+				X = i + j
+			$$
+			and
+			$$
+				Y = i - j.
+			$$
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>The random variables $X$ and $Y$ are independent.</answer>
+		<answer correct="correct">The random variables $X$ and $Y$ are not independent.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\WhoGoesFirst}{{\rm W {\scriptsize HO} G {\scriptsize OES} F {\scriptsize IRST}}}
+				 \newcommand{\thensp}{\phantom{\mathbf{then}\ }}$
+			</div>
+			
+			Alexa and May want to play the game of Monopoly. They use the following recursive algorithm
+			to decide who goes first:
+			
+			<div style="margin: 1rem 0;">
+				$\mathbf{Algorithm}\ \WhoGoesFirst(k)\mathrm{:}$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="vertical-align: top;">$//$</td>
+							<td>
+								$k \geq 1,$ $\text{the die is fair},$ $\text{and all rolls are independent}$
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				$\text{Alexa rolls the die, let \(a\) be the result};$ <br>
+				$\text{May rolls the die, let \(m\) be the result};$ <br>
+				$\mathbf{if}\ a > m$ <br>
+				$\mathbf{then}\ \mathrm{print}\ {\tt Alexa\ goes\ first};$ <br>
+				$\thensp \mathrm{return}\ k$ <Br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{if}\ a < m$ <br>
+				$\mathbf{then}\ \mathrm{print}\ {\tt May\ goes\ first};$ <br>
+				$\thensp \mathrm{return}\ k$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{if}\ a = m$ <br>
+				$\mathbf{then}\ \WhoGoesFirst(k + 1)$ <br>
+				$\mathbf{endif}$
+			</div>
+			
+			The ladies run algorithm $\WhoGoesFirst(1)$, i.e., with $k = 1$. Define the random variable $X$ to
+			be the value of the output of this algorithm. <br>
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+		]]>
+		</question>
+		<answer>3/2</answer>
+		<answer>5/4</answer>
+		<answer>5/6</answer>
+		<answer correct="correct">6/5</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Is the following statement true or false?
+			
+			<p style="text-align: center;">
+				For any random variable $X$, $\mathbb{E}\left(1 \middle/ X \right) = 1 / \mathbb{E}(X)$.
+			</p>
+		]]>
+		</question>
+		<answer>The statement is true.</answer>
+		<answer correct="correct">The statement is false.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n$ and $k$ be integers such that $n$ is even, $n \geq 2$, and $1 \leq k \leq n$. <br>
+			The Carleton Computer Science Society (CCSS) is having their annual <s>Christmas</s> Holiday Season Party, which
+			is attended by $n$ students.
+			
+			<!-- yes, i know, css li::marker is great. it also doesn't work on Safari -->
+			<table style="margin: 1rem 0; padding-left: 1.1em;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top; text-align: right; padding: 0;">(a)</td>
+						<td style="padding: 0 0 0 0.35em;">
+							$k$ of these $n$ students are politically correct and, thus, refuse to say <em>Merry Christmas</em>.
+							Instead, they say <em>Happy Holidays</em>.
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top; text-align: right; padding: 0;">(b)</td>
+						<td style="padding: 0 0 0 0.35em;">
+							$n - k$ of these $n$ students do not care about political correctness and, thus, they say
+							<em>Merry Christmas</em>.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			Consider a uniformly random permutation of these $n$ students. The positions in this permutation are numbered
+			as $1,2,...,n$. <br>
+			
+			Define the following random variable $X$:
+			[defs]
+			  X = the number of positions $i$ with $1 \leq i \leq \left. n \middle/ 2 \right.$ such that both students at positions $i$ and $2i$ are politically correct.
+			[/defs]
+			
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer>$n \cdot \frac{k(k - 1)}{n(n - 1)}$</answer>
+		<answer>$n \cdot \frac{(k - 1)(k - 2)}{n(n - 1)}$</answer>
+		<answer correct="correct">$\frac{n}{2} \cdot \frac{k(k - 1)}{n(n - 1)}$</answer>
+		<answer>$\frac{n}{2} \cdot \frac{(k - 1)(k - 2)}{n(n - 1)}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+			How do you feel about writing an exam on Friday evening?
+		</question>
+		<answer correct="correct">I would rather sit in the pub and have a beer.</answer>
+	</multiple-choice>
+</quiz>

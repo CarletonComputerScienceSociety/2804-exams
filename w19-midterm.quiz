@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2019 Midterm"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider bitstrings of length 13. The positions in these strings are numbered as $1,2,3,\dots,13$.
+			How many such bitstrings have the property that all bits at the odd positions are equal?
+		]]>
+		</question>
+		<answer>32</answer>
+		<answer>64</answer>
+		<answer correct="correct">128</answer>
+		<answer>256</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider permutations of the set $\{a,b,c,d,e,f,g\}$ that do not contain $bge$ (in this order). <br>
+			How many such permutations are there?
+		]]>
+		</question>
+		<answer>$7! - 6!$</answer>
+		<answer correct="correct">$7! - 5!$</answer>
+		<answer>$7! - 4!$</answer>
+		<answer>$7! - 3!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of length 15, where each character is a lowercase letter or an uppercase letter.
+			How many such strings contain at least one lowercase letter and at least one uppercase letter?
+		]]>
+		</question>
+		<answer>$52^{15} - 26^{15}$</answer>
+		<answer correct="correct">$52^{15} - 2 \cdot 26^{15}$</answer>
+		<answer>$52^{15} - 3 \cdot 26^{15}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 8$ be an even integer and let $k$ be an integer with $2 \leq k \leq n/2$. Consider
+			$k$-element subsets of the set $S = \{1,2,\dots,n\}$. How many such subsets contain at least two even
+			numbers?
+		]]>
+		</question>
+		<answer>${n \choose k} - {n/2 \choose k - 1} - \frac{n}{2} \cdot {n/2 \choose k}$</answer>
+		<answer>${n \choose k} - {n/2 \choose k - 1} - \frac{n}{2} \cdot {n/2 \choose k - 1}$</answer>
+		<answer>${n \choose k} - {n/2 \choose k} - \frac{n}{2} \cdot {n/2 \choose k}$</answer>
+		<answer correct="correct">${n \choose k} - {n/2 \choose k} - \frac{n}{2} \cdot {n/2 \choose k - 1}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In a group of 100 students,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					37 students like beer,
+				</li>
+				<li>
+					18 students like cider,
+				</li>
+				<li>
+					55 students do not like beer and do not like cider.
+				</li>
+			</ul>
+			How many students like beer and cider?
+		]]>
+		</question>
+		<answer>8</answer>
+		<answer>9</answer>
+		<answer correct="correct">10</answer>
+		<answer>11</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer. A group of $n$ students write an exam. Each student receives a grade,
+			which is an element of the set $\{A, B, C, D, F\}$. <br>
+			What is the minimum value for $n$, such that there must be at least four students who receive the same grade?
+		]]>
+		</question>
+		<answer>14</answer>
+		<answer>15</answer>
+		<answer correct="correct">16</answer>
+		<answer>17</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider 17-element subsets of the set $\{1,2,3,\dots,45\}$. <br>
+			How many such subsets have the property that the largest element in the subset is equal to 30?
+		]]>
+		</question>
+		<answer correct="correct">${{29}\choose{16}}$</answer>
+		<answer>${29 \choose 17}$</answer>
+		<answer>${30 \choose 16}$</answer>
+		<answer>${30 \choose 17}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 4$ be an integer. What does
+			$$
+				3 \cdot { n\choose 3} + 6n \cdot {n \choose 2} + n^3
+			$$
+			count?
+		]]>
+		</question>
+		<answer>
+		<![CDATA[
+			The number of ways to choose an ordered triple
+			<p style="text-align: center; margin: 0.5rem 0;">
+				(beer bottle, cider bottle, wine bottle)
+			</p>
+			in a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+		]]>
+		</answer>
+		<answer correct="correct">
+			The number of ways to choose a 3-element subset of a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+		</answer>
+		<answer>
+			The number of ways to choose 3 elements (with repetitions allowed) in a set consisting of $n$ beer bottles, $n$ cider bottles, and $n$ wine bottles.
+		</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 4$ be an even integer and let $k$ be an integer with $1 \leq k \leq n/2$. Consider
+			strings consisting of $n$ characters, such that
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					each character is an element of $\{a, b, c\}$,
+				</li>
+				<li>
+					the number of $a$'s is equal to $k$, and
+				</li>
+				<li>
+					each $a$ is at an even position.
+				</li>
+			</ul>
+			How many such strings are there?
+		]]>
+		</question>
+		<answer correct="correct">${n/2 \choose k} \cdot 2^{n-k}$</answer>
+		<answer>${n/2 \choose k} \cdot 2^{n/2}$</answer>
+		<answer>${n \choose k} \cdot 2^{n-k}$</answer>
+		<answer>${n \choose k} \cdot 2^{n/2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bitstring is called 00-<em>free</em>, if it does not contain two 0's next to each other.
+			In class, we have seen that for any $m \geq 1$,
+			the number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number
+			$f_{m+2}$. <br>
+			What is the number of 00-free bitstrings of length 77 that have 0 at position 59? (The positions are numbered $1,2,\dots,77$.)
+		]]>
+		</question>
+		<answer>$f_{17} \cdot f_{57}$</answer>
+		<answer>$f_{18} \cdot f_{58}$</answer>
+		<answer correct="correct">$f_{19} \cdot f_{59}$</answer>
+		<answer>$f_{20} \cdot f_{60}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is recursively defined as follows:
+			$$
+				\begin{align}
+				f(0) &= 6, \\
+				f(n) &= 4 \cdot f(n-1) + 2^{n} \ \ \mathrm{if}\ n \geq 1.
+				\end{align}
+			$$
+			Which of the following is true for all integers $n \geq 0$?
+		]]>
+		</question>
+		<answer>$f(n) = 6 \cdot 4^{n} - 2^{n}$</answer>
+		<answer correct="correct">$f(n) = 7 \cdot 4^{n} - 2^{n}$</answer>
+		<answer>$f(n) = 8 \cdot 4^{n} - 2^{n+1}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of characters, where each character is an element of the set $\{a, b, c\}$. Such a
+			string is called <em>awesome</em>, if it does not contain $aa$, and does not contain $aba$, and does not contain $abb$. <br>
+			For any integer $n \geq 1$, let $A_n$ be the number of awesome strings of length $n$. <br>
+			Which of the following is true for any integer $n \geq 4$?
+		]]>
+		</question>
+		<answer>$A_n = A_{n-1} + 2 \cdot A_{n-2} + 2 \cdot A_{n-3}$</answer>
+		<answer>$A_n = A_{n-1} + 2 \cdot A_{n-2} + A_{n-3}$</answer>
+		<answer>$A_n = 2 \cdot A_{n-1} + A_{n-2} + 2 \cdot A_{n-3}$</answer>
+		<answer correct="correct">$A_n = 2 \cdot A_{n-1} + A_{n-2} + A_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We consider binary $2 \times n$ matrices, i.e., matrices with 2 rows and $n$ columns, in which each
+			entry is 0 or 1. A column in such a matrix is called a <span class="sticky">$1 \atop 1$-<em>column</em>,</span>
+			if both bits in the column are 1. <br>
+			For any integer $n \geq 1$ and integer $k$ with $0 \leq k \leq n$, let $M(n,k)$ be the number of binary $2 \times n$ matrices
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					that do not contain any $1 \atop 1$-column, and
+				</li>
+				<li>
+					contain exactly $k$ many 1's.
+				</li>
+			</ul>
+			Which of the following is true for all <span class="sticky">integers $n \geq 2$</span> and $k$ with $1 \leq k \leq n-1$?
+		]]>
+		</question>
+		<answer>$M(n,k) = M(n-1,k)\ +$$\ M(n-1,k-1)$</answer>
+		<answer correct="correct">$M(n,k) = M(n-1,k)\ +$$\ 2 \cdot M(n-1,k-1)$</answer>
+		<answer>$M(n,k) = M(n,k-1)\ +$$\ M(n-1,k-1)$</answer>
+		<answer>$M(n,k) = M(n,k-1)\ +$$\ 2 \cdot M(n-1,k-1)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>$\newcommand{\HelloWorld}{{\rm H {\scriptsize ELLO} W {\scriptsize ORLD}}}$</div>
+			
+			Consider the recursive algorithm $\HelloWorld$, which takes as input an integer $n \geq 0$:
+			<p>
+				$\mathbf{Algorithm}\ \HelloWorld(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ \mathrm{print}\ \mathit{Hello}\ \mathit{World}$ <br>
+				$\mathbf{else}\ \mathbf{if}\ n \text{ is a multiple of } 3$ <br>
+				$\qquad \mathbf{then}\ \HelloWorld\left( n \middle/ 3 \right);$ <br>
+				$\qquad \qquad \ \ \mathrm{print}\ \mathit{Hello}\ \mathit{World};$ <br>
+				$\qquad \qquad \ \ \HelloWorld\left( 2n \middle/ 3 \right)$ <br>
+				$\qquad \mathbf{else}\ \HelloWorld(n + 1)$ <br>
+				$\qquad \mathbf{endif};$ <br>
+				$\mathbf{endif}$
+			</p>
+			Which of the following is correct?
+		]]>
+		</question>
+		<answer>For any integer $n \geq 0$, algorithm $\HelloWorld(n)$ terminates.</answer>
+		<answer correct="correct">There exists an integer $n \geq 0$, for which algorithm $\HelloWorld(n)$ does not terminate.</answer>
+		<answer>All of the above.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The Carleton Computer Science Society (CCSS) is organizing their annual Saint Patrick's Day party.
+			The CCSS has bought three types of drinks:
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					Porterhouse Brewing Co. Oyster Stout,
+				</li>
+				<li>
+					Guinness Extra Stout,
+				</li>
+				<li>
+					Magners Original Irish Cider.
+				</li>
+			</ul>
+			There is an unlimited supply for each of these types. <br>
+			There are 75 students at the party, and each of them gets one drink, which is chosen uniformly at random from these three types. <br>
+			Let $A$ be the event
+			[defs]
+			  A = "exactly 50 students get Magners Original Irish Cider".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer correct="correct">$\frac{{ 75 \choose 50 } \cdot 2^{25}}{3^{75}}$</answer>
+		<answer>$\frac{3^{75}}{{75 \choose 50} \cdot 2^{25}}$</answer>
+		<answer>$\frac{75 \choose 50}{3^{75}}$</answer>
+		<answer>$\frac{{75 \choose 50} \cdot 3^{25}}{3^{75}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a standard 6-sided fair die. We roll this die 8 times. Let $A$ be the event
+			[defs]
+			  A = "there are at least two 5's in the sequence of 8 rolls".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$1 - {\frac{8 \cdot 5^{7}}{6^{8}}}$</answer>
+		<answer>$1 - {\frac{6^{8}}{5^{8} + 8 \cdot 5^{7}}}$</answer>
+		<answer correct="correct">$1 - {\frac{5^{8} + 8 \cdot 5^{7}}{6^{8}}}$</answer>
+		<answer>$1 - {\frac{8^{5} + 8 \cdot 7^{5}}{8^{6}}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			This midterm has 17 questions. For each question, four options are given, exactly one of which is
+			correct. Assume that you answer each question, by choosing one of the four options uniformly at random. <br>
+			Let A be the event
+			[defs]
+			  A = "you answer at least 16 questions correctly".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$\frac{4^{17}}{52}$</answer>
+		<answer>$\frac{51}{4^{17}}$</answer>
+		<answer>$\frac{49}{4^{17}}$</answer>
+		<answer correct="correct">$\frac{52}{4^{17}}$</answer>
+	</multiple-choice>
+</quiz>

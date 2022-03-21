@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Fall 2017 Midterm"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 8$ be an even integer and let $S = \{1,2,3,\dots,n\}$. Consider 7-element subsets of $S$
+			that consist of 4 even numbers and 3 odd numbers. How many such subsets are there?
+		]]>
+		</question>
+		<answer correct="correct">${n/2 \choose 4} \cdot {n/2 \choose 3}$</answer>
+		<answer>${n \choose 4} \cdot {n \choose 3}$</answer>
+		<answer>${n/2 \choose 4} + {n/2 \choose 3}$</answer>
+		<answer>${n \choose 4} + {n \choose 3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $s \geq 1$, $t \geq 1$, and $k \geq 1$ be integers. The Carleton Computer Science Society is
+			organizing their annual Halloween party. At this party, there are
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					$s$ students who are dressed up as Superman,
+				</li>
+				<li>
+					$t$ students who are dressed up as Donald Trump,
+				</li>
+				<li>
+					$k$ students who are dressed up as Kim Jong Un.
+				</li>
+			</ul>
+			These $s+t+k$ students are arranged on a line, such that all Supermen are standing next to each
+			other, all Trumps are standing next to each other, all Kims are standing next to each other, and no
+			Trump is standing next to any Kim. How many such arrangements are there?
+		]]>
+		</question>
+		<answer>$\left. (s+t+k)! \middle/ (s! \cdot t! \cdot k!) \right.$</answer>
+		<answer>$\left. (s+t+k)! \middle/ (2 \cdot s! \cdot t! \cdot k!) \right.$</answer>
+		<answer>$s! \cdot t! \cdot k!$</answer>
+		<answer correct="correct">$2 \cdot s! \cdot t! \cdot k!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer. Consider functions
+			$$
+				f : \{1,2,3,\dots,n\} \rightarrow \{1,2,3,\dots,7n\}
+			$$
+			such that, for each $i$ with $1 \leq i \leq n$, $f(i)$ is divisible by 7. How many such functions
+			are there?
+		]]>
+		</question>
+		<answer>$(7n)^{n}$</answer>
+		<answer>$n^{7n}$</answer>
+		<answer correct="correct">$n^{n}$</answer>
+		<answer>$7^{n}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $m \geq 5$ and $n \geq 5$ be integers. Let $P$ be a set consisting of $m$ strictly positive
+			integers, and let $N$ be a set consisting of $n$ strictly negative integers. Consider 5-element
+			subsets $A$ of $P \cup N$ such that the product of the elements in $A$ is strictly positive. How
+			many such subsets $A$ are there?
+		]]>
+		</question>
+		<answer>${n \choose 5} + {n \choose 3} \cdot {m \choose 2} + n \cdot {m \choose 4}$</answer>
+		<answer correct="correct">${m \choose 5} + {m \choose 3} \cdot {n \choose 2} + m \cdot {n \choose 4}$</answer>
+		<answer>${m+n \choose 5} - {n \choose 5}$</answer>
+		<answer>${m \choose 5} \cdot {n \choose 5}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an even integer and let $S = \{1,2,3,\dots,n\}$. Consider subsets of $S$ that
+			contain at least one even number. How many such subsets are there?
+		]]>
+		</question>
+		<answer>$(n/2) \cdot 2^{n/2}$</answer>
+		<answer>$2^{n/2} + 2^{n/2}$</answer>
+		<answer correct="correct">$2^{n} - 2^{n/2}$</answer>
+		<answer>$2^{n} + 2^{n/2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 7$ be an integer and consider strings of length $n$ consisting of the characters $a$, $b$,
+			$c$, and $d$. How many such strings are there that start with $abc$ or end with $dddd$?
+		]]>
+		</question>
+		<answer>$4^{n-3} + 4^{n-4}$</answer>
+		<answer correct="correct">$4^{n-3} + 4^{n-4} - 4^{n-7}$</answer>
+		<answer>$2 \cdot 4^{n-3} - 4^{n-7}$</answer>
+		<answer>$2 \cdot 4^{n-4} - 4^{n-7}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. What does
+			$$
+				\sum_{k=2}^{n} {{n}\choose{k}} \cdot 2^{n-k}
+			$$
+			count?
+		]]>
+		</question>
+		<answer>The number of strings of length $n$, where each character is $a$ or $b$, that contain at least one $a$.</answer>
+		<answer>The number of strings of length $n$, where each character is $a$ or $b$, that contain at least 2 many $a$'s.</answer>
+		<answer>The number of strings of length $n$, where each character is $a$, $b$, or $c$, that contain at least one $a$.</answer>
+		<answer correct="correct">The number of strings of length $n$, where each character is $a$, $b$, or $c$, that contain at least 2 many $a$'s.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a square with sides of length 17. This square contains $n$ points. What is the minimum
+			value of $n$ such that we can guarantee that at least two of these points have distance at most
+			$\left. 17 \middle/ \sqrt{2} \right.$?
+		]]>
+		</question>
+		<answer>4</answer>
+		<answer correct="correct">5</answer>
+		<answer>6</answer>
+		<answer>7</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{20}y^{80}$ in the expansion of $(7x-13y)^{100}$?
+		]]>
+		</question>
+		<answer correct="correct">${100 \choose 80} \cdot 7^{20} \cdot 13^{80}$</answer>
+		<answer>$- {100 \choose 80} \cdot 7^{20} \cdot 13^{80}$</answer>
+		<answer>${100 \choose 20} \cdot 7^{80} \cdot 13^{20}$</answer>
+		<answer>$- {100 \choose 20} \cdot 7^{80} \cdot 13^{20}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bitstring is called 01-<em>free</em> if it does not contain 01.
+			Let $n \geq 2$ be an integer. How many 01-free bitstrings of length $n$ are there?
+		]]>
+		</question>
+		<answer>$n-1$</answer>
+		<answer>$n$</answer>
+		<answer correct="correct">$n+1$</answer>
+		<answer>$n+2$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bitstring is called 00-<em>free</em> if it does not contain two 0's next to each other.
+			In class, we have seen that for any $m \geq 1$, the number of 00-free
+			bitstrings of length $m$ is equal to the $(m + 2)$-th Fibonacci number $f_{m+2}$. <br>
+			
+			What is the number of 00-free bitstrings of length 20 that have 0 at position 7?
+			(The positions are numbered $1,2,\dots,20$.)
+		]]>
+		</question>
+		<answer>$f_{7} \cdot f_{15}$</answer>
+		<answer>$f_{8} \cdot f_{14}$</answer>
+		<answer>$f_{8} \cdot f_{15}$</answer>
+		<answer correct="correct">$f_{7} \cdot f_{14}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The functions $f : \mathbb{N}^2 \rightarrow \mathbb{N}$ and $g : \mathbb{N} \rightarrow \mathbb{N}$
+			are recursively defined as follows:
+			
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$f(m, 0)$</td>
+						<td style="vertical-align: top;">$= m\ \;$</td>
+						<td>$\mathrm{if}\ m \geq 0,$</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top;">$f(m, n)$</td>
+						<td style="vertical-align: top;">$= 1 + f(m, n - 1)\ \;$</td>
+						<td>$\mathrm{if}\ m \geq 0$ $\mathrm{and}\ n \geq 1,$</td>
+					</tr>
+					<tr>
+						<td>$g(0)$</td>
+						<td colspan="2">$= 1,$</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top;">$g(n)$</td>
+						<td style="vertical-align: top;">$= 5 \cdot g(n - 1)\ \;$</td>
+						<td>$\mathrm{if}\ n \geq 1.$</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			For any integer $n \geq 0$, what is $f(g(n), g(n))$?
+		]]>
+		</question>
+		<answer correct="correct">$2 \cdot 5^{n}$</answer>
+		<answer>$2 \cdot 5^{n-1}$</answer>
+		<answer>$(5^{n})^{2}$</answer>
+		<answer>$(5^{n-1})^{2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of characters, where each character is $a$, $b$, or $c$. Such a string is called <em>ccc-free</em>
+			if it does not contain <em>ccc</em>. <br>
+			
+			For any integer $n \geq 4$, let $B_n$ be the number of <em>ccc</em>-free strings of length $n$. Which of the following is true?
+		]]>
+		</question>
+		<answer>$B_n = B_{n-1} + B_{n-2} + B_{n-3}$</answer>
+		<answer correct="correct">$B_n = 2 \cdot B_{n-1} + 2 \cdot B_{n-2} + 2 \cdot B_{n-3}$</answer>
+		<answer>$B_n = 2 \cdot B_{n-1} + 2 \cdot B_{n-2} + B_{n-3}$</answer>
+		<answer>$B_n = B_{n-1} + B_{n-2} + 2 \cdot B_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer and consider a $2 \times n$ board $B_n$ consisting of a total of $2n$ square cells.
+			The top part of the figure below shows $B_{13}$.
+			
+			<img width="421" height="163" style="display: block; max-width: 100%; height: auto; margin: 1rem auto;"
+				src="data:image/png;base64,
+				iVBORw0KGgoAAAANSUhEUgAAAaUAAACjAQMAAAAQMpNEAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMA/MKYcw8AAACySURBVGje
+				7ZexDcIwEAA9BmMEZQBWcZUFGIA18DZUVAxBRU1J99hCIBE5RT7R5xPdSa80OclnF5aDKHgprUsIfxN701Rml/8cid7SrZAuuuii
+				i64Fum6Fa1ejrbFPKZ1/1qPL07OOQxbnRRdddNFF17Jdpq82AAAAKw4i8jSymjJYWBu2TvLhbmDF79fIinrLdRe7sd6uNjN+hcXy
+				3bXV86LLd9fE+8vtvYyF5dGa8f31BinwIpXAsQmNAAAAAElFTkSuQmCC">
+			
+			A <em>brick</em> is a horizontal or vertical board consisting of 2 square cells; see the bottom part of the figure
+			above. A <em>tiling</em> of the board $B_n$ is a placement of bricks on the board such that
+			<ul style="margin: 0.5rem 0;">
+				<li>the bricks exactly cover $B_n$ and</li>
+				<li>no two bricks overlap.</li>
+			</ul>
+			The figure below shows a tiling of $B_{13}$.
+			
+			<img width="421" height="66" style="display: block; max-width: 100%; height: auto; margin: 1rem auto;"
+				src="data:image/png;base64,
+				iVBORw0KGgoAAAANSUhEUgAAAaUAAABCAQMAAADNKltjAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMA/MKYcw8AAABRSURBVEjH
+				Y/hPBvhBpq4DDAxgzIBEJyBhA6iYARJbYlTXqK5RXaO6RnWN6sKuC6M2eoCkyx4q9gGJ/YM0XaP116iuUV2jukZ1jeqiti569r8A
+				WBcKX0qCyKUAAAAASUVORK5CYII=">
+			
+			Let $T_n$ be the number of different tilings of the board $B_n$. Which of the following is true for any $n \geq 3$?
+		]]>
+		</question>
+		<answer>$T_n = T_{n + 1} + T_{n + 2}$</answer>
+		<answer correct="correct">$T_n = T_{n - 1} + T_{n - 2}$</answer>
+		<answer>$T_n = 2 \cdot T_{n - 1} + T_{n - 2}$</answer>
+		<answer>$T_n = T_{n - 1} + 2 \cdot T_{n - 2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Hello}{{\rm H {\scriptsize ELLO}}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+			</div>
+			
+			Consider the recursive algorithm $\Hello$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Hello(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ \text{print ``hello''}$ <br>
+				$\mathbf{else}\ \Hello(n - 1);$ <br>
+				$\elsesp \text{print ``hello''};$ <br>
+				$\elsesp \Hello(n - 2)$ <br>
+				$\mathbf{endif}$
+			</p>
+			
+			If you run algorithm $\Hello(5)$, how many times is the word "hello" printed?
+		]]>
+		</question>
+		<answer>13</answer>
+		<answer>14</answer>
+		<answer correct="correct">15</answer>
+		<answer>16</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $X = \{1,2,...,20\}$. You choose a uniformly random 7-element subset $Y$ of $X$. Define the
+			event
+			[defs]
+			  A = "3 is an element of $Y$ or 13 is an element of $Y$".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$\frac{{19 \choose 6} + {19 \choose 6}}{{20 \choose 7}}$</answer>
+		<answer>$\frac{2 \cdot {20 \choose 6} - {20 \choose 5}}{{20 \choose 7}}$</answer>
+		<answer>$\frac{2 \cdot {19 \choose 7} - {18 \choose 7}}{{20 \choose 7}}$</answer>
+		<answer correct="correct">$\frac{2 \cdot {19 \choose 6} - {18 \choose 5}}{{20 \choose 7}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			After having proctored the midterm, Alexa, Farah, May, and Shelly decide to go trick-or-treating.
+			For any house that the ladies visit, if they do not receive candy, they throw rotten eggs at the
+			house. <br>
+			
+			Let $m \geq 7$ and $n \geq 7$ be integers. There are $m$ houses whose owners hand out candy and
+			there are $n$ houses whose owners do not hand out candy. <br>
+			
+			The ladies choose a uniformly random subset of 7 houses and visit these 7 houses. Define the event
+			[defs]
+			  A = "the ladies throw rotten eggs at exactly 2 of the 7 chosen houses".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$\frac{{m \choose 5} + {n \choose 2}}{{m+n \choose 7}}$</answer>
+		<answer correct="correct">$\frac{{m \choose 5} \cdot {n \choose 2}}{{m+n \choose 7}}$</answer>
+		<answer>$\frac{{7 \choose 2}}{{m \choose 5} \cdot {n \choose 2}}$</answer>
+		<answer>$\frac{{7 \choose 2}}{{m+n \choose 7}}$</answer>
+	</multiple-choice>
+</quiz>

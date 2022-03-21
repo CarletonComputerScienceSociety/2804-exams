@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2014 Final"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A password consists of 28 characters, each character being a lowercase letter. A password must
+			contain exactly one vowel (i.e., <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, or <em>u</em>).
+			How many passwords are there?
+		]]>
+		</question>
+		<answer>$5 \cdot 21^{27}$</answer>
+		<answer correct="correct">$28 \cdot 5 \cdot 21^{27}$</answer>
+		<answer>$28 \cdot 5 \cdot 27^{21}$</answer>
+		<answer>$28 \cdot 5 \cdot 26^{27}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A password consists of 10 characters, each character being a lowercase letter or a digit. A password
+			must contain at least one digit and at most three digits. How many passwords are there?
+		]]>
+		</question>
+		<answer>${10 \choose 1}26^9 + {10 \choose 2}26^8 + {10 \choose 3}26^7$</answer>
+		<answer>$10 \cdot 26^9 + 10^2 \cdot 26^8 + 10^3 \cdot 26^7$</answer>
+		<answer correct="correct">
+			${10 \choose 1} \cdot 10 \cdot 26^9 + {10 \choose 2} \cdot 10^2 \cdot 26^8\ +$ $ {10 \choose 3} \cdot 10^3 \cdot 26^7$
+		</answer>
+		<answer>none of the above</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is
+			$$
+				\sum_{k=0}^{45} {45 \choose k} (-3)^{2k}.
+			$$
+		]]>
+		</question>
+		<answer>$(-2)^{45}$</answer>
+		<answer>$4^{45}$</answer>
+		<answer>$(-8)^{45}$</answer>
+		<answer correct="correct">$10^{45}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a group of 8 people, consisting of Simon, John, and 6 other people. How many ways are there
+			to arrange these 8 people on a horizontal line such that Simon and John are standing next to each
+			other? (The order on the line matters and Simon is either to the left or to the right of John.)
+		]]>
+		</question>
+		<answer>$7 \cdot 6!$</answer>
+		<answer correct="correct">$2 \cdot 7 \cdot 6!$</answer>
+		<answer>$8 \cdot 6!$</answer>
+		<answer>$2 \cdot 8 \cdot 6!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of $n$ characters, each character being $a$, $b$, or $c$. Let $S_n$ be the
+			number of such strings of length $n$ that do not contain the substring $aa$. Which of the following
+			is true?
+		]]>
+		</question>
+		<answer>$S_{n+1} = S_n + S_{n-1}\ \mathrm{for}\ n \geq 2.$</answer>
+		<answer>$S_{n+1} = 2 \cdot S_n + S_{n-1}\ \mathrm{for}\ n \geq 2.$</answer>
+		<answer>$S_{n+1} = S_n + 2 \cdot S_{n-1}\ \mathrm{for}\ n \geq 2.$</answer>
+		<answer correct="correct">$S_{n+1} = 2 \cdot S_n + 2 \cdot S_{n-1}\ \mathrm{for}\ n \geq 2.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In a group of 150 people,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					30 weigh at least 150 pounds,
+				</li>
+				<li>
+					60 are at least 6 feet tall,
+				</li>
+				<li>
+					70 weigh less than 150 pounds and are less than 6 feet tall.
+				</li>
+			</ul>
+			How many people weigh at least 150 pounds and are at least 6 feet tall?
+		]]>
+		</question>
+		<answer correct="correct">10</answer>
+		<answer>20</answer>
+		<answer>30</answer>
+		<answer>40</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider 4 blue balls $B_1,B_2,B_3,B_4$ and 5 red balls $R_1,R_2,R_3,R_4,R_5$. We pick 3
+			balls of the same color and arrange them on a horizontal line. (The order on the line matters.) How
+			many arrangements are there?
+		]]>
+		</question>
+		<answer>64</answer>
+		<answer>74</answer>
+		<answer correct="correct">84</answer>
+		<answer>94</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a group of $n$ people, let $k$ be an integer with $1 \leq k \leq n$, and consider a
+			circular table with $k$ chairs around it. We select $k$ people and seat them around this table. How
+			many different seating arrangements are there? (Two seating arrangements $A$ and $B$ are the same if
+			for each person, the clockwise neighbor in $A$ is the same as the clockwise neighbor in $B$, and the
+			counterclockwise neighbor in $A$ is the same as the counterclockwise neighbor in $B$.)
+		]]>
+		</question>
+		<answer correct="correct">$\frac{n!}{k(n-k)!}$</answer>
+		<answer>$\frac{n!}{k!(n-k)!}$</answer>
+		<answer>$\frac{n!}{(n-k)!}$</answer>
+		<answer>$\frac{2 \cdot n!}{(n-k)!}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 777$, where $x_1 \geq 0$, $x_2 \geq 0$,
+			$x_3 \geq 0$, $x_4 \geq 0$ are integers?
+		]]>
+		</question>
+		<answer correct="correct">${780 \choose 3}$</answer>
+		<answer>${780 \choose 4}$</answer>
+		<answer>${781 \choose 3}$</answer>
+		<answer>${781 \choose 4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider the following recursive function:
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$f(0)$</td>
+						<td>$\;=\;$</td>
+						<td>$3,$</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top;">$f(n + 1)$</td>
+						<td>$\;=\;$</td>
+						<td>$f(n) + 10n + 2\; \ \text{for all}$ $\text{integers}\ n \geq 0.$</td>
+					</tr>
+				</tbody>
+			</table>
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>for all $n \geq 0$: $f(n) = 5n^{2} - 3n + 2$</answer>
+		<answer correct="correct">for all $n \geq 0$: $f(n) = 5n^{2} - 3n + 3$</answer>
+		<answer>for all $n \geq 0$: $f(n) = 5n^{2} + 3n + 3$</answer>
+		<answer>for all $n \geq 0$: $f(n) = 5n^{2} - 2n + 3$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+			</div>
+			
+			The Fibonacci numbers are defined as follows: $f_0 = 0$, $f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for
+			$n \geq 2$. <br>
+			
+			Consider the recursive algorithm $\Fib$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			For $n \geq 5$, run algorithm $\Fib(n)$ and let $a_n$ be the number of times that $\Fib(4)$ is called. <br>
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>for all $n \geq 5$, $a_n = f_n$</answer>
+		<answer>for all $n \geq 5$, $a_n = f_{n-1}$</answer>
+		<answer>for all $n \geq 5$, $a_n = f_{n-2}$</answer>
+		<answer correct="correct">for all $n \geq 5$, $a_n = f_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We choose a subset of $\{1,2,3,4,5\}$ uniformly at random. What is the probability that this
+			subset has size 3?
+		]]>
+		</question>
+		<answer>4/16</answer>
+		<answer>4/32</answer>
+		<answer correct="correct">5/16</answer>
+		<answer>5/32</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A = \{1,2,3,\dots,100\}$. Let $x$, $y$, and $z$ be elements in $A$ that are chosen independently
+			and uniformly at random. What is the probability that $x = y = z$?
+		]]>
+		</question>
+		<answer>$\frac{1}{100}$</answer>
+		<answer>$\frac{1}{100 \cdot 99}$</answer>
+		<answer correct="correct">$\frac{1}{100 \cdot 100}$</answer>
+		<answer>$\frac{1}{{100 \choose 2}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We flip a fair coin repeatedly and independently, resulting in a sequence of heads ($H$) and tails
+			($T$). We stop flipping the coin as soon as this sequence contains $H$ or $TTTT$. What is the
+			probability that this sequence contains at most two $T$s?
+		]]>
+		</question>
+		<answer>4/8</answer>
+		<answer>5/8</answer>
+		<answer>6/8</answer>
+		<answer correct="correct">7/8</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We roll two fair and independent dice. Define the events
+			[defs]
+			  A = "at least one of the dice shows a 3",
+			  B = "the sum of the dice is 5".
+			[/defs]
+			What is the conditional probability $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer correct="correct">1/2</answer>
+		<answer>1/4</answer>
+		<answer>1/8</answer>
+		<answer>1/9</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $C_1$ be a fair coin that has $H$ on one side and $T$ on the other side. Let $C_2$ be a coin
+			that has $H$ on both sides. We choose one of $C_1$ and $C_2$ uniformly at random and flip it. Define
+			the events
+			[defs]
+			  A = "we choose $C_2$",
+			  B = "the flip resulted in $H$".
+			[/defs]
+			What is the conditional probability $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer>1/3</answer>
+		<answer>1/2</answer>
+		<answer correct="correct">2/3</answer>
+		<answer>none of the above</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ and $B$ be events in a sample space, such that $\Pr(A) = 1/3$, $\Pr(B) = 1/2$,
+			and $\Pr(A|B) = 2/5$. What is $\Pr(B|A)$?
+		]]>
+		</question>
+		<answer>1/5</answer>
+		<answer>2/5</answer>
+		<answer correct="correct">3/5</answer>
+		<answer>4/5</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a group of 5 people. Each person in this group was born in a uniformly random month (from
+			the 12 months of the year), independent of the other people's month of birth. What is the
+			probability that at least 2 of these 5 people were born in the same month?
+		]]>
+		</question>
+		<answer>$1 - \frac{12!}{12^{4} \cdot 7!}$</answer>
+		<answer correct="correct">$1 - \frac{11!}{12^{4} \cdot 7!}$</answer>
+		<answer>$1 - \frac{11!}{12^{4} \cdot 6!}$</answer>
+		<answer>$1 - \frac{11!}{12^{4} \cdot 8!}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Assume you answer the first question in this exam by choosing one of the four answers uniformly at random.
+			You answer the second question by choosing, again uniformly at random, one of the three answers you did not choose in
+			the first question. What is the probability that you answer the second question correctly?
+		]]>
+		</question>
+		<answer>$\frac{1}{3}$</answer>
+		<answer correct="correct">$\frac{1}{4}$</answer>
+		<answer>$\frac{1}{4} \cdot \frac{1}{3} + \frac{3}{4} \cdot \frac{1}{4}$</answer>
+		<answer>none of the above</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			I flip two fair and independent coins. If the first coin comes up heads, you win \$1.
+			If the second coin comes up heads, you win \$2. (Thus, if both coins come up heads, you win \$3.)
+			Define the random variable $X$ to be the amount of dollars that you win. What is the expected
+			value of $X$?
+		]]>
+		</question>
+		<answer>3</answer>
+		<answer>2</answer>
+		<answer>5/2</answer>
+		<answer correct="correct">3/2</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			When a couple has a child, this child is a boy with probability 1/2 and a girl with probability
+			1/2, independent of the gender of previous children. A couple stops having children as soon as
+			they have 2 girls or 2 boys. Define the random variables
+			[defs]
+			  G = the number of girls the couple has
+			[/defs]
+			and
+			[defs]
+			  B = the number of boys the couple has.
+			[/defs]
+			Are $G$ and $B$ independent random variables?
+		]]>
+		</question>
+		<answer>Yes</answer>
+		<answer correct="correct">No</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			I flip a fair coin, independently, 10 times, resulting in a sequence of heads ($H$) and tails ($T$).
+			For each $HT$ in this sequence, you win \$3.
+			Define the random variable $X$ to be the amount of dollars that you win. For example, if the
+			sequence is
+			$$
+				HHTTHTTHTT,
+			$$
+			then $X = 9$. What is the expected value of $X$?
+		]]>
+		</question>
+		<answer correct="correct">27/4</answer>
+		<answer>28/4</answer>
+		<answer>29/4</answer>
+		<answer>30/4</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We roll a pair of fair dice repeatedly and independently, and stop as soon as the sum of the numbers
+			for the pair is 7. Define the random variable $X$ to be the number of times we roll the dice. (In
+			one roll, we roll a pair of dice.) What is the expected value of $X$?
+		]]>
+		</question>
+		<answer>4</answer>
+		<answer>5</answer>
+		<answer correct="correct">6</answer>
+		<answer>7</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We flip a fair coin independently $n$ times. Define the random variable
+			[defs]
+			  X = the number of heads minus the number of tails in the sequence of $n$ flips.
+			[/defs]
+			What is the expected value of $X$?
+		]]>
+		</question>
+		<answer>$n/2$</answer>
+		<answer>$n/4$</answer>
+		<answer>$n/8$</answer>
+		<answer correct="correct">$0$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Who discovered the formula
+			$$
+				1 + 2 + 3 + \dots + n = n(n + 1) / 2
+			$$
+			when he was a young boy?
+		]]>
+		</question>
+		<answer>Justin Bieber</answer>
+		<answer>Fibonacci</answer>
+		<answer correct="correct">Carl Friedrich Gauss</answer>
+		<answer>Simon Pratt</answer>
+	</multiple-choice>
+</quiz>

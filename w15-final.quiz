@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2015 Final"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a set $S$ consisting of 20 integers; 5 of these are even and the other 15 integers in $S$
+			are odd. What is the number of 7-element subsets of $S$ having exactly 3 even integers?
+		]]>
+		</question>
+		<answer>${20 \choose 7}$</answer>
+		<answer>${5\choose 3} + {15 \choose 4}$</answer>
+		<answer correct="correct">${5 \choose 3}{15 \choose 4}$</answer>
+		<answer>${5 \choose 4}{15 \choose 3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a set $S$ consisting of 20 integers; 5 of them are even and the other 15 integers in $S$
+			are odd. What is the number of 7-element subsets of $S$ having at least 5 even integers or at least
+			5 odd integers?
+		]]>
+		</question>
+		<answer correct="correct">
+			${5 \choose 5}{15 \choose 2} + {5 \choose 2}{15 \choose 5} + {5 \choose 1}{15 \choose 6} + {5 \choose 0}{15 \choose 7}$
+		</answer>
+		<answer>${5 \choose 5}{15 \choose 2} + {5 \choose 2}{15 \choose 5} - {5 \choose 5}{15 \choose 5}$</answer>
+		<answer>${20 \choose 7} - {5 \choose 4}{15 \choose 4}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many bitstrings of length 77 start with 1111 or end with 0000?
+		]]>
+		</question>
+		<answer>$2^{73} + 2^{73}$</answer>
+		<answer correct="correct">$2^{74} - 2^{69}$</answer>
+		<answer>$2^{77} - 2^{69}$</answer>
+		<answer>$2^{77} - 2^{73} - 2^{73}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{4}y^{11}$ in the expansion of $(2x - 7y)^{15}$?
+		]]>
+		</question>
+		<answer>${15 \choose 11} \cdot 2^4 \cdot 7^{11}$</answer>
+		<answer correct="correct">$- {15 \choose 11} \cdot 2^4 \cdot 7^{11}$</answer>
+		<answer>${15 \choose 11} \cdot 2^{11} \cdot 7^4$</answer>
+		<answer>$- {15 \choose 11} \cdot 2^{11} \cdot 7^4$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In a group of 20 people,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					6 are blond,
+				</li>
+				<li>
+					7 have green eyes,
+				</li>
+				<li>
+					11 are not blond and do not have green eyes.
+				</li>
+			</ul>
+			How many people in this group are blond and have green eyes?
+		]]>
+		</question>
+		<answer>3</answer>
+		<answer correct="correct">4</answer>
+		<answer>5</answer>
+		<answer>6</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 7$ be an integer. Why does the following equality hold:
+			$$
+				{n \choose 5}{n - 5 \choose 2} = {n \choose 2}{n - 2 \choose 5}
+			$$
+		]]>
+		</question>
+		<answer>Because both sides count the number of pairs $(A,B)$ of subsets of the $n$ people, such that $|A| = 2$, $|B| = 5$, and $A \subseteq B$.</answer>
+		<answer>Because both sides count the number of pairs $(A,B)$ of subsets of the $n$ people, such that $|A| = 5$, $|B| = 2$, and $A \subseteq B$.</answer>
+		<answer>Because both sides count the number of ways to choose 2 committees in a group of $n$ people, one committee has 5 members, the other committee has 2 members, and a person can be on both committees.</answer>
+		<answer correct="correct">
+		<![CDATA[
+			Because both sides count the number of ways to choose 2 committees in a group of $n$ people, one committee has 5 members, the other committee has 2 members, and <strong>no</strong> person can be on both committees.
+		]]>
+		</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of characters, each character being $a$, $b$, or $c$, that contain an odd number of
+			$a$s. Let $S_n$ be the number of such strings having length $n$. Which of the following is true?
+		]]>
+		</question>
+		<answer>$S_n = S_{n-1} + S_{n-2}$</answer>
+		<answer>$S_n = 2 \cdot S_{n-1} + S_{n-2}$</answer>
+		<answer>$S_n = S_{n-1} + (3^{n-1} - S_{n-1})$</answer>
+		<answer correct="correct">$S_n = 2 \cdot S_{n-1} + (3^{n-1} - S_{n-1})$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider the following recursive function:
+			[defs]
+			  f(0) = $7$,
+			  f(n) = $f(n - 1) + 6n - 3\; \ \text{for all}$ $\mathrm{integers}\ n \geq 1$.
+			[/defs]
+			Which of the following is true??
+		]]>
+		</question>
+		<answer>For all $n \geq 0$: $f(n) = 2n^2 + 7$</answer>
+		<answer correct="correct">For all $n \geq 0$: $f(n) = 3n^2 + 7$</answer>
+		<answer>For all $n \geq 0$: $f(n) = 4n^2 + 7$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+			</div>
+			
+			Consider the recursive algorithm $\Fib$, which takes as input an
+			integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			If we run algorithm $\Fib(77)$, how many calls are there to $\Fib(73)$?
+		]]>
+		</question>
+		<answer>3</answer>
+		<answer>4</answer>
+		<answer correct="correct">5</answer>
+		<answer>6</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S$ be the set of ordered pairs of integers that is recursively defined in the following way:
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					$(1,6) \in S$.
+				</li>
+				<li>
+					If $(a,b) \in S$ then $(a+3, b+4) \in S$.
+				</li>
+				<li>
+					If $(a,b) \in S$ then $(a+5, b+2) \in S$.
+				</li>
+			</ul>
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">For every element $(a,b)$ in $S$, $a + b$ is divisible by 7.</answer>
+		<answer>For every element $(a,b)$ in $S$, $a + b$ is not divisible by 7.</answer>
+		<answer>$S = \{(a,b) : a &gt; 0$ and $b &gt; 0$ are integers and $a + b$ is divisible by 7$\}$.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 99$, where $x_1 \geq 0$,
+			$x_2 \geq 0$, $x_3 \geq 0$, $x_4 \geq 0$ are integers?
+		]]>
+		</question>
+		<answer correct="correct">${102 \choose 3}$</answer>
+		<answer>${102 \choose 4}$</answer>
+		<answer>${103 \choose 3}$</answer>
+		<answer>${103 \choose 4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider two events $A$ and $B$ in a sample space $S$. You are given that $\Pr(B) = 2/3$ and
+			$\Pr(A|B) = 4/5$. What is $\Pr(A \cap B)$?
+		]]>
+		</question>
+		<answer>5/15</answer>
+		<answer>6/15</answer>
+		<answer>7/15</answer>
+		<answer correct="correct">8/15</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider three events, $A$, $B$, and $C$ in a sample space $S$. Is the following true or false?
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$\Pr\bigl(A \cup (\overline{B} \cap \overline{C})\bigr) = $</td>
+						<td>$\Pr(A) + \Pr(B)\ - $ $\Pr(C).$</td>
+					</tr>
+				</tbody>
+			</table>
+		]]>
+		</question>
+		<answer>True</answer>
+		<answer correct="correct">False</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S$ be a set of 100 integers; 30 of these are positive and the other 70 integers in $S$ are
+			negative. We choose, uniformly at random, a 20-element subset of $S$. What is the probability that
+			at least one of the elements in this subset is positive?
+		]]>
+		</question>
+		<answer>$\left. {30 \choose 1} \middle/ {100 \choose 20} \right.$</answer>
+		<answer>$\left. {30 \choose 1}{70 \choose 19} \middle/ {100 \choose 20} \right.$</answer>
+		<answer correct="correct">$1 - \left. {70 \choose 20} \middle/ {100 \choose 20} \right.$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S$ be a set of 100 integers; 30 of these are positive and the other 70 integers in $S$ are
+			negative. We choose, uniformly at random, a 20-element subset of $S$. Let $x$ be the product of the
+			integers in the chosen subset. What is the probability that $x &gt; 0$?
+		]]>
+		</question>
+		<answer>$\frac{1}{{100 \choose 20}} \sum_{k=0}^{20} \left({70 \choose k} + {30 \choose 20 - k}\right)$</answer>
+		<answer>$\frac{1}{{100 \choose 20}} \sum_{k=0}^{20} {70 \choose k}{30 \choose 20 - k}$</answer>
+		<answer>$\frac{1}{{100 \choose 20}} \sum_{k=0}^{10} \left({70 \choose 2k} + {30 \choose 20 - 2k}\right)$</answer>
+		<answer correct="correct">$\frac{1}{{100 \choose 20}} \sum_{k=0}^{10} {70 \choose 2k}{30 \choose 20 - 2k}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a bitstring of length 77, in which each bit is 0 with probability 1/3 (and, thus, 1 with
+			probability 2/3), independently of the other bits. What is the probability that there are exactly
+			15 0s in this bitstring?
+		]]>
+		</question>
+		<answer correct="correct">${77 \choose 15}(1/3)^{15}(2/3)^{62}$</answer>
+		<answer>${77 \choose 15}((1/3)^{15} + (2/3)^{62})$</answer>
+		<answer>${77 \choose 15}(1/3)^{62}(2/3)^{15}$</answer>
+		<answer>${77 \choose 15}((1/3)^{62} + (2/3)^{15})$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a uniformly random bitstring of length 5. Define the events
+			[defs]
+			  A = "the bitstring contains exactly two 0s",
+			  B = "the bitstring contains an even number of 0s".
+			[/defs]
+			(Note that zero is even.) What is the conditional probability $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer>$\left. {5 \choose 2} \middle/ 2^3 \right.$</answer>
+		<answer correct="correct">$\left. {5 \choose 2} \middle/ 2^4 \right.$</answer>
+		<answer>$\left. {5 \choose 2} \middle/ 2^5 \right.$</answer>
+		<answer>$\left. 2^5 \middle/ {5 \choose 2} \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a uniformly random bitstring of length 5. Define the events
+			[defs]
+			  A = "the bitstring contains an odd number of 0s"
+			[/defs]
+			and
+			[defs]
+			  B = "the first three bits in the bitstring are 111".
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">The events $A$ and $B$ are independent.</answer>
+		<answer>The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			I flip a fair coin, independently, $n$ times. For each heads, you win \$3, whereas for each tails,
+			you lose \$1. Define the random variable $X$ to be the amount of dollars that you win. What is the
+			expected value of $X$?
+		]]>
+		</question>
+		<answer>$n/2$</answer>
+		<answer correct="correct">$n$</answer>
+		<answer>$3n/2$</answer>
+		<answer>$2n$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $G = (V,E)$ be a graph with vertex set $V$ and edge set $E$, let $n$ be the size of $V$, and let
+			$m$ be the size of $E$. For each vertex of $V$, flip a fair and independent coin. Let $V'$ be the
+			subset of $V$ consisting of all vertices of $V$ whose coin flip resulted in heads. Let $E'$ be the
+			set consisting of all edges $(u,v)$ in $E$ for which both $u$ and $v$ are in $V'$. Define the random
+			variable $X$ to be the number of edges in $E'$. What is the expected value of $X$?
+		]]>
+		</question>
+		<answer>$m/2$</answer>
+		<answer correct="correct">$m/4$</answer>
+		<answer>$m/8$</answer>
+		<answer>$m/16$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a bitstring of length 5, in which each bit is 0 with probability 1/2 (and, thus, 1 with
+			probability 1/2), independently of the other bits. Define the random variables $X$ and $Y$ as
+			follows:
+			[defs]
+			  X = the number of 0s in this bitstring
+			[/defs]
+			and
+			[defs]
+			  Y = the value of the first bit in this bitstring.
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>The random variables $X$ and $Y$ are independent.</answer>
+		<answer correct="correct">The random variables $X$ and $Y$ are not independent.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			One of Lindsay and Simon is chosen uniformly at random. The person that is chosen wins \$100.
+			Define the random variables $L$ and $S$ as follows:
+			[defs]
+			  L = the amount that Lindsay wins
+			[/defs]
+			and
+			[defs]
+			  S = the amount that Simon wins.
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>$\mathbb{E}(L) = 50$ and $\mathbb{E}(\max(L,S)) = 50$.</answer>
+		<answer>$\mathbb{E}(L) = 100$ and $\mathbb{E}(\max(L,S)) = 100$.</answer>
+		<answer correct="correct">$\mathbb{E}(L) = 50$ and $\mathbb{E}(\max(L,S)) = 100$.</answer>
+		<answer>$\mathbb{E}(L) = 100$ and $\mathbb{E}(\max(L,S)) = 50$.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\TwoTails}{{\rm T {\scriptsize WO} T {\scriptsize AILS}}}$
+			</div>
+			
+			Consider the following recursive algorithm $\TwoTails$, which takes as input a positive integer $k$:
+			
+			<div style="margin: 1rem 0;">
+				$\mathbf{Algorithm}\ \TwoTails(k)\mathrm{:}$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="vertical-align: top;">$//$</td>
+							<td>
+								$\text{all coin flips made are mutually}$ $\text{independent}$
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				$\text{flip a fair coin twice};$ <br>
+				$\mathbf{if}\ \text{the coin came up heads exactly twice}$ <br>
+				$\mathbf{then}\ \mathrm{return}\ 2^k$ <br>
+				$\mathbf{else}\ \TwoTails(k + 1)$ <br>
+				$\mathbf{endif}$ <br>
+			</div>
+			
+			You run algorithm $\TwoTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the
+			output of this algorithm.
+			Let $k \geq 1$ be an integer. What is $\Pr(X = 2^k)$?
+		]]>
+		</question>
+		<answer>$(1/4)^{k} \cdot 3/4$</answer>
+		<answer>$(1/4)^{k-1} \cdot 3/4$</answer>
+		<answer>$(3/4)^{k} \cdot 1/4$</answer>
+		<answer correct="correct">$(3/4)^{k-1} \cdot 1/4$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You repeatedly, and independently, roll two fair dice, until the sum of the values of the two dice
+			is equal to 12. Define the random variable $X$ to be the number of times you roll the pair of dice.
+			What is the expected value of $X$?
+		]]>
+		</question>
+		<answer correct="correct">36</answer>
+		<answer>30</answer>
+		<answer>20</answer>
+		<answer>12</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>Who is Lindsay Bangs?</question>
+		<answer>A world-renowned rapper.</answer>
+		<answer>
+		<![CDATA[
+			Goalie of the Ottawa Senators, her nickname is <em>The Hamburglar</em>.
+		]]>
+		</answer>
+		<answer correct="correct">President of the Carleton Computer Science Society.</answer>
+		<answer>
+		<![CDATA[
+			Owner of the brewery that produces <em>Leo's Early Breakfast IPA</em>.
+		]]>
+		</answer>
+	</multiple-choice>
+</quiz>

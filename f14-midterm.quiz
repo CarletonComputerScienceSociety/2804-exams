@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Midterm Fall 2014"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. How many bitstrings of length $n$ are there that contain at least two
+			1s?
+		]]>
+		</question>
+		<answer>${n \choose 2} \cdot 2^{n-2}$</answer>
+		<answer>$n \cdot 2^{n-1}$</answer>
+		<answer correct="correct">$2^{n} - 1 - n$</answer>
+		<answer>$2^{n} - n$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many bitstrings of length 99 are there that start with 1010 or end with 1010?
+		]]>
+		</question>
+		<answer>$2^{91}$</answer>
+		<answer>$2^{95} + 2^{95}$</answer>
+		<answer correct="correct">$2^{96} - 2^{91}$</answer>
+		<answer>$2^{99} - 2^{96}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider 17 boys and 17 girls. How many ways are there to arrange them on a line if all boys are
+			standing next to each other and all girls are standing next to each other?
+		]]>
+		</question>
+		<answer>$17! + 17!$</answer>
+		<answer>$2(17! + 17!)$</answer>
+		<answer>$(17!)^2$</answer>
+		<answer correct="correct">$2(17!)^2$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider 12 boys, 17 girls, and 25 dogs. How many ways are there to arrange them on a line if
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					all boys stand next to each other,
+				</li>
+				<li>
+					all girls stand next to each other,
+				</li>
+				<li>
+					all dogs stand next to each other,
+				</li>
+				<li>
+					none of the boys are standing next to any of the girls.
+				</li>
+			</ul>
+		]]>
+		</question>
+		<answer>$12! + 17! + 25!$</answer>
+		<answer>$2(12! + 17! + 25!)$</answer>
+		<answer>$(12!)(17!)(25!)$</answer>
+		<answer correct="correct">$2(12!)(17!)(25!)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Is the following true or false? In any group of 900 people, there must be at least three people that
+			have the same birthday.
+		]]>
+		</question>
+		<answer correct="correct">True</answer>
+		<answer>False</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a square with sides of length 3. Assume this square contains 10 points. Which of the
+			following is true?
+		]]>
+		</question>
+		<answer>At least two of these $n$ points are at distance at most $1$.</answer>
+		<answer>At least two of these $n$ points are at distance at most $\left. 1 \middle/ \sqrt{2} \right.$.</answer>
+		<answer correct="correct">At least two of these $n$ points are at distance at most $\sqrt{2}$.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{20}y^{80}$ in the expansion of $(5x - 3y)^{100}$?
+		]]>
+		</question>
+		<answer>$-{100 \choose 80} 5^{20}3^{80}$</answer>
+		<answer correct="correct">${100 \choose 80} 5^{20}3^{80}$</answer>
+		<answer>${100 \choose 80} 5^{80}3^{20}$</answer>
+		<answer>${80 \choose 100} 5^{20}3^{80}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 27$, where $x_1 \geq 0$,
+			$x_2 \geq 0$, $x_3 \geq 0$, and $x_4 \geq 0$ are integers?
+		]]>
+		</question>
+		<answer correct="correct">${30 \choose 3}$</answer>
+		<answer>${30 \choose 4}$</answer>
+		<answer>${31 \choose 3}$</answer>
+		<answer>${31 \choose 4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $m \geq 1$ and $n \geq 1$ be integers. Consider a rectangle whose horizontal side has length $m$
+			and whose vertical side has length $n$. A path from the bottom-left corner to the top-right corner is
+			called <em>valid</em>, if in each step, it either goes one unit to the right or one unit upwards. <br>
+			In the example below, you see a valid path for the case when $m = 5$ and $n = 3$.
+			
+			<img width="342" height="222" style="display: block; max-width: 100%; height: auto; margin: 1rem auto;"
+				src="data:image/png;base64,
+				iVBORw0KGgoAAAANSUhEUgAAAVYAAADeAQMAAABc9brBAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAfZJREFUaN7t
+				1z1Ow0AQBeC3G8ukiJBLOlJyBApkm45jrMQ9YOk4lo9iiQukdIESkLw/sh17ZiVAIZlpRpv9Eq2frNUEtxbsMim2YcIC2HJtCYBr
+				q29onz+W6+CqhQLfXsOgr7m+c2ewUJayXd8eADSkjesay6WiNYayn9HWfFsT56XstPvYaBvrNywR2J9Z+pzpFidgJV/JV/KVfCVf
+				yResXiY802OCfbN827Ct+bbU3ButomyZYKs2WryUfY3766GvvVsbaLYFMnLubeFrTc69JkYybyefb8m5F8HWlpplo7UJ9mBn594z
+				vh/C3m/ZC79/JV/JV/KVfCXf/5hvnmDLhPPmbIsTsEdyKHxnZFb6zrBV43p7xMYZdlj70YybYoF8Ou/6Ps1sOu/6Tlhmvqoj/29V
+				jbefpAVSrPH2jO8Hg5n6aXuh96/kK/lKvpKv5Cv5nmG+RUJmZYKtWoatwgy7XCkWsSoLdj3ghGtNE9UN7aqD2vnNZmhzZ3DvbAvt
+				P7rytnN249Z3fdOA3ox+V2V9DxtPwebZyOrcrRl2pUfP/86whTuTz2E3tfBnaIdWrxfsjTfh/FObDZ8t8zY7YsOey/2wYAt3lHz4
+				3fyY3YY92tZ9yzbehrXejK0d2So8o16PrNLhHRzUahffySu3pzXYtdrP7XwBhSQdbPCsOHQAAAAASUVORK5CYII=">
+			
+			How many valid paths are there?
+		]]>
+		</question>
+		<answer>${m + n \choose n - 1}$</answer>
+		<answer correct="correct">${m + n \choose n}$</answer>
+		<answer>$2^{m + n}$</answer>
+		<answer>$2^m + 2^n$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+			$$
+				\begin{align}
+				f(0) &= 8 \\
+				f(n) &= f(n - 1) + 6n - 8\; \ \mathrm{for}\ n \geq 1
+				\end{align}
+			$$
+			What is $f(n)$?
+		]]>
+		</question>
+		<answer>$f(n) = 2n^{2} - 5n + 7$</answer>
+		<answer>$f(n) = 2n^{2} - 5n + 8$</answer>
+		<answer correct="correct">$f(n) = 3n^{2} - 5n + 8$</answer>
+		<answer>$f(n) = 4n^{2} - 5n + 8$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $B_n$ be the number of bitstrings of length $n$ that do not contain 1111. Which of the following
+			is true?
+		]]>
+		</question>
+		<answer>$B_n = B_{n-1} + B_{n-2} + B_{n-3}$</answer>
+		<answer correct="correct">$B_n = B_{n-1} + B_{n-2} + B_{n-3} + B_{n-4}$</answer>
+		<answer>$B_n = 2^{n} - 2^{n-4}$</answer>
+		<answer>$B_n = 2^{n} - (n-3) \cdot 2^{n-4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+			</div>
+			
+			Consider the following recursive algorithm $\Fib$, which takes as input an
+			integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			When running $\Fib(9)$, how many calls are there to $\Fib(4)$?
+		]]>
+		</question>
+		<answer>6</answer>
+		<answer>7</answer>
+		<answer correct="correct">8</answer>
+		<answer>9</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Silly}{{\rm S \scriptsize ILLY}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+			</div>
+			
+			Consider the following recursive algorithm $\Silly$, which takes as input an integer $n \geq 1$ which is a power of 2:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Silly(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 1$ <br>
+				$\mathbf{then}\ \text{drink one pint of beer}$ <br>
+				$\mathbf{else}\ \mathbf{if}\ n = 2$ <br>
+				$\elsesp \mathbf{then}\ \text{fart once}$ <br>
+				$\elsesp \mathbf{else}\ \text{fart once};$ <br>
+				$\elsesp \elsesp \Silly(n / 2);$ <br>
+				$\elsesp \elsesp \text{fart once}$ <br>
+				$\elsesp \mathbf{endif}$ <br>
+				$\mathbf{endif}$
+			</p>
+			
+			For $n$ a power of 2, let $F(n)$ be the number of times you fart when running algorithm $\Silly(n)$.
+			Which of the following is true? <br>
+			(n.b., $\log$ denotes the base-2 logarithm)
+		]]>
+		</question>
+		<answer>$F(n) = \log n\ \mathrm{for}\ n \geq 1.$</answer>
+		<answer>$F(n) = 2 \log n\ \mathrm{for}\ n \geq 1.$</answer>
+		<answer>$F(n) = (2 \log n) - 1\ \mathrm{for}\ n \geq 1.$</answer>
+		<answer correct="correct">$F(n) = (2 \log n) - 1\ \mathrm{for}\ n \geq 2.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin 5 times. What is the probability that the first flip results in heads or the
+			fifth flip results in heads?
+		]]>
+		</question>
+		<answer>1/4</answer>
+		<answer>1/2</answer>
+		<answer correct="correct">3/4</answer>
+		<answer>1</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin 5 times. Define the events
+			[defs]
+			  A = "the number of heads is odd"
+			[/defs]
+			and
+			[defs]
+			  B = "the number of tails is even".
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">$\Pr(A) = \Pr(B)$</answer>
+		<answer>$\Pr(A) &lt; \Pr(B)$</answer>
+		<answer>$\Pr(A) &gt; \Pr(B)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider 10 boxes and 10 balls. We throw each ball, uniformly, in a random box. What is the
+			probability that, after we have thrown all 10 balls, none of the 10 boxes is empty?
+		]]>
+		</question>
+		<answer correct="correct">$\frac{10!}{10^{10}}$</answer>
+		<answer>$\frac{10^{10}}{10!}$</answer>
+		<answer>$1 - \frac{10 \cdot (9/10)^{10}}{10^{10}}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Assume you write a multiple-choice exam that consists of 100 questions. For each question, 4 options
+			are given, one of which is the correct one. If you answer each of the 100 questions by choosing an
+			answer uniformly at random, what is the probability that you have exactly one correct answer?
+		]]>
+		</question>
+		<answer>$\frac{100}{4^{100}}$</answer>
+		<answer>$\frac{3^{99}}{4^{100}}$</answer>
+		<answer>$\frac{100 + 3^{99}}{4^{100}}$</answer>
+		<answer correct="correct">$\frac{100 \cdot 3^{99}}{4^{100}}$</answer>
+	</multiple-choice>
+</quiz>

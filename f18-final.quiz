@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Fall 2018 Final"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of length 70, in which each character is one of the letters $a,b,c$. How many
+			such strings have exactly 1 letter $c$?
+		]]>
+		</question>
+		<answer correct="correct">$70 \cdot 2^{69}$</answer>
+		<answer>$70 \cdot 3^{69}$</answer>
+		<answer>$70 \cdot 2^{70}$</answer>
+		<answer>$70 \cdot 3^{70}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of length 70, in which each character is one of the letters $a, b, c$. How many
+			such strings have exactly 12 letters $c$ <em>and</em> exactly 30 letters $b$?
+		]]>
+		</question>
+		<answer>${70 \choose 12} + {58 \choose 30}$</answer>
+		<answer correct="correct">${70 \choose 12} \cdot {58 \choose 30}$</answer>
+		<answer>${70 \choose 12} \cdot {58 \choose 30} \cdot 2^{28}$</answer>
+		<answer>${70 \choose 12} \cdot {58 \choose 30} \cdot 3^{28}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of length 70, in which each character is one of the letters $a, b, c$. How many
+			such strings have exactly 12 letters $c$ <em>or</em> exactly 30 letters $b$?
+		]]>
+		</question>
+		<answer>${70 \choose 12} + {70 \choose 30} - {58 \choose 30}$</answer>
+		<answer>${70 \choose 12} \cdot 2^{58} + {70 \choose 30} \cdot 2^{40}$</answer>
+		<answer correct="correct">${70 \choose 12} \cdot 2^{58} + {70 \choose 30} \cdot 2^{40} - {70 \choose 12} \cdot {58 \choose 30}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of length 70, in which each character is one of the letters $a, b, c$. How many
+			such strings have at least 3 letters $c$?
+		]]>
+		</question>
+		<answer>$3^{70} - 2^{70} - 70 \cdot 2^{69}$</answer>
+		<answer correct="correct">$3^{70} - 2^{70} - 70 \cdot 2^{69} - {70 \choose 2} \cdot 2^{68}$</answer>
+		<answer>$\sum_{k=4}^{70} {70 \choose k} \cdot 2^{k}$</answer>
+		<answer>$\sum_{k=4}^{70} {70 \choose k} \cdot 2^{70-k}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer and consider the set $S = \{1,2,\dots,n\}$. What does
+			$$
+				\sum_{k=2}^{n} {n \choose k}
+			$$ count?
+		]]>
+		</question>
+		<answer>The number of subsets of $S$ that are non-empty.</answer>
+		<answer correct="correct">The number of subsets of $S$ that contain at least two elements.</answer>
+		<answer>The number of bitstrings of length $n$ that contain at least one 0.</answer>
+		<answer>The number of bitstrings of length $n$ that contain at least three 0's.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{20}y^{35}$ in the expansion of $(5x - 3y)^{55}$?
+		]]>
+		</question>
+		<answer>${55 \choose 20} \cdot 5^{35} \cdot 3^{20}$</answer>
+		<answer>$- {55 \choose 20} \cdot 5^{35} \cdot 3^{20}$</answer>
+		<answer>${55 \choose 35} \cdot 5^{20} \cdot 3^{35}$</answer>
+		<answer correct="correct">$- {55 \choose 35} \cdot 5^{20} \cdot 3^{35}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A string that is obtained by rearranging the letters of the word
+			<p style="text-align: center;">
+				SUCCESS
+			</p>
+			is called <em>awesome</em>, if the string contains the substring UE or EU.
+			Thus, both SCUESCS and SCSEUCS are awesome, whereas SUCCESS is not awesome.
+			What is the number of awesome strings?
+		]]>
+		</question>
+		<answer>30</answer>
+		<answer>60</answer>
+		<answer>90</answer>
+		<answer correct="correct">120</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a
+			sum of 2's and 4's; the order in which the 2's and 4's occur in the sum matters. For example, $S_6 =
+			3$, because
+			$$
+				6 = 2 + 2 + 2 = 2 + 4 = 4 + 2.
+			$$
+			Which of the following is true for any integer $n \geq 6$?
+		]]>
+		</question>
+		<answer correct="correct">$S_n = S_{n-2} + S_{n-4}$</answer>
+		<answer>$S_n = 2 \cdot S_{n-2} + S_{n-4}$</answer>
+		<answer>$S_n = S_{n-2} + 4 \cdot S_{n-4}$</answer>
+		<answer>$S_n = 2 \cdot S_{n-2} + 4 \cdot S_{n-4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider bitstrings that do not contain 110. Let $S_n$ be the number of such strings having length
+			$n$. Which of the following is true for any $n \geq 4$?
+		]]>
+		</question>
+		<answer correct="correct">$S_n = S_{n-1} + S_{n-2} + 1$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + 2^{n-2}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + 2^{n-3}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + S_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The function $T : \mathbb{N} \rightarrow \mathbb{N}$ is recursively defined as follows:
+			$$
+				\begin{align}
+				T(0) &= 2, \\
+				T(n) &= 3 \cdot T(n - 1) + 1,\ \ \mathrm{if}\ n \geq 1.
+				\end{align}
+			$$
+			Which of the following is true for all integers $n \geq 0$?
+		]]>
+		</question>
+		<answer>$T(n) = \frac{5}{2} \cdot 3^{n} - 1$</answer>
+		<answer>$T(n) = \frac{3}{2} \cdot 3^{n} - \frac{1}{2}$</answer>
+		<answer correct="correct">$T(n) = \frac{5}{2} \cdot 3^{n} - \frac{1}{2}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin 5 times; the flips are independent of each other. What is the probability that
+			in these 5 coin flips, the coin comes up heads an odd number of times?
+		]]>
+		</question>
+		<answer>2/3</answer>
+		<answer correct="correct">1/2</answer>
+		<answer>1/3</answer>
+		<answer>1/4</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In a standard deck of 52 cards, each card has a <em>suit</em> and a <em>rank</em>.
+			There are four suits (spades ♠, hearts ♡, clubs ♣, and diamonds ♢),
+			and 13 ranks (Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, and King). <br>
+			Assume you get a uniformly random hand consisting of 5 cards. What is the probability that the 5
+			cards in this hand are all of the same suit?
+		]]>
+		</question>
+		<answer>$\left. {13 \choose 5} \middle/ {52 \choose 5} \right.$</answer>
+		<answer>$\left. {52 \choose 5} \middle/ {13 \choose 5} \right.$</answer>
+		<answer correct="correct">$4 \cdot \left. {13 \choose 5} \middle/ {52 \choose 5} \right.$</answer>
+		<answer>$4 \cdot \left. {52 \choose 5} \middle/ {13 \choose 5} \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given a fair die that has six faces. One face has the letter $a$ on it, two faces have the
+			letter $b$ on them, and three faces have the letter $c$ on them. Assume you roll this die twice,
+			independently of each other. Define the events
+			[defs]
+			  A = "both rolls result in the same letter",
+			  B = "at least one of the rolls results in the letter $a$".
+			[/defs]
+			What is $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer>2/7</answer>
+		<answer>1/7</answer>
+		<answer>2/11</answer>
+		<answer correct="correct">1/11</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n$ and $k$ be integers with $1 \leq k \leq n$. <br>
+			You are given two bitstrings $a_1,a_2,\dots,a_n$ and $b_1,b_2,\dots,b_n$ of length $n$. In both
+			bitstrings, each bit is 0 with probability 1/2, and 1 with probability 1/2 (independent of all
+			other bits). <br>
+			Consider the bitstring
+			$$
+				a_1 \cdot b_1,a_2 \cdot b_2,\dots,a_n \cdot b_n
+			$$
+			where $a_i \cdot b_i$ is the result of multiplying the two bits $a_i$ and $b_i$. What is the probability that this
+			bitstring contains exactly $k$ many 1's?
+		]]>
+		</question>
+		<answer correct="correct">${n \choose k} \cdot \left. 3^{n - k} \middle/ 4^n \right.$</answer>
+		<answer>${n \choose k} \cdot \left. 4^{n - k} \middle/ 3^n \right.$</answer>
+		<answer>${n \choose k} \cdot \left. 4^{n - k} \middle/ 3^k \right.$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a uniformly random permutation $a_1,a_2,a_3,a_4$ of the set $\{1,2,3,4\}$.
+			Define the events
+			[defs]
+			  A = "$a_1 > a_2$",
+			  B = "$a_4 > a_3$".
+			[/defs]
+			Which of the following is correct?
+		]]>
+		</question>
+		<answer correct="correct">The events $A$ and $B$ are independent.</answer>
+		<answer>The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+		<answer>All of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin three times; these three flips are independent. Define the events
+			[defs]
+			  A = "the number of heads in these three flips is even",
+			  B = "the number of tails in these three flips is at most one".
+			[/defs]
+			(Remember that 0 is even.) Which of the following is correct?
+		]]>
+		</question>
+		<answer>The events $A$ and $B$ are independent.</answer>
+		<answer correct="correct">The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+		<answer>All of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ and $B$ be two independent events in some sample space $S$.
+			You are given that $\Pr(A) = 1/4$ and $\Pr(B) = 2/3$. What is $\Pr(A \cup B)$?
+		]]>
+		</question>
+		<answer>5/6</answer>
+		<answer>2/3</answer>
+		<answer correct="correct">3/4</answer>
+		<answer>1/3</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A red box contains the numbers 0, 1, and 2, and a blue box also contains the numbers 0, 1, and 2.
+			You choose a uniformly random element from the red box and a uniformly random element from the blue
+			box; these two choices are independent of each other. Define the random variables
+			[defs]
+			  X = the number you choose from the red box,
+			  Y = the number you choose from the blue box,
+			  Z = $\max(X, Y)$.
+			[/defs]
+			What is the expected value $\mathbb{E}(Z)$ of the random variable $Z$?
+		]]>
+		</question>
+		<answer>9/13</answer>
+		<answer correct="correct">13/9</answer>
+		<answer>8/9</answer>
+		<answer>9/8</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. Consider a string $c_1,c_2,\dots,c_n$ of length $n$, in which each
+			character $c_i$ is a uniformly random element of the set $\{\alpha, \beta, \gamma, \delta, \epsilon\}$
+			(independently of all other characters). <br>
+			Define the random variable $X$ to be the number of indices $i$ with $1 \leq i < n$
+			for which $c_i = c_{i+1}$. <br>
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer>$\left. n \middle/ 25 \right.$</answer>
+		<answer>$\left. (n - 1) \middle/ 25 \right.$</answer>
+		<answer>$\left. n \middle/ 5 \right.$</answer>
+		<answer correct="correct">$\left. (n - 1) \middle/ 5 \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. You are given $n$ beer bottles $B_1,B_2,\dots,B_n$ and two cider
+			bottles $C_1$ and $C_2$. You choose a uniformly random 3-element subset of the set of these $n+2$
+			bottles. Define the random variable $X$ to be
+			[defs]
+			  X = the number of cider bottles in the chosen subset.
+			[/defs]
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+		]]>
+		</question>
+		<answer>$\frac{2 {{n}\choose{2}} + n}{{{n+2}\choose{3}}}$</answer>
+		<answer>$\frac{2 {{n}\choose{2}} + n + 1}{{{n+2}\choose{3}}}$</answer>
+		<answer correct="correct">$\frac{2 {{n}\choose{2}} + 2n}{{{n+2}\choose{3}}}$</answer>
+		<answer>$\frac{2 {{n}\choose{2}} + n - 1}{{{n+2}\choose{3}}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given two independent random variables $X$ and $Y$, where
+			
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$\Pr(X = 0)$</td>
+						<td>
+							$= \Pr(X = 1) = \Pr(Y = 0)$
+							$= \Pr(Y = 1) = 1/2.$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			Define the random variable
+			$$
+				Z = (X + Y)\ \mathrm{mod}\ 2.
+			$$
+			Which of the following is correct?
+		]]>
+		</question>
+		<answer correct="correct">The random variables $X$ and $Z$ are independent.</answer>
+		<answer>The random variables $X$ and $Z$ are not independent.</answer>
+		<answer>None of the above.</answer>
+		<answer>All of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\TriIsHungry}{{\rm T {\scriptsize RI} I {\scriptsize S} H {\scriptsize UNGRY}}}$
+			</div>
+			
+			Zoltan's Noodle House is a popular restaurant in downtown Ottawa. When you order the surprise dish,
+			you get <em>Mi Quang</em> with probability 1/4, <em>Bun Cha Ca</em> with probability 1/3, and
+			<em>Banh Xeo</em> with probability 5/12. <br>
+			Tri enjoys going to this restaurant, because the food reminds him of his mommy's food back home in Da Nang. <br>
+			Tri runs the following recursive algorithm:
+			
+			<!-- this markup is messy to enable correctly-aligned word wrapping on horizontally constrained devices -->
+			<div style="margin: 1rem 0;">
+				$\mathbf{Algorithm}\ \TriIsHungry\mathrm{:}$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="vertical-align: top;">$//$</td>
+							<td>
+								$\text{the results of all}$ $\text{orders are independent}$
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				$\text{Tri orders the surprise dish;}$ <br>
+				$\mathbf{if}\ \mathrm{Tri}\ \mathrm{gets}\ \mathit{Mi}\ \mathit{Quang}$ <br>
+				$\mathbf{then}\ \text{Tri eats the dish;}$ <br>
+				$\qquad\ \ \TriIsHungry$ <br>
+				$\mathbf{else}\ \mathbf{if}\ \mathrm{Tri}\ \mathrm{gets}\ \mathit{Bun}\ \mathit{Cha}\ \mathit{Ca}$ <br>
+				$\qquad\, \mathbf{then}\ \text{Tri eats the dish;}$ <br>
+				$\qquad \qquad\ \ \, \TriIsHungry$ <br>
+				$\qquad\, \mathbf{else}\ \text{Tri eats the dish;}$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="padding: 0;">$\hspace{4.05em}$</td>
+							<td style="padding: 0;">$\text{Tri pays the bill}$ $\text{and goes home}$</td>
+						</tr>
+					</tbody>
+				</table>
+				$\qquad\, \mathbf{endif}$ <br>
+				$\mathbf{endif}$ <br>
+			</div>
+			
+			Define the random variable $X$ to be the number of dishes that Tri eats when running algorithm $\TriIsHungry$. <br>
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+		]]>
+		</question>
+		<answer>5/12</answer>
+		<answer correct="correct">12/5</answer>
+		<answer>5/7</answer>
+		<answer>7/5</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The final exam for COMP 2804 has 25 multiple-choice questions. For each question, there are 4
+			possible answers, exactly one of which is correct. Michiel chooses a positive real number $z$ and
+			uses the following marking scheme: For each correct answer, a student receives 1 mark, whereas for
+			each incorrect answer, the student receives $-z$ marks. <br>
+			
+			Jim is one of the students and answers the 25 questions, by choosing a uniformly random answer for
+			each question; the choices are independent of each other. <br>
+			
+			Define the random variable
+			[defs]
+			  X = the number of marks that Jim recevies.
+			[/defs]
+			For what value of $z$ is the expected value $\mathbb{E}(X)$ equal to 0? <br>
+			
+			<em>Hint:</em> Use the Linearity of Expectation.
+		]]>
+		</question>
+		<answer>$z = 1/4$</answer>
+		<answer correct="correct">$z = 1/3$</answer>
+		<answer>$z = 1/2$</answer>
+		<answer>$z = 3/4$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. There are $n$ students $S_1,S_2,\dots,S_n$ writing this exam. Each
+			student has brought one backpack with them. Before the exam starts, all students have to leave their
+			backpacks at the front of the examination room. <br>
+			
+			At the end of the exam, the proctor places the backpacks in a uniformly random order $b_1,b_2,\dots,b_n$,
+			and, for each $i = 1, 2, ..., n$, gives backpack $b_i$ to student $S_i$. <br>
+			
+			Define the following random variable $X$:
+			[defs]
+			  X = the number of students who get their own backpack.
+			[/defs]
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer correct="correct">1</answer>
+		<answer>2</answer>
+		<answer>$\left. (n + 1) \middle/ n \right.$</answer>
+		<answer>$\left. (n - 1) \middle/ n \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Who discovered the Vandermonde Identity?
+		]]>
+		</question>
+		<answer>Professor Identity</answer>
+		<answer>Donald Trump</answer>
+		<answer correct="correct">Alexandre-Théophile Vandermonde</answer>
+		<answer>Justin Bieber</answer>
+	</multiple-choice>
+</quiz>

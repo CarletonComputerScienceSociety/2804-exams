@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2017 Midterm"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Carleton's Computer Science program has $f$ female students and $m$ male students, where $f \geq 1$
+			and $f + m \geq 8$. The Carleton Computer Science Society has a Board of Directors consisting of a
+			President, five Vice-Presidents, and two Cider-Presidents (whose task is to buy cider for the
+			President). All members of the Board of Directors are Computer Science students. The President is
+			female, cannot be Vice-President, and cannot be Cider-President. A Vice-President cannot be Cider-President.
+			In how many ways can a Board of Directors be chosen?
+		]]>
+		</question>
+		<answer>$f \cdot {f+m-1 \choose 7}$</answer>
+		<answer>$f + {f+m-1 \choose 5} + {f+m-6 \choose 2}$</answer>
+		<answer correct="correct">$f \cdot {f+m-1 \choose 5} \cdot {f+m-6 \choose 2}$</answer>
+		<answer>$f \cdot {f+m \choose 5} \cdot {f+m \choose 2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $b \geq 1$ and $g \geq 1$ be integers. Consider $b$ boys and $g$ girls. How many ways are there
+			to arrange these kids on a line such that the leftmost kid is a girl?
+		]]>
+		</question>
+		<answer>$(b + g)!$</answer>
+		<answer correct="correct">$g \cdot (b + g - 1)!$</answer>
+		<answer>$(b + g)! / b$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $b \geq 1$ and $g \geq 1$ be integers. Consider $b$ boys and $g$ girls. How many ways are there
+			to arrange these kids on a line such that the leftmost kid is a girl or the rightmost kid is a boy?
+		]]>
+		</question>
+		<answer>$(b+g)!$</answer>
+		<answer>$(b+g)! - b \cdot (b+g-1)! -\ $ $ g \cdot (b+g-1)!$</answer>
+		<answer>$g \cdot (b+g-1)! + b \cdot (b+g-1)!\ -$ $ b \cdot g \cdot (b+g-1)!$</answer>
+		<answer correct="correct">$g \cdot (b+g-1)! + b \cdot (b+g-1)!\ -$ $ b \cdot g \cdot (b+g-2)!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 13$ be an integer. What is the number of bitstrings of length $n$ that have exactly
+			seven 0's or exactly five 1's?
+		]]>
+		</question>
+		<answer>${n \choose 12} \cdot {12 \choose 7}$</answer>
+		<answer correct="correct">${n \choose 7} + {n \choose 5}$</answer>
+		<answer>${n \choose 7} + {n \choose 5} - {n \choose 5} \cdot {n - 5 \choose 7}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of length six consisting of the characters $a$, $b$, $c$, and $d$. How many such
+			strings are there that start with $abc$ or end with $cccc$?
+		]]>
+		</question>
+		<answer correct="correct">79</answer>
+		<answer>80</answer>
+		<answer>81</answer>
+		<answer>82</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 4$ be an integer and consider strings of length $n$ consisting of the characters $a$, $b$,
+			$c$, and $d$. How many such strings are there that start with $ab$ or start with $abc$?
+		]]>
+		</question>
+		<answer>$4^{n}$</answer>
+		<answer>$4^{n-1}$</answer>
+		<answer correct="correct">$4^{n-2}$</answer>
+		<answer>$4^{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $m \geq 2$ and $n \geq 2$ be integers. What does
+			$$
+				{m \choose 2} + {n \choose 2} + mn
+			$$
+			count?
+		]]>
+		</question>
+		<answer>The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ must be a man and $y$ must be a woman.</answer>
+		<answer>The number of ways to choose an ordered pair $(x,y)$ from a group consisting of $m$ men and $n$ women, where $x$ and $y$ cannot both be men.</answer>
+		<answer>The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women, where at least one man must be chosen.</answer>
+		<answer correct="correct">The number of ways to choose an unordered pair of people from a group consisting of $m$ men and $n$ women.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Each student has a student number which is a string of five digits, in which no digit occurs more
+			than once. Thus, 94631 is a valid student number, whereas 94641 is not valid. <br>
+			
+			What is the minimum number of students such that we can guarantee that at least two of them have the
+			same student number?
+		]]>
+		</question>
+		<answer>$1 + 10^{5}$</answer>
+		<answer>$1 + 5^{10}$</answer>
+		<answer correct="correct">$1 + \frac{10!}{5!}$</answer>
+		<answer>$1 + \frac{5!}{10!}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{20}y^{80}$ in the expansion of $(7x-13y)^{100}$?
+		]]>
+		</question>
+		<answer correct="correct">${100 \choose 80} \cdot 7^{20} \cdot 13^{80}$</answer>
+		<answer>$- {100 \choose 80} \cdot 7^{20} \cdot 13^{80}$</answer>
+		<answer>${100 \choose 20} \cdot 7^{80} \cdot 13^{20}$</answer>
+		<answer>$- {100 \choose 20} \cdot 7^{80} \cdot 13^{20}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many strings can be obtained by rearranging the letters of the word
+			<p style="text-align: center;">
+				POOPERSCOOPER
+			</p>
+		]]>
+		</question>
+		<answer>$13!$</answer>
+		<answer>${13 \choose 4}{13 \choose 3}{13 \choose 2}{13 \choose 2}{13 \choose 1}$</answer>
+		<answer>${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}$</answer>
+		<answer correct="correct">${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}{2 \choose 1}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bitstring is called 00-<em>free</em> if it does not contain two 0's next to each other.
+			In class, we have seen that for any $m \geq 1$,
+			the number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number $f_{m+2}$. <br>
+			
+			Let $n \geq 3$ be an integer. What is the number of 00-free bitstrings of length $3n-1$ that have 0 at position $n$
+			and 1 at position $2n$? (The positions are numbered $1,2,\dots,3n-1)$. <br>
+			(n.b., $f^2_x = f_x \cdot f_x$)
+		]]>
+		</question>
+		<answer>${f^2_{n+1}} \cdot f_n$</answer>
+		<answer correct="correct">${f^2_{n}} \cdot f_{n+1}$</answer>
+		<answer>${f^2_{n+2}} \cdot f_{n+1}$</answer>
+		<answer>${f^2_{n+1}} \cdot f_{n+2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The function $f : \{1,2,3,\dots\} \rightarrow \mathbb{R}$ is defined by
+			$$
+				\begin{align}
+				f(1) &= 2, \\
+				f(n) &= 2 \left( \frac{n - 1}{n} \right)^2 \cdot f(n - 1)\ \mathrm{if}\ n \geq 2.
+				\end{align}
+			$$
+			What is $f(n)$?
+		]]>
+		</question>
+		<answer>$f(n) = \frac{2^{n}}{(n-1)^{2}}$</answer>
+		<answer>$f(n) = \frac{2^{n-1}}{n^{2}}$</answer>
+		<answer correct="correct">$f(n) = \frac{2^{n}}{n^{2}}$</answer>
+		<answer>$f(n) = \frac{n^{2}}{2^{n}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			For any integer $n \geq 1$, let $B_n$ be the number of bitstrings of length $n$ that do not contain
+			the substring 10. Which of the following is true for any $n \geq 4$?
+		]]>
+		</question>
+		<answer>$B_n = n$</answer>
+		<answer correct="correct">$B_n = n+1$</answer>
+		<answer>$B_n = f_{n+1}$, the $(n+1)$-st Fibonacci number.</answer>
+		<answer>$B_n = f_{n+2}$, the $(n+2)$-nd Fibonacci number.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer, and let $S_n$ be the number of ways in which $n$ can be written
+			as a sum of 3's and 4's, such that the order in which the 3's and 4's occur in the sum matters.
+			For example, $S_5 = 0$, because 5 cannot be written as a sum of 3's and 4's.
+			We have $S_{11} = 3$, because
+			
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$11$</td>
+						<td>
+							$= 3 + 4 + 4 = 4 + 3 + 4$
+							$= 4 + 4 + 3.$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			Which of the following is true for any $n \geq 5$?
+		]]>
+		</question>
+		<answer>$S_n = 2 \cdot S_{n - 1}$</answer>
+		<answer>$S_n = S_{n - 1} + S_{n - 2}$</answer>
+		<answer>$S_n = S_{n - 2} + S_{n - 3}$</answer>
+		<answer correct="correct">$S_n = S_{n - 3} + S_{n - 4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Hello}{{\rm H {\scriptsize ELLO}}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+			</div>
+			
+			Consider the recursive algorithm $\Hello$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Hello(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ \text{print ``hello''}$ <br>
+				$\mathbf{else}\ \mathbf{if}\ n\ \mathrm{is}\ \mathrm{even}$ <br>
+				$\elsesp \mathbf{then}\ \Hello(n / 2)$ <br>
+				$\elsesp \mathbf{else}\ \Hello(n - 1);$ <br>
+				$\elsesp \elsesp \Hello(n - 2)$ <br>
+				$\elsesp \mathbf{endif};$ <br>
+				$\mathbf{endif}$
+			</p>
+			
+			If we run algorithm $\Hello(7)$, how many times is the word "hello" printed?
+		]]>
+		</question>
+		<answer>4</answer>
+		<answer correct="correct">5</answer>
+		<answer>6</answer>
+		<answer>7</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin 15 times. Define the event
+			[defs]
+			  A = "the result of the first three flips are equal".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>1/2</answer>
+		<answer correct="correct">1/4</answer>
+		<answer>1/6</answer>
+		<answer>1/8</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer. A bag contains $n$ red balls and $n$ blue balls. We choose a uniformly
+			random subset of two balls. Define the event
+			[defs]
+			  A = "this subset consists of one red ball and one blue ball".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer correct="correct">$\left. n^2 \middle/ {2n \choose 2} \right.$</answer>
+		<answer>$\left. {2n \choose 2} \middle/ n^2 \right.$</answer>
+		<answer>$\left. n^2 \middle/ {n \choose 2} \right.$</answer>
+		<answer>$\left. {n \choose 2} \middle/ n^2 \right.$</answer>
+	</multiple-choice>
+</quiz>

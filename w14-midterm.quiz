@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2014 Midterm"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			On a table, you see three types of fruit: apples, bananas, and oranges. There are $m \geq 2$ apples,
+			$n \geq 2$ bananas, and $k \geq 2$ oranges. How many ways are there to choose 7 pieces of fruit, if
+			you must take at least two pieces of each type?
+		]]>
+		</question>
+		<answer>${m + n + k \choose 7} - (m + n + k)$</answer>
+		<answer>${m + n + k \choose 7} - {m \choose 2} - {n \choose 2} - {k \choose 2}$</answer>
+		<answer correct="correct">
+			${m \choose 3}{n \choose 2}{k \choose 2} + {m \choose 2}{n \choose 3}{k \choose 2} + {m \choose 2}{n \choose 2}{k \choose 3}$
+		</answer>
+		<answer>${m \choose 2}{n \choose 2}{k \choose 2}(m + n + k)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider 9 boys and 15 girls. How many ways are there to arrange these 24 people on a line if all
+			boys stand next to each other and all girls stand next to each other?
+		]]>
+		</question>
+		<answer>$\frac{24!}{9!15!}$</answer>
+		<answer>${24 \choose 9}(9!)(15!)$</answer>
+		<answer>$(9!)(15!)$</answer>
+		<answer correct="correct">$2(9!)(15!)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S$ be a set of size 37, and let $x$, $y$, and $z$ be three distinct elements of $S$. How many subsets
+			of $S$ are there that contain $x$ <em>and</em> $y$, but do not contain $z$?
+		]]>
+		</question>
+		<answer>$2^{33}$</answer>
+		<answer correct="correct">$2^{34}$</answer>
+		<answer>$2^{35}$</answer>
+		<answer>$2^{37} - 2^{35} - 2^{36}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S$ be a set of size 37, and let $x$, $y$, and $z$ be three distinct elements of $S$. How many subsets
+			of $S$ are there that contain $x$ <em>or</em> $y$, but do not contain $z$?
+		]]>
+		</question>
+		<answer correct="correct">$2^{36} - 2^{34}$</answer>
+		<answer>$2^{36} - 2^{35}$</answer>
+		<answer>$2^{37} - 2^{34}$</answer>
+		<answer>$2^{37} - 2^{35}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A password consists of 12 or 13 characters, each character being one of the 10 digits $0,1,2,\dots,9$.
+			A password must contain the digit 7 at least once. How many passwords are there?
+		]]>
+		</question>
+		<answer correct="correct">$10^{12} + 10^{13} - 9^{12} - 9^{13}$</answer>
+		<answer>$12^{10} + 13^{10} - 12^{9} - 13^{9}$</answer>
+		<answer>$10^{12} + 10^{13} - 7^{12} - 7^{13}$</answer>
+		<answer>$12^{10} + 13^{10} - 12^{7} - 13^{7}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 7$ and $k \geq 1$ be integers, let $A$ be the set of all bitstrings of length $n$ that
+			contain exactly seven 0s, and let $B$ be the set of all bitstrings of length $k$ that contain at
+			least one 1. Assume there exists a one-to-one function $f : A \rightarrow B$. Which of the following
+			is true?
+		]]>
+		</question>
+		<answer>$2^k - 1 &lt; {n \choose 7}$</answer>
+		<answer correct="correct">$2^k - 1 \geq {n \choose 7}$</answer>
+		<answer>$2^k - 1 &lt; \left. 2^n \middle/ {n \choose n-7} \right.$</answer>
+		<answer>$2^k - 1 \geq \left. 2^n \middle/ {n \choose n-7} \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{9}y^{16}$ in the expansion of $(7x + 21y)^{25}$?
+		]]>
+		</question>
+		<answer>${25 \choose 16} 7^{16}21^{9}$</answer>
+		<answer>${16 \choose 25} 7^{9}21^{16}$</answer>
+		<answer correct="correct">${25 \choose 16} 7^{25}3^{16}$</answer>
+		<answer>none of the above</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many solutions are there to the equation $x_1 + x_2 + x_3 = 17$, where $x_1 \geq 0$, $x_2 \geq 0$,
+			and $x_3 \geq 0$ are integers?
+		]]>
+		</question>
+		<answer>${19 \choose 16}$</answer>
+		<answer correct="correct">${19 \choose 17}$</answer>
+		<answer>${20 \choose 16}$</answer>
+		<answer>${20 \choose 17}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many strings can be obtained by rearranging the letters of the word
+			<p style="margin: 1rem 0; text-align: center;">
+				POOPERSCOOPER
+			</p>
+		]]>
+		</question>
+		<answer>$13!$</answer>
+		<answer>${13 \choose 4}{9 \choose 2}{7 \choose 2}{5 \choose 3}$</answer>
+		<answer>${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}$</answer>
+		<answer correct="correct">${13 \choose 1}{12 \choose 4}{8 \choose 2}{6 \choose 1}{5 \choose 2}{3 \choose 3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+			$$
+				\begin{align}
+				f(0) &= 2 \\
+				f(n + 1) &= f(n) + 6n - 2\; \ \mathrm{for}\ n \geq 0
+				\end{align}
+			$$
+			What is $f(n)$?
+		]]>
+		</question>
+		<answer correct="correct">$f(n) = 3n^{2} - 5n + 2$</answer>
+		<answer>$f(n) = 3n^{2} + 5n + 2$</answer>
+		<answer>$f(n) = 2n^{2} - 5n + 2$</answer>
+		<answer>$f(n) = 2n^{2} + 5n + 2$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+			</div>
+			
+			Consider the following recursive algorithm $\Fib$, which takes as input an
+			integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			When running $\Fib(7)$, how many calls are there to $\Fib(3)$?
+		]]>
+		</question>
+		<answer>4</answer>
+		<answer correct="correct">5</answer>
+		<answer>6</answer>
+		<answer>7</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The Fibonacci numbers are defined as follows: $f_0 = 0$, $f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for
+			$n \geq 2$. <br>
+			
+			Consider again the recursive algorithm $\Fib$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			For $n \geq 3$, run algorithm $\Fib(n)$ and let $a_n$ be the number of times that $\Fib(2)$ is called. <br>
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">For $n \geq 3$, $a_n = f_{n - 1}$</answer>
+		<answer>For $n \geq 3$, $a_n = f_n$</answer>
+		<answer>For $n \geq 3$, $a_n = f_{n + 1}$</answer>
+		<answer>For $n \geq 3$, $a_n = -1 + f_n$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $B_n$ be the number of bitstrings of length $n$ that do not contain 111. Which of the following
+			is true?
+		]]>
+		</question>
+		<answer>$B_n = B_{n-1} + B_{n-2} + 2^{n-3}$</answer>
+		<answer>$B_n = B_{n-1} + B_{n-2} + 2^{n-3} - B_{n-3}$</answer>
+		<answer correct="correct">$B_n = B_{n-1} + B_{n-2} + B_{n-3}$</answer>
+		<answer>$B_n = B_{n-1} + B_{n-2} + B_{n-3} + 2^{n-4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A standard deck of 52 cards has 4 Kings. Consider a hand of 9 cards, chosen uniformly at random.
+			What is the probability that there are exactly two Kings in this hand?
+		]]>
+		</question>
+		<answer>$1 - \left. {48 \choose 7} \middle/ {52 \choose 9} \right.$</answer>
+		<answer>$\left. \bigl\{ {4 \choose 2} + {48 \choose 7} \bigr\} \middle/ {52 \choose 9} \right.$</answer>
+		<answer>$\left. {52 \choose 9} \middle/ \bigl\{ {4 \choose 2}{48 \choose 7} \bigr\} \right.$</answer>
+		<answer correct="correct">$\left. {4 \choose 2}{48 \choose 7} \middle/ {52 \choose 9} \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We choose a bitstring of length 25 uniformly at random. What is the probability that this string
+			contains at least two 1s?
+		]]>
+		</question>
+		<answer correct="correct">$1 - (1/2)^{25} - 25(1/2)^{25}$</answer>
+		<answer>$1 + (1/2)^{25} - 25(1/2)^{25}$</answer>
+		<answer>$\sum_{k=2}^{25} {{25}\choose{k}}(1/2)^{k}$</answer>
+		<answer>none of the above</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider three people, each one having a uniformly random birthday (out of 365 days; we ignore leap
+			years). What is the probability that at least two of them have the same birthday?
+		]]>
+		</question>
+		<answer>$1 - \frac{365^2}{364 \cdot 363}$</answer>
+		<answer correct="correct">$1 - \frac{364 \cdot 363}{365^2}$</answer>
+		<answer>$1 - \left. {3 \choose 2} \middle/ 365^3 \right.$</answer>
+		<answer>$1 - \left. \bigl\{ {3\choose 2} + {3 \choose 3} \bigr\} \middle/ 365^3 \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is Simon Pratt’s favorite drink?
+		]]>
+		</question>
+		<answer>Herbal tea</answer>
+		<answer correct="correct">India Pale Ale</answer>
+		<answer>Poutine</answer>
+		<answer>None of the above, because Simon doesn't like beer</answer>
+	</multiple-choice>
+</quiz>

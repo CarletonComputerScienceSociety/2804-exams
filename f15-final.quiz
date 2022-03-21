@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Fall 2015 Final"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a set $S$ consisting of 20 integers; 5 of these are strictly positive and the other 15
+			integers in $S$ are strictly negative. What is the number of 3-element subsets of $S$ having the
+			property that the product of the 3 elements in the subset is negative?
+		]]>
+		</question>
+		<answer>${20 \choose 3}$</answer>
+		<answer>${15 \choose 3}$</answer>
+		<answer correct="correct">${15 \choose 3} + 15 \cdot {5 \choose 2}$</answer>
+		<answer>${15 \choose 3} + {15 \choose 2} \cdot 5 + 15 \cdot {5 \choose 2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a set $S$ consisting of 20 integers. The integer 0 is an element of $S$, 9 elements in $S$
+			are strictly positive, and the remaining 10 elements are strictly negative. What is the number of
+			7-element subsets of $S$ having the property that the product of the 7 elements in the subset is
+			equal to 0?
+		]]>
+		</question>
+		<answer correct="correct">${19 \choose 6}$</answer>
+		<answer>${19 \choose 7}$</answer>
+		<answer>${20 \choose 6}$</answer>
+		<answer>${20}\choose{7}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many bitstrings $s_1s_2 \dots s_{20}$ of length 20 have the property that $s_1s_2s_3 = 000$ or
+			$s_2s_3s_4 = 000$?
+		]]>
+		</question>
+		<answer>$2^{17} - 2^{15}$</answer>
+		<answer>$2^{17} - 2^{16}$</answer>
+		<answer correct="correct">$2^{18} - 2^{16}$</answer>
+		<answer>$2^{18} - 2^{17}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{15}y^{5}$ in the expansion of $(-3x + 5y)^{20}$?
+		]]>
+		</question>
+		<answer>${20 \choose 5} \cdot 3^{15} \cdot 5^5$</answer>
+		<answer correct="correct">$- {20 \choose 5} \cdot 3^{15} \cdot 5^5$</answer>
+		<answer>${20 \choose 5} \cdot 5^{15} \cdot 3^5$</answer>
+		<answer>$- {20 \choose 5} \cdot 5^{15} \cdot 3^5$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In a group of 30 people,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					10 are blond,
+				</li>
+				<li>
+					20 have green eyes,
+				</li>
+				<li>
+					9 are not blond and do not have green eyes.
+				</li>
+			</ul>
+			How many people in this group are blond and have green eyes?
+		]]>
+		</question>
+		<answer>8</answer>
+		<answer correct="correct">9</answer>
+		<answer>10</answer>
+		<answer>11</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of characters, each character being $a$, $b$, or $c$, that contain at least one $a$.
+			Let $S_n$ be the number of such strings having length $n$. Which of the following is true?
+		]]>
+		</question>
+		<answer>$S_n = n \cdot 2^{n-1}$</answer>
+		<answer>$S_n = n \cdot 3^{n-1}$</answer>
+		<answer>$S_n = 3^{n} - n$</answer>
+		<answer correct="correct">$S_n = 3^{n} - 2^{n}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of characters, each character being $a$, $b$, or $c$, that contain at least one $a$.
+			Let $S_n$ be the number of such strings having length $n$. Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">$S_n = 2 \cdot S_{n-1} + 3^{n-1}$</answer>
+		<answer>$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2}$</answer>
+		<answer>$S_n = 3 \cdot S_{n-1}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider the following recursive function:
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$f(0) = $</td>
+						<td>$7,$</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top;">$f(n) = $</td>
+						<td>$2 \cdot f(n - 1) + 1\; \ \text{for all}$ $\text{integers}\ n \geq 1.$</td>
+					</tr>
+				</tbody>
+			</table>
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>$f(n) = 8n + 7$</answer>
+		<answer>$f(n) = 4n^{2} + 4n + 7$</answer>
+		<answer correct="correct">$f(n) = 2^{n+3} - 1$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+			</div>
+			
+			Consider the following recursive algorithm $\Fib$, which takes as input an
+			integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			If we run algorithm $\Fib(18)$, how many calls are there to $\Fib(14)$?
+		]]>
+		</question>
+		<answer>4</answer>
+		<answer correct="correct">5</answer>
+		<answer>6</answer>
+		<answer>7</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the number of bitstrings of length $n$ that contain 00 or 11?
+		]]>
+		</question>
+		<answer>$2 \cdot (n-1) \cdot 2^{n-2}$</answer>
+		<answer>$2 \cdot n \cdot 2^{n-1}$</answer>
+		<answer>$2^n - 4$</answer>
+		<answer correct="correct">$2^n - 2$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Nick gets 75 bananas for his birthday. He decides to eat them all over a period of 5 days. In order
+			to do this, Nick makes a banana-schedule, which specifies the number of bananas he is going to eat
+			on the first day, on the second day, etc., up to the fifth day. For example, (20, 20, 10, 20, 5),
+			(40, 13, 0, 20, 2), and (40, 13, 20, 2, 0) are three different banana-schedules. What is the
+			total number of banana-schedules?
+		]]>
+		</question>
+		<answer correct="correct">${79 \choose 4}$</answer>
+		<answer>${79 \choose 5}$</answer>
+		<answer>${80 \choose 4}$</answer>
+		<answer>${80 \choose 5}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bowl contains 5 red balls and 7 blue balls. We choose a uniformly random subset of 3 balls. Define the event
+			[defs]
+			  A = "exactly 2 of the chosen balls are red".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$\frac{{5 \choose 2}}{{12 \choose 3}}$</answer>
+		<answer>$\frac{5 \cdot {7 \choose 2}}{{12 \choose 3}}$</answer>
+		<answer correct="correct">$\frac{{5 \choose 2} \cdot 7}{{12 \choose 3}}$</answer>
+		<answer>$\frac{{7 \choose 2}}{{12 \choose 3}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a uniformly random bitstring of length 5. Define the events
+			[defs]
+			  A = "the first three bits are 101 or 110",
+			  B = "the last three bits are 111".
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">The events $A$ and $B$ are independent.</answer>
+		<answer>The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n$ be the number of students who are writing this exam. Each of these students has a uniformly
+			random birthday, which is independent of the birthdays of the other students. We ignore leap years;
+			thus, the year has 365 days. Define the event
+			[defs]
+			  A = "at least one student's birthday is on December 21".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$n \cdot (1/365) \cdot (364/365)^{n-1}$</answer>
+		<answer>$365 \cdot n \cdot (364/365)^{n-1}$</answer>
+		<answer>$1 - (1/365)^{n}$</answer>
+		<answer correct="correct">$1 - (364/365)^{n}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given that:
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					The course COMP 9999 runs over a period of one year, starting on January 1 and ending on December
+					31. There is one lecture every day; thus, the total number of lectures is 365.
+				</li>
+				<li>
+					Dania and Nick take this course. Dania's birthday is on November 19. Nick's birthday is on December
+					3.
+				</li>
+				<li>
+					Professor G. Ruesome teaches the course. Professor Ruesome decides to have 20 quizzes during the
+					year. For this, he chooses a uniformly random subset of 20 days; the quizzes will be on the 20
+					chosen days. (It is possible that there is a quiz on January 1.)
+				</li>
+			</ul>
+			
+			Determine $\Pr(A)$, where $A$ is the event
+			[defs]
+			  A = "There is a quiz on Dania's birthday and there is a quiz on Nick's birthday".
+			[/defs]
+		]]>
+		</question>
+		<answer>$1 - \left. {363 \choose 20} \middle/ {365 \choose 20} \right.$</answer>
+		<answer correct="correct">$\left. {363 \choose 18} \middle/ {365 \choose 20} \right.$</answer>
+		<answer>$\left. {365 \choose 18} \middle/ {365 \choose 20} \right.$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given that:
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					The course COMP 9999 runs over a period of one year, starting on January 1 and ending on December
+					31. There is one lecture every day; thus, the total number of lectures is 365.
+				</li>
+				<li>
+					Dania and Nick take this course. Dania's birthday is on November 19. Nick's birthday is on December
+					3.
+				</li>
+				<li>
+					Professor G. Ruesome teaches the course. Professor Ruesome decides to have 20 quizzes during the
+					year. For this, he chooses a uniformly random subset of 20 days; the quizzes will be on the 20
+					chosen days. (It is possible that there is a quiz on January 1.)
+				</li>
+			</ul>
+			
+			Determine the conditional probability $\Pr(B|C)$, where $B$ and $C$ are the events
+			[defs]
+			  B = "there is a quiz on Nick's birthday",
+			  C = "there are exactly 5 quizzes in December".
+			[/defs]
+		]]>
+		</question>
+		<answer>4/31</answer>
+		<answer correct="correct">5/31</answer>
+		<answer>4/32</answer>
+		<answer>5/32</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given that:
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					The course COMP 9999 runs over a period of one year, starting on January 1 and ending on December
+					31. There is one lecture every day; thus, the total number of lectures is 365.
+				</li>
+				<li>
+					At the beginning of each of the 365 lectures, Nick flips a fair and independent coin twice.
+					If the coin comes up heads twice, then Nick eats 3 bananas during the lecture; otherwise,
+					Nick eats 5 bananas during the lecture.
+				</li>
+			</ul>
+			
+			Let $X$ be the total number of bananas that Nick eats during the 365 lectures of the course COMP
+			9999. What is the expected value $\mathbb{E}(X)$ of $X$? <br>
+			(n.b., you may find it useful to apply Linearity of Expectation)
+		]]>
+		</question>
+		<answer correct="correct">$\frac{9 \cdot 365}{2}$</answer>
+		<answer>$\frac{7 \cdot 365}{2}$</answer>
+		<answer>$\frac{5 \cdot 365}{2}$</answer>
+		<answer>$4 \cdot 365$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The $n$ students $S_1,S_2,\dots,S_n$ decide to organize a Secret Santa: They take a uniformly
+			random permutation $P_1,P_2,\dots,P_n$ of $S_1,S_2,\dots,S_n$. For each $i = 1,2,\dots,n$,
+			student $S_i$ buys a gift and gives it, anonymously, to student $P_i$.
+			
+			<p style="margin: 0.5rem 0;">
+				Let $X$ be the number of students who give their gift to themselves. What is the expected value
+				$\mathbb{E}(X)$ of the random variable $X$? <br>
+				<em>Hint:</em> Use an indicator random variable for each student.
+			</p>
+		]]>
+		</question>
+		<answer correct="correct">$1$</answer>
+		<answer>$2$</answer>
+		<answer>$1 + 1/n$</answer>
+		<answer>$2 + 1/n$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The $n$ students $S_1,S_2,\dots,S_n$ decide to organize a Secret Santa: They take a uniformly
+			random permutation $P_1,P_2,\dots,P_n$ of $S_1,S_2,\dots,S_n$. For each $i = 1,2,\dots,n$,
+			student $S_i$ buys a gift and gives it, anonymously, to student $P_i$.
+			
+			<p style="margin: 0.5rem 0;">
+				For each $i = 1,2,\dots,n$, let $v_i$ be the value (in dollars) of the gift that student $S_i$
+				buys. Let $Y$ be the value of the gift that student $S_1$ receives, and let $Z$ be the value of the
+				gift that student $S_2$ receives. What is $\mathbb{E}(2 \cdot Y - Z)$?
+			</p>
+		]]>
+		</question>
+		<answer>$2v_1 - v_2$</answer>
+		<answer>$\sum_{i=3}^{n} v_i/n$</answer>
+		<answer correct="correct">$\sum_{i=1}^{n} v_i/n$</answer>
+		<answer>$2 \sum_{i=2}^{n} v_i/n - (v_1/n + \sum_{i=3}^{n} v_i/n)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You repeatedly, and independently, flip three fair coins, until there are exactly two heads among
+			the three flips. Define the random variable $X$ to be the total number of coin flips.
+			For example, if the coin flips result in
+			$$
+			(TTT), (THT), (HHH), (HTH),
+			$$
+			then $X = 12$. <br>
+			
+			What is the expected value $\mathbb{E}(X)$ of $X$?
+		]]>
+		</question>
+		<answer>3/8</answer>
+		<answer>8/3</answer>
+		<answer correct="correct">8</answer>
+		<answer>12</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n$ be an integer with $n \geq 3$. Consider a bitstring of length $n$, in which each bit is 0
+			with probability 1/3 (and, thus, 1 with probability 2/3), independently of the other bits. Let
+			$X$ be the number of occurrences of 010 in this bitstring. For example, if the bitstring is
+			$$
+				0010100100,
+			$$
+			then $X = 3$. <br>
+			
+			What is the expected value $\mathbb{E}(X)$ of $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer>$2n/27$</answer>
+		<answer correct="correct">$2(n-2)/27$</answer>
+		<answer>$(n-2)/8$</answer>
+		<answer>$n/8$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S = \{1,2,\dots,n\}$ and let $T$ be a set of $m$ unordered pairs of distinct elements of $S$. Thus,
+			$$
+				T \subseteq \{\{i,j\} : 1 \leq i < j \leq n\}.
+			$$
+			Consider a coin that comes up heads with probability 1/3 and, thus, tails with probability 2/3.
+			For each element of $S$, flip the coin, and let $S'$ be the set consisting of all elements of $S$ whose
+			coin flip resulted in heads. Let $T'$ be the set consisting of all elements $\{i,j\}$ in $T$ for which
+			both $i$ and $j$ are in $S'$. <br>
+			
+			Let $X$ be the size of the set $T'$.
+			What is the expected value $\mathbb{E}(X)$ of $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer>$n/9$</answer>
+		<answer correct="correct">$m/9$</answer>
+		<answer>$4n/9$</answer>
+		<answer>$4m/9$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S$ be a uniformly random 2-element subset of $\{1,2,3,4\}$, and let $X$ be the number of
+			elements of $S$ that are even. What is the expected value $\mathbb{E}(X)$ of $X$?
+		]]>
+		</question>
+		<answer correct="correct">1</answer>
+		<answer>3/2</answer>
+		<answer>2</answer>
+		<answer>5/2</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Heads}{{\rm H \scriptsize EADS}}$
+			</div>
+			
+			Consider a coin that comes up heads with probability 1/3 and, thus, tails with probability 2/3.
+			Consider the following recursive algorithm $\Heads$, which takes as input a positive integer $k$:
+			
+			<div style="margin: 1rem 0;">
+				$\mathbf{Algorithm}\ \Heads(k)\mathrm{:}$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="vertical-align: top;">$//$</td>
+							<td>
+								$\text{all coin flips made}$ $\text{are mutually independent}$
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				$\text{flip the coin};$ <br>
+				$\mathbf{if}\ \text{the coin came up heads}$ <br>
+				$\mathbf{then}\ \mathrm{return}\ k + 1$ <br>
+				$\mathbf{else}\ \Heads(k + 1)$ <br>
+				$\mathbf{endif}$
+			</div>
+			
+			You run algorithm $\Heads(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of
+			the output of this algorithm. Let $m \geq 1$ be an integer. What is $\Pr(X = m + 1)$?
+		]]>
+		</question>
+		<answer correct="correct">$2^{m-1}/3^{m}$</answer>
+		<answer>$(2/3)^{m}$</answer>
+		<answer>$2^{m}/3^{m+1}$</answer>
+		<answer>$(2/3)^{m+1}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+			Who discovered Newton's Binomial Theorem?
+		</question>
+		<answer>Professor Binomial.</answer>
+		<answer>Justin Bieber.</answer>
+		<answer correct="correct">Isaac Newton.</answer>
+		<answer>Professor G. Ruesome (the guy teaching COMP 9999).</answer>
+	</multiple-choice>
+</quiz>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2017 Final"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider permutations $a_1,a_2,\dots,a_{10}$ of the set $\{1,2,\dots,10\}$ for which
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					$a_1,a_3,a_5,a_7,a_9$ are all odd and
+				</li>
+				<li>
+					$a_2,a_4,a_6,a_8,a_{10}$ are all even.
+				</li>
+			</ul>
+			How many such permutations are there?
+		]]>
+		</question>
+		<answer>$10!$</answer>
+		<answer>$5^5 \cdot 5^5$</answer>
+		<answer correct="correct">$(5!)^2$</answer>
+		<answer>$2 \cdot (5!)^2$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. Consider permutations $a_1,a_2,\dots,a_n$ of the set $\{1,2,\dots,n\}$
+			for which $a_1 < a_2$. How many such permutations are there?
+		]]>
+		</question>
+		<answer correct="correct">$\frac{n!}{2}$</answer>
+		<answer>$n!$</answer>
+		<answer>$2{n \choose 2} \cdot (n-2)!$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $B$ be a set consisting of 45 bottles. Out of these, 17 are beer bottles, and the remaining 28
+			are cider bottles. Consider subsets of $B$ that contain
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					exactly 5 beer bottles and zero or more cider bottles,
+				</li>
+			</ul>
+			or
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					exactly 5 cider bottles and zero or more beer bottles.
+				</li>
+			</ul>
+			How many such subsets are there?
+		]]>
+		</question>
+		<answer>${17 \choose 5} \cdot 2^{28} + 2^{17} \cdot {28 \choose 5}$</answer>
+		<answer correct="correct">${17 \choose 5} \cdot 2^{28} + 2^{17} \cdot {28 \choose 5} - {17 \choose 5} \cdot {28 \choose 5}$</answer>
+		<answer>$2^{45} - {17 \choose 5} - {28 \choose 5}$</answer>
+		<answer>$2^{45} - {17 \choose 5} \cdot {28 \choose 5}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bitstring $b_1b_2 \dots b_n$ is called a palindrome if $b_1b_2 \dots b_n = b_nb_{n-1} \dots b_1$, i.e.,
+			reading the string from left to right gives the same result as reading it from right to left. Let
+			$n \geq 3$ be an odd integer. How many palindromes of length $n$ are there?
+		]]>
+		</question>
+		<answer>$2^{n-1}$</answer>
+		<answer>$2^{n-2}$</answer>
+		<answer>$2^{(n-1)/2}$</answer>
+		<answer correct="correct">$2^{(n+1)/2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. What does $2^{n} - 2^{n-2}$ count?
+		]]>
+		</question>
+		<answer correct="correct">The number of bitstrings of length $n$ in which the first bit is 0 or the last bit is 1.</answer>
+		<answer>The number of bitstrings of length $n$ in which the first bit is 0 and the last bit is 1.</answer>
+		<answer>The number of bitstrings of length $n$ in which the first bit is equal to the last bit.</answer>
+		<answer>The number of bitstrings of length $n$ in which the first bit is not equal to the last bit.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a group of 100 students. In this group,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					63 students like beer,
+				</li>
+				<li>
+					71 students like cider, and
+				</li>
+				<li>
+					25 students do not like beer and do not like cider.
+				</li>
+			</ul>
+			How many students like beer and cider?
+		]]>
+		</question>
+		<answer>57</answer>
+		<answer>58</answer>
+		<answer correct="correct">59</answer>
+		<answer>60</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In this question, we consider bitstrings of length $n$, where $n$ is an even integer, and in which
+			the positions are numbered $1,2,\dots,n$. <br>
+			
+			For any even integer $n$, let $S_n$ be the number of bitstrings of length $n$ that have both of the
+			following two properties:
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					There is a 0 at every even position.
+				</li>
+				<li>
+					The entire bitstring does not contain the substring 101.
+				</li>
+			</ul>
+			Which of the following is true for all even integers $n \geq 6$?
+		]]>
+		</question>
+		<answer>$S_n = S_{n/2} + S_{(n/2)-3}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-3}$</answer>
+		<answer>$S_n = S_{n-2} + S_{n-3}$</answer>
+		<answer correct="correct">$S_n = S_{n-2} + S_{n-4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider bitstrings that contain at least one occurrence of 000. Let $S_n$ be the number of such
+			strings having length $n$. Which of the following is true for $n \geq 4$?
+		]]>
+		</question>
+		<answer>$S_n = S_{n-1} + S_{n-2} + 2^{n-2}$</answer>
+		<answer correct="correct">$S_n = S_{n-1} + S_{n-2} + S_{n-3} + 2^{n-3}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + S_{n-3}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + S_{n-3} + 2^{n-4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Hello}{{\rm H {\scriptsize ELLO}}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}
+				 \newcommand{\thensp}{\phantom{\mathbf{then}\ }}$
+			</div>
+			
+			Consider the recursive algorithm $\Hello$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Hello(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ \text{print ``hello''}$ <br>
+				$\mathbf{else}\ \mathbf{if}\ n\ \mathrm{is}\ \mathrm{even}$ <br>
+				$\elsesp \mathbf{then}\ \Hello(\frac{n}{2});$ <br>
+				$\elsesp \thensp \Hello(\frac{n}{2} - 1)$ <br>
+				$\elsesp \mathbf{else}\ \Hello(n - 1);$ <br>
+				$\elsesp \elsesp \Hello(n - 2)$ <br>
+				$\elsesp \mathbf{endif};$ <br>
+				$\mathbf{endif}$
+			</p>
+			
+			If we run algorithm $\Hello(7)$, how many times is the word "hello" printed?
+		]]>
+		</question>
+		<answer>9</answer>
+		<answer>10</answer>
+		<answer correct="correct">11</answer>
+		<answer>12</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We choose, uniformly at random, a string consisting of 14 characters, where each character is a
+			lowercase letter. Let $A$ be the event
+			[defs]
+			  A = "the string contains at least one vowel".
+			[/defs]
+			(A vowel is one of the letters $a$, $e$, $i$, $o$, and $u$.) What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer correct="correct">$1 - (21/26)^{14}$</answer>
+		<answer>$1 - (26/21)^{14}$</answer>
+		<answer>$5 \cdot (5/26) \cdot (21/26)^{13}$</answer>
+		<answer>$14 \cdot (5/26) \cdot (21/26)^{13}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a group consisting of 7 girls and 6 boys. Elisa is one of the girls. How many ways are
+			there to arrange these 13 people on a horizontal line such that Elisa has 2 neighbors, both of whom
+			are girls? (The order on the line matters.)
+		]]>
+		</question>
+		<answer>$11 \cdot {6 \choose 2} \cdot 10!$</answer>
+		<answer correct="correct">$11 \cdot 6 \cdot 5 \cdot 10!$</answer>
+		<answer>$12 \cdot 6 \cdot 5 \cdot 10!$</answer>
+		<answer>$13 \cdot 6 \cdot 5 \cdot 10!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $X = \{1,2,3,\dots,10\}$. We choose, uniformly at random, a subset $Y$ of $X$, where $Y$ has
+			size 5. Define the events
+			[defs]
+			  A = "1 is an element of $Y$",
+			  B = "7 is an element of $Y$".
+			[/defs]
+			What is $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer>4/8</answer>
+		<answer>5/8</answer>
+		<answer correct="correct">4/9</answer>
+		<answer>5/9</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We flip a fair coin, independently, five times. Define the events
+			[defs]
+			  A = "the coin comes up heads exactly four times",
+			  B = "the fifth coin flip results in heads".
+			[/defs]
+			What is $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer>1/3</answer>
+		<answer>2/3</answer>
+		<answer>2/5</answer>
+		<answer correct="correct">1/4</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 3$ be an integer. Consider a uniformly random permutation $a_1a_2 \dots a_n$ of the set
+			$\{1,2,\dots,n\}$. Define the events
+			[defs]
+			  A = "$a_n = n$",
+			  B = "$a_2 > a_1$".
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">The events $A$ and $B$ are independent.</answer>
+		<answer>The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 5$ be an integer. Consider a uniformly random permutation $a_1a_2 \dots a_n$ of the set
+			$\{1,2,\dots,n\}$. Define the events
+			[defs]
+			  A = "$a_1 = 1$",
+			  B = "$a_n = 5$".
+			[/defs]
+			What is $\Pr(A \cup B)$?
+		]]>
+		</question>
+		<answer>${\frac{1}{n}} - {\frac{1}{n(n-1)}}$</answer>
+		<answer correct="correct">${\frac{2}{n}} - {\frac{1}{n(n-1)}}$</answer>
+		<answer>${\frac{2}{n}} - {\frac{1}{n^{2}}}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ and $B$ be two events in some sample space. You are given that
+			$$
+				\begin{align}
+				\Pr(A|B) &= \Pr(B|A), \\
+				\Pr(A \cup B) &= 1, \\
+				\Pr(A \cap B) &> 0.
+				\end{align}
+			$$
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>$\Pr(A) &lt; 1/2$</answer>
+		<answer correct="correct">$\Pr(A) > 1/2$</answer>
+		<answer>$\Pr(A) &lt; 1$</answer>
+		<answer>$\Pr(A) > 0$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a uniformly random permutation of the set $\{1,2,\dots,50\}$. Define the event
+			[defs]
+			  A = "in the permutation, both 8 and 4 are to the left of both 1 and 2".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>1/3</answer>
+		<answer>2/3</answer>
+		<answer>1/5</answer>
+		<answer correct="correct">1/6</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You roll a fair red die and a fair blue die, independently of each other. Define the random
+			variables
+			[defs]
+			  X = "the result of the red die",
+			  Y = "the result of the blue die",
+			  Z = $\min(X,Y)$.
+			[/defs]
+			What is $\Pr(Z = 2)$?
+		]]>
+		</question>
+		<answer>5/18</answer>
+		<answer>1/6</answer>
+		<answer correct="correct">1/4</answer>
+		<answer>1/3</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 3$ be an integer and consider a group $P_1,P_2,\dots,P_n$ of $n$ people. Each of these
+			people has a uniformly random birthday, which is independent of the birthdays of the other people.
+			We ignore leap years; thus, the year has 365 days. <br>
+			
+			Define the random variable $X$ to be the number of unordered triples $\{P_i,P_j,P_k\}$ of people
+			(i.e., subsets consisting of three people) that have the same birthday. <br>
+			
+			What is the expected value $\mathbb{E}(X)$ of $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer correct="correct">${\frac{1}{365^2}} \cdot {n \choose 3}$</answer>
+		<answer>${\frac{1}{365^3}} \cdot {n \choose 3}$</answer>
+		<answer>${\frac{1}{365^2}} \cdot n^3$</answer>
+		<answer>${\frac{1}{365^3}} \cdot n^3$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a coin that comes up heads with probability 1/5 and comes up tails with probability 4/5.
+			You flip this coin twice, independently of each other. For each heads, you win \$100. For each tails, you win \$50. <br>
+			
+			What is the expected value $\mathbb{E}(X)$ of $X$?
+		]]>
+		</question>
+		<answer>80</answer>
+		<answer>100</answer>
+		<answer correct="correct">120</answer>
+		<answer>140</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given a fair red die and a fair blue die. You roll each die once, independently of each other.
+			Let $(i,j)$ be the outcome, where $i$ is the result of the red die and $j$ is the result of the blue die.
+			Define the random variables
+			$$
+				X = |i - j|
+			$$
+			and
+			$$
+				Y = \max(i, j).
+			$$
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>The random variables $X$ and $Y$ are independent.</answer>
+		<answer correct="correct">The random variables $X$ and $Y$ are not independent.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\TwoTails}{{\rm T {\scriptsize WO} T {\scriptsize AILS}}}$
+			</div>
+			
+			Consider the following recursive algorithm $\TwoTails$, which takes as input a positive integer $k$:
+			
+			<div style="margin: 1rem 0;">
+				$\mathbf{Algorithm}\ \TwoTails(k)\mathrm{:}$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="vertical-align: top;">$//$</td>
+							<td>
+								$\text{all coin flips made are mutually}$ $\text{independent}$
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				$\text{flip a fair coin twice};$ <br>
+				$\mathbf{if}\ \text{the coin came up heads exactly twice}$ <br>
+				$\mathbf{then}\ \mathrm{return}\ 2^k$ <br>
+				$\mathbf{else}\ \TwoTails(k + 1)$ <br>
+				$\mathbf{endif}$ <br>
+			</div>
+			
+			You run algorithm $\TwoTails(1)$, i.e., with $k = 1$. Define the random variable $X$ to be the value of the
+			output of this algorithm. <br>
+			Let $m \geq 1$ be an integer. What is $\Pr(X = 2^m)$?
+		]]>
+		</question>
+		<answer>$(1/4)^{m} \cdot 3/4$</answer>
+		<answer>$(1/4)^{m-1} \cdot 3/4$</answer>
+		<answer>$(3/4)^{m} \cdot 1/4$</answer>
+		<answer correct="correct">$(3/4)^{m-1} \cdot 1/4$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Is the following statement true or false?
+			<p align="center">
+				For any two random variables $X$ and $Y$,
+				$\mathbb{E}(X \cdot Y) = \mathbb{E}(X) \cdot \mathbb{E}(Y)$.
+			</p>
+		]]>
+		</question>
+		<answer>The statement is true.</answer>
+		<answer correct="correct">The statement is false.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Elisa Kazan has successfully completed her first term as President of the Carleton Computer Science
+			Society. In order to celebrate this, Elisa decides to spend an evening in the Hyacintho Cactus Bar
+			and Grill in downtown Ottawa. During this evening, Tan Tran is working as a server. Since Tan has
+			been studying very hard for COMP 2804, he is a bit absent-minded: Every time a customer orders a
+			drink, Tan serves the wrong drink with probability 1/12, independently of other orders. <br>
+			
+			Elisa orders 7 ciders, one cider at a time. Let $(D_1,D_2,\dots,D_7)$ be the sequence of drinks
+			that Tan serves. Define the following random variable $X$:
+			[defs]
+			  X = the number of indices $i$ such that $D_i$ is a cider and $D_{i+1}$ is not a cider.
+			[/defs]
+			What is the expected value $\mathbb{E}(X)$ of $X$?
+		]]>
+		</question>
+		<answer>44/144</answer>
+		<answer>55/144</answer>
+		<answer correct="correct">66/144</answer>
+		<answer>77/144</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>How do you feel about writing an exam on Sunday afternoon?</question>
+		<answer correct="correct">I hate it!</answer>
+	</multiple-choice>
+</quiz>

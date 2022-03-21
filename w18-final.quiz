@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2018 Final"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given 20 beer bottles $B_1,B_2,\dots,B_{20}$ and 50 cider bottles $C_1,C_2,\dots,C_{50}$.
+			Consider subsets of these 70 bottles, consisting of 30 bottles, exactly 12 of which are beer
+			bottles. How many subsets are there?
+		]]>
+		</question>
+		<answer>${20 \choose 12} \cdot {38 \choose 18}$</answer>
+		<answer correct="correct">${20 \choose 12} \cdot {50 \choose 18}$</answer>
+		<answer>${50 \choose 12} \cdot {20 \choose 18}$</answer>
+		<answer>${70 \choose 30} \cdot {20 \choose 12}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given 20 beer bottles $B_1,B_2,\dots,B_{20}$ and 50 cider bottles $C_1,C_2,\dots,C_{50}$.
+			Consider subsets of these 70 bottles, that contain exactly 12 beer bottles (and any number of cider
+			bottles) or exactly 12 cider bottles (and any number of beer bottles). How many such subsets are
+			there?
+		]]>
+		</question>
+		<answer>${20 \choose 12} + {50 \choose 12}$</answer>
+		<answer>${20 \choose 12} + {50 \choose 12} - {20 \choose 12} \cdot {50 \choose 12}$</answer>
+		<answer>${20 \choose 12} \cdot 2^{50} + {50 \choose 12} \cdot 2^{20}$</answer>
+		<answer correct="correct">${20 \choose 12} \cdot 2^{50} + {50 \choose 12} \cdot 2^{20} - {20 \choose 12} \cdot {50 \choose 12}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given 20 beer bottles $B_1,B_2,\dots,B_{20}$ and 50 cider bottles $C_1,C_2,\dots,C_{50}$.
+			Consider subsets of these 70 bottles, that contain at least 3 beer bottles (and any number of cider
+			bottles). How many such subsets are there?
+		]]>
+		</question>
+		<answer>$2^{70} - 2^{50} - 20 - {20 \choose 2}$</answer>
+		<answer correct="correct">$2^{70} - 2^{50} - 20 \cdot 2^{50} - {20 \choose 2} \cdot 2^{50}$</answer>
+		<answer>$2^{70} - 2^{50} - 20 \cdot 2^{50}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of 40 characters, where each character is an element of $\{a,b,c,d\}$.
+			How many such strings contain exactly five $a$'s or exactly five $c$'s?
+		]]>
+		</question>
+		<answer correct="correct">$2 \cdot {40 \choose 5} \cdot 3^{35} - {40 \choose 5} \cdot {35 \choose 5} \cdot 2^{30}$</answer>
+		<answer>$2 \cdot {40 \choose 5} \cdot 3^{35}$</answer>
+		<answer>${40 \choose 5} + {35 \choose 5} - {40 \choose 5} \cdot {35 \choose 5}$</answer>
+		<answer>$2 \cdot {40 \choose 5} - {40 \choose 5} \cdot {35 \choose 5}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $m \geq 2$ and $n \geq 2$ be integers. What does
+			$$
+				{m \choose 2} + {n \choose 2} + m \cdot n
+			$$
+			count?
+		]]>
+		</question>
+		<answer>The number of ways to choose a subset from a set consisting of $m + n$ elements.</answer>
+		<answer>The number of ways to choose an ordered pair of 2 elements from a set consisting of $m + n$ elements.</answer>
+		<answer correct="correct">The number of ways to choose a 2-element subset from a set consisting of $m + n$ elements.</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Nick (your friendly TA) eats lots of bananas. During a period of 7 days, Nick eats a total of 25 bananas. A banana
+			schedule is a sequence of 7 numbers, whose sum is equal to 25, and whose numbers indicate the number
+			of bananas that Nick eats on each day. Three examples of such schedules are (3,2,7,4,1,3,5),
+			(2,3,7,4,1,3,5), and (3,0,9,4,1,0,8). How many banana schedules are there?
+		]]>
+		</question>
+		<answer correct="correct">${31 \choose 6}$</answer>
+		<answer>${31 \choose 7}$</answer>
+		<answer>${32 \choose 6}$</answer>
+		<answer>${32 \choose 7}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A string that is obtained by rearranging the letters of the word
+			<p style="text-align: center;">
+				BOOGER
+			</p>
+			is called <em>awesome</em>, if the string does not contain the substring OO.
+			Thus, GEOROB is awesome, whereas GREOOB is not awesome.
+			What is the number of awesome strings?
+		]]>
+		</question>
+		<answer>$6 \cdot {5 \choose 2} \cdot 3 \cdot 2$</answer>
+		<answer correct="correct">$(6 \cdot {5 \choose 2} \cdot 3 \cdot 2) - 5!$</answer>
+		<answer>$6! - 5!$</answer>
+		<answer>$(6 \cdot {5 \choose 2} \cdot 3) - 5!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of characters, where each character is an element of $\{a, b, c, d\}$.
+			Such a string is called <em>valid</em>, if it does not contain $aa$, it does not contain $bb$,
+			it does not contain $cc$, and it does not contain $dd$. <br>
+			
+			For any integer $n \geq 2$, what is the number of valid strings of length $n$?
+		]]>
+		</question>
+		<answer>$4^{n} - 4(n-1)$</answer>
+		<answer>$4^{n} - 4n$</answer>
+		<answer>$4 \cdot 3^{n}$</answer>
+		<answer correct="correct">$4 \cdot 3^{n-1}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider bitstrings that do not contain 110. Let $S_n$ be the number of such strings having length
+			$n$. Which of the following is true for any $n \geq 4$?
+		]]>
+		</question>
+		<answer correct="correct">$S_n = S_{n-1} + S_{n-2} + 1$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + 2^{n-2}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + 2^{n-3}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + S_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\SundayEveningExam}{{\rm S {\scriptsize UNDAY} E {\scriptsize VENING} E {\scriptsize XAM}}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+			</div>
+			
+			Consider the recursive algorithm $\SundayEveningExam$, which takes as input an integer $n \geq 1$:
+			
+			<div style="margin: 1rem 0;">
+				$\mathbf{Algorithm}\ \SundayEveningExam(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 1$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="padding: 0; vertical-align: top;">
+								$\mathbf{then}\ \mathrm{print}\ \text{``}$
+							</td>
+							<td style="padding: 0;">$\text{I don't like Sunday}$ $\text{evening exams''}$</td>
+						</tr>
+					</tbody>
+				</table>
+				$\mathbf{else}\ \mathbf{for}\ i = 1\ \mathbf{to}\ n$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="padding: 0; vertical-align: top;">
+								$\elsesp \mathbf{do}\ \mathrm{print}\ \text{``}$
+							</td>
+							<td style="padding: 0;">$\text{I don't like Sunday}$ $\text{evening exams''}$</td>
+						</tr>
+					</tbody>
+				</table>
+				$\elsesp \mathbf{endfor};$ <br>
+				$\elsesp \SundayEveningExam(n - 1)$ <br>
+				$\mathbf{endif}$
+			</div>
+			
+			Let $P(n)$ be the number of times the line "I don't like Sunday evening exams" is printed when running
+			algorithm $\SundayEveningExam(n)$. Which of the following is true for all $n \geq 1$?
+		]]>
+		</question>
+		<answer>$P(n) = 1 + \frac{n(n-1)}{2}$</answer>
+		<answer>$P(n) = \frac{n(n-1)}{2}$</answer>
+		<answer correct="correct">$P(n) = \frac{n(n+1)}{2}$</answer>
+		<answer>$P(n) = 1 + \frac{n(n+1)}{2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You roll a fair die 18 times; the rolls are independent of each other. What is the probability that
+			you roll a 5 exactly three times?
+		]]>
+		</question>
+		<answer>${18 \choose 3} \cdot \left(5 \middle/ 6 \right)^{18}$</answer>
+		<answer>$18 \cdot \left. 5^{15} \middle/ 6^{18} \right.$</answer>
+		<answer correct="correct">${18 \choose 3} \cdot \left. 5^{15} \middle/ 6^{18} \right.$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A string $s_1s_2{\dots}s_n$ is called a <em>palindrome</em>, if
+			$$
+				s_1s_2{\dots}s_{n-1}s_n = s_ns_{n-1}{\dots}s_2s_1,
+			$$
+			i.e., reading the string from left to right <span class="sticky">gives the</span>
+			same result as reading the string from right to left. <br>
+			
+			Let $n \geq 3$ be an odd integer. You are given a string of length $n$, in which each character is a
+			uniformly random element of $\{a,b,c\}$. The characters are independent of each other. What is the
+			probability that this string is a palindrome?
+		]]>
+		</question>
+		<answer>$(1/3)^{(n+1)/2}$</answer>
+		<answer correct="correct">$(1/3)^{(n-1)/2}$</answer>
+		<answer>$(1/2)^{(n+1)/2}$</answer>
+		<answer>$(1/2)^{(n-1)/2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given a uniformly random bitstring of length five. Define the events
+			[defs]
+			  A = "the bitstring contains at most four 1's",
+			  B = "the bitstring contians an odd number of 1's".
+			[/defs]
+			What is $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer>12/16</answer>
+		<answer>13/16</answer>
+		<answer>14/16</answer>
+		<answer correct="correct">15/16</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given two bitstrings $a_1,a_2,\dots,a_{77}$ and $b_1,b_2,\dots,b_{77}$ of length 77. In
+			both bitstrings, each bit is 0 with probability 3/4, and 1 with probability 1/4 (independent of
+			all other bits). <br>
+			
+			Consider the string
+			$$
+				a_1-b_1,a_2-b_2,\dots,a_{77}-b_{77}.
+			$$
+			What is the probability that each element in this string is non-zero?
+		]]>
+		</question>
+		<answer correct="correct">$(3/8)^{77}$</answer>
+		<answer>$(4/8)^{77}$</answer>
+		<answer>$(5/8)^{77}$</answer>
+		<answer>$(6/8)^{77}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin four times; these four flips are independent. Define the events
+			[defs]
+			  A = "the first two flips result (in this order) in $HT$",
+			  B = "the second and third flips result in $TT$".
+			[/defs]
+			Which of the following is correct?
+		]]>
+		</question>
+		<answer>The events $A$ and $B$ are independent.</answer>
+		<answer correct="correct">The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+		<answer>All of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin five times; these five flips are independent. Define the events
+			[defs]
+			  A = "the first three flips result in $HHH$",
+			  B = "the number of $T$ in these five flips is at least two".
+			[/defs]
+			Which of the following is correct?
+		]]>
+		</question>
+		<answer>The events $A$ and $B$ are independent.</answer>
+		<answer correct="correct">The events $A$ and $B$ are not independent.</answer>
+		<answer>None of the above.</answer>
+		<answer>All of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer.
+			Consider a uniformly random permutation of the set $\{1,2,3,\dots,2n\}$. Define the event
+			[defs]
+			  A = "both the first element and the last element in the permutation are even integers".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$\frac{2(2n-1)}{n-1}$</answer>
+		<answer>$\frac{n-1}{4n}$</answer>
+		<answer correct="correct">$\frac{n-1}{2(2n-1)}$</answer>
+		<answer>$\frac{n}{2(2n-1)}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair red coin once, and you flip a fair blue coin once, independently of each other.
+			Define the random variables
+			
+			<!-- yes, i'm aware of the cases environment. the strings are sufficiently long i need them to word wrap on mobile -->
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td rowspan="2">$X = \bigg\{$</td>
+						<td>$1\ $</td>
+						<td>if the red coin flip resulted in heads$,$</td>
+					</tr>
+					<tr>
+						<td>$0\ $</td>
+						<td>if the red coin flip resulted in tails$,$</td>
+					</tr>
+					<tr>
+						<td rowspan="2">$Y = \bigg\{$</td>
+						<td>$1\ $</td>
+						<td>if the blue coin flip resulted in heads$,$</td>
+					</tr>
+					<tr>
+						<td>$0\ $</td>
+						<td>if the blue coin flip resulted in tails$,$</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			and
+			[defs]
+			  Z = $\min(X,Y).$
+			[/defs]
+			What is the expected value $\mathbb{E}(Z)$ of the random variable $Z$?
+		]]>
+		</question>
+		<answer correct="correct">1/4</answer>
+		<answer>1/2</answer>
+		<answer>3/4</answer>
+		<answer>1</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. Consider a bitstring $b_1,b_2,\dots,b_n$ of length $n$, in which each
+			bit $b_i$ is 0 with probability 1/2, and 1 with probability 1/2 (independent of all other bits). <br>
+			
+			Define the random variable $X$ to be the number of indices $i$ with $1 \leq i &lt; n$ for which $b_i
+			\cdot b_{i+1} = 0$. <br>
+			
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer>$n/4$</answer>
+		<answer>$(n-1)/4$</answer>
+		<answer>$3n/4$</answer>
+		<answer correct="correct">$3(n-1)/4$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 2$ be an integer. You are given $n$ beer bottles $B_1,B_2,\dots,B_n$ and one cider
+			bottle $C$. Consider a uniformly random permutation of these $n+1$ bottles. The positions in this
+			permutation are numbered as $1,2,3,\dots,n+1$. Define the random variable $X$ to be
+			[defs]
+			  X = the position of the leftmost beer bottle.
+			[/defs]
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+		]]>
+		</question>
+		<answer>1</answer>
+		<answer correct="correct">$\frac{n+2}{n+1}$</answer>
+		<answer>$\frac{n+1}{n}$</answer>
+		<answer>$\frac{n+3}{n+1}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given two independent random variables $X$ and $Y$, where
+			
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$\Pr(X = 0)$</td>
+						<td>
+							$= \Pr(X = 1) = \Pr(Y = 0)$
+							$= \Pr(Y = 1) = 1/2.$
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			Define the random variable $Z = X \cdot Y$. Which of the following is correct?
+		]]>
+		</question>
+		<answer>The random variables $X$ and $Z$ are independent.</answer>
+		<answer correct="correct">The random variables $X$ and $Z$ are not independent.</answer>
+		<answer>None of the above.</answer>
+		<answer>All of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\WhoGoesFirst}{{\rm W {\scriptsize HO} G {\scriptsize OES} F {\scriptsize IRST}}}
+				 \newcommand{\thensp}{\phantom{\mathbf{then}\ }}$
+			</div>
+			
+			Alexa and Shelly want to play the game of Monopoly. They use the following recursive algorithm
+			to decide who goes first:
+			
+			<div style="margin: 1rem 0;">
+				$\mathbf{Algorithm}\ \WhoGoesFirst(k)\mathrm{:}$ <br>
+				<table>
+					<tbody>
+						<tr>
+							<td style="vertical-align: top;">$//$</td>
+							<td>
+								$k \geq 1,$ $\text{the die is fair},$ $\text{and all rolls are independent}$
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				$\text{Alexa rolls the die, let \(a\) be the result};$ <br>
+				$\text{Shelly rolls the die, let \(s\) be the result};$ <br>
+				$\mathbf{if}\ a > s$ <br>
+				$\mathbf{then}\ \mathrm{print}\ {\tt Alexa\ goes\ first};$ <br>
+				$\thensp \mathrm{return}\ k$ <Br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{if}\ a < s$ <br>
+				$\mathbf{then}\ \mathrm{print}\ {\tt Shelly\ goes\ first};$ <br>
+				$\thensp \mathrm{return}\ k$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{if}\ a = s$ <br>
+				$\mathbf{then}\ \WhoGoesFirst(k + 1)$ <br>
+				$\mathbf{endif}$
+			</div>
+			
+			The ladies run algorithm $\WhoGoesFirst(1)$, i.e., with $k = 1$. Define the random variable $X$ to
+			be the value of the output of this algorithm. <br>
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$?
+		]]>
+		</question>
+		<answer>3/2</answer>
+		<answer>5/4</answer>
+		<answer>5/6</answer>
+		<answer correct="correct">6/5</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider the following statement: For any three random variables $X$, $Y$, and $Z$,
+			
+			[defs]
+			  \mathbb{E}(\min(X,Y,Z)) = $\min(\mathbb{E}(X), \mathbb{E}(Y),$ $\mathbb{E}(Z)).$
+			[/defs]
+			
+			Which of the following is correct?
+		]]>
+		</question>
+		<answer>The statement is true.</answer>
+		<answer correct="correct">The statement is false.</answer>
+		<answer>None of the above.</answer>
+		<answer>All of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Elisa Kazan has successfully completed her second year as President of the Carleton Computer Science Society.
+			In order to celebrate this, Elisa throws a party. She invites 15 students; thus, the total number of students
+			at the party is equal to 16. Elisa has brought an unlimited amount of drinks: 5 types $C_1,C_2,C_3,C_4,C_5$
+			of cider and 3 types $B_1,B_2,B_3$ of beer. Each of the 16 students gets 3 drinks; each of these drinks is
+			uniformly, and independently, chosen from the 8 types of drinks. <br>
+			Define the following random variable $X$:
+			[defs]
+			  X = the number of students who get exactly 2 ciders.
+			[/defs]
+			What is the expected value $\mathbb{E}(X)$ of the random variable $X$? <br>
+			<em>Hint:</em> Use indicator random variables.
+		]]>
+		</question>
+		<answer>$2^{4} \cdot 3^{2} \cdot \left. 5^{2} \middle/ 3^{8} \right.$</answer>
+		<answer>$2^{4} \cdot 3^{2} \cdot \left. 2^{5} \middle/ 8^{3} \right.$</answer>
+		<answer correct="correct">$2^{4} \cdot 3^{2} \left. \cdot 5^{2} \middle/ 8^{3} \right.$</answer>
+		<answer>$3^{2} \cdot \left. 5^{2} \middle/ 8^{3} \right.$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>Are you happy that this is the last question?</question>
+		<answer correct="correct">Yes.</answer>
+	</multiple-choice>
+</quiz>

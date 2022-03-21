@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Fall 2018 Midterm"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 3$ be an integer and let $S$ be a set consisting of $n$ elements. How many ordered
+			triples $(A, B, C)$ are there for which $A \subseteq S$, $B \subseteq S$, $C \subseteq S$, and $A$, $B$,
+			and $C$ are pairwise disjoint?
+		]]>
+		</question>
+		<answer>$2^n$</answer>
+		<answer>$3^n$</answer>
+		<answer correct="correct">$4^n$</answer>
+		<answer>$5^n$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider bitstrings of length 9. The positions in these strings are numbered as $1,2,3,\dots,9$.
+			How many such bitstrings have the property that
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					the bit at each even position is 0, or
+				</li>
+				<li>
+					the bitstring starts with 1010?
+				</li>
+			</ul>
+		]]>
+		</question>
+		<answer>54</answer>
+		<answer correct="correct">56</answer>
+		<answer>58</answer>
+		<answer>60</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of length 15, where each character is a lowercase letter or an uppercase letter.
+			How many such strings contain at least two lowercase letters?
+		]]>
+		</question>
+		<answer>$52^{15} - 26^{15} - 15 \cdot 26^{14}$</answer>
+		<answer correct="correct">$52^{15} - 26^{15} - 15 \cdot 26^{15}$</answer>
+		<answer>$52^{15} - 15 \cdot 26^{15}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Elisa Kazan's neighborhood pub serves 8 different types of cider; denote these types by $C_1,C_2,\dots,C_8$.
+			Elisa invites 7 friends to this pub and orders one cider for each friend. Different
+			friends may get the same type of cider. (Elisa came by car and, therefore, orders a glass of water
+			for herself.) <br>
+			In how many ways can Elisa place these orders of cider, such that exactly 4 of her friends get a
+			cider of type $C_3$?
+		]]>
+		</question>
+		<answer correct="correct">${7 \choose 4} \cdot 7^3$</answer>
+		<answer>${7 \choose 4} \cdot 8^3$</answer>
+		<answer>${7 \choose 4} \cdot 7^4$</answer>
+		<answer>${7 \choose 4} \cdot 8^4$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider the equation
+			$$
+				x_1 + x_2 + x_3 + x_4 + x_5 = 17.
+			$$
+			How many solutions $(x_1, x_2, x_3, x_4, x_5)$ does this equation have, where
+			$x_1 \geq 0$, $x_2 \geq 0$, $x_3 \geq 0$, $x_4 \geq 0$, and $x_5 \geq 0$ are all integers?
+		]]>
+		</question>
+		<answer>${22 \choose 5}$</answer>
+		<answer>${22 \choose 4}$</answer>
+		<answer>${21 \choose 5}$</answer>
+		<answer correct="correct">${21 \choose 4}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S$ be a subset of the set $\{1,2,3,\dots,50\}$. <br>
+			What is the minimum size of this subset $S$, such that there must be at least two elements in $S$ whose sum is equal to 51?
+		]]>
+		</question>
+		<answer>25</answer>
+		<answer correct="correct">26</answer>
+		<answer>27</answer>
+		<answer>28</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider 5-element subsets $\{x_1,x_2,x_3,x_4,x_5\}$ of the set $\{1,2,3,\dots,17\}$,
+			where $x_1 < x_2 < x_3 < x_4 < x_5$. <br>
+			How many such subsets have the property that $x_3 = 7$?
+		]]>
+		</question>
+		<answer correct="correct">${6 \choose 2} \cdot {10 \choose 2}$</answer>
+		<answer>${6 \choose 2} \cdot {9 \choose 2}$</answer>
+		<answer>${7 \choose 2} \cdot {10 \choose 2}$</answer>
+		<answer>${7 \choose 2} \cdot {9 \choose 2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a set $\mathcal{B} = \{B_1,B_2,\dots,B_{13}\}$ of 13 beer bottles and a set
+			$\mathcal{C} = \{C_1,C_2,\dots,C_{12}\}$ of 12 cider bottles. <br>
+			
+			Consider subsets $X$ of $\mathcal{B} \cup \mathcal{C}$, such that $X$ consists of exactly 5 beer
+			bottles and all cider bottles in $X$ have an even index. <br>
+			
+			How many such subsets $X$ are there?
+		]]>
+		</question>
+		<answer>${12 \choose 5} \cdot 2^6$</answer>
+		<answer>${13 \choose 5} \cdot 2^5$</answer>
+		<answer correct="correct">${13 \choose 5} \cdot 2^6$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bitstring $s_1s_2...s_n$ is called a <em>palindrome</em>, if $$s_1s_2...s_{n-1}s_n = s_ns_{n-1}...s_2s_1,$$
+			i.e., reading the string from left to right gives the same string as when reading from right to left. <br>
+			
+			For any integer $n \geq 1$, let $P_n$ be the number of bitstrings of length $n$ that are palindromes. <br>
+			
+			Which of the following is true for any integer $n \geq 3$?
+		]]>
+		</question>
+		<answer>$P_n = 2 + P_{n-2}$</answer>
+		<answer>$P_n = 2 \cdot P_{n/2}$</answer>
+		<answer>$P_n = 2 \cdot P_{n-1}$</answer>
+		<answer correct="correct">$P_n = 2 \cdot P_{n-2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer and consider a set $\mathcal{B} = \{B_1,B_2,\dots,B_n\}$ of $n$ beer
+			bottles and a set $\mathcal{C} = \{C_1,C_2,\dots,C_n\}$ of $n$ cider bottles. <br>
+			
+			For any integer $k$ with $0 \leq k \leq n$, consider subsets $X$ of $\mathcal{B} \cup \mathcal{C}$,
+			such that $X$ consists of exactly $k$ bottles and no two bottles in $X$ have the same index. (For
+			example, if $B_n \in X$, then $C_n \notin X$.) <br>
+			
+			Let $F(n,k)$ be the number of such subsets X. <br>
+			Which of the following is true for all integers $n \geq 2$ and $k$ with $1 \leq k \leq n - 1$?
+		]]>
+		</question>
+		<answer>$F(n,k) = F(n-1,k)\ +$ $ F(n-1,k-1)$</answer>
+		<answer correct="correct">$F(n,k) = F(n-1,k)\ +$ $ 2 \cdot F(n-1,k-1)$</answer>
+		<answer>$F(n,k) = F(n,k-1)\ +$ $ F(n-1,k-1)$</answer>
+		<answer>$F(n,k) = F(n,k-1)\ +$ $ 2 \cdot F(n-1,k-1)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A bitstring is called 00-<em>free</em>, if it does not contain two 0's next to each other.
+			In class, we have seen that for any $m \geq 1$,
+			the number of 00-free bitstrings of length $m$ is equal to the $(m+2)$-th Fibonacci number $f_{m+2}$. <br>
+			
+			What is the number of 00-free bitstrings of length 55 that have 0 at position 9, and 1 at position 40?
+			(The positions are numbered $1,2,\dots,55$.)
+		]]>
+		</question>
+		<answer>$f_7 \cdot f_{29} \cdot f_{15}$</answer>
+		<answer>$f_8 \cdot f_{30} \cdot f_{16}$</answer>
+		<answer correct="correct">$f_9 \cdot f_{31} \cdot f_{17}$</answer>
+		<answer>$f_{10} \cdot f_{32} \cdot f_{18}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The functions $f: \mathbb{N} \rightarrow \mathbb{N}$ and $g: \mathbb{N} \rightarrow \mathbb{N}$ are
+			recursively defined as follows:
+			$$
+				\begin{alignat}{2}
+				f(0) &= 3, \\
+				f(n) &= 5 + f(n - 1)\ \; &\mathrm{if}\ n \geq 1, \\
+				g(0) &= 1, \\
+				g(n) &= 2 \cdot g(n - 1) &\mathrm{if}\ n \geq 1.
+				\end{alignat}
+			$$
+			For any integer $n \geq 0$, what is $f(g(n))$?
+		]]>
+		</question>
+		<answer correct="correct">$3 + 5 \cdot 2^{n}$</answer>
+		<answer>$5 + 3 \cdot 2^{n}$</answer>
+		<answer>$2^{3 + 5n}$</answer>
+		<answer>$2^{5 + 3n}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of characters, where each character is one of the 26 lowercase letters $a,b,c,\dots,z$.
+			Such a string is called $qq$<em>-free</em>, if it does not contain two $q$'s next to each other.
+			For any integer $n \geq 1$, let $Q_n$ be the number of $qq$-free strings of length $n$. <br>
+			
+			Which of the following is true for any integer $n \geq 3$?
+		]]>
+		</question>
+		<answer>$Q(n) = 26 \cdot Q(n-1) + 26 \cdot Q(n-2)$</answer>
+		<answer correct="correct">$Q(n) = 25 \cdot Q(n-1) + 25 \cdot Q(n-2)$</answer>
+		<answer>$Q(n) = 26 \cdot Q(n-1) + 25 \cdot Q(n-2)$</answer>
+		<answer>$Q(n) = 25 \cdot Q(n-1) + 26 \cdot Q(n-2)$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fart}{{\rm F {\scriptsize ART}}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}
+				 \newcommand{\thensp}{\phantom{\mathbf{then}\ }}$
+			</div>
+			
+			Consider the recursive algorithm $\Fart$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fart(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ \text{eat one can of beans}$ <br>
+				$\mathbf{else}\ \mathbf{if}\ n\ \mathrm{is}\ \mathrm{even}$ <br>
+				$\elsesp \mathbf{then}\ \text{fart once};$ <br>
+				$\elsesp \thensp \Fart \left( n \middle/ 2 \right)$ <br>
+				$\elsesp \mathbf{else}\ \Fart(n + 1);$ <br>
+				$\elsesp \elsesp \text{fart once};$ <br>
+				$\elsesp \elsesp \Fart(n - 1)$ <br>
+				$\elsesp \mathbf{endif};$ <br>
+				$\mathbf{endif}$
+			</p>
+			
+			If you run algorithm $\Fart(9)$, how many times do you fart?
+		]]>
+		</question>
+		<answer>11</answer>
+		<answer>12</answer>
+		<answer correct="correct">13</answer>
+		<answer>14</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The Carleton Computer Science Society is organizing their annual Halloween party. At this party,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					one student is dressed up as Donald Trump,
+				</li>
+				<li>
+					one student is dressed up as Kim Jong Un,
+				</li>
+				<li>
+					the remaining 57 students are dressed up as Kim Kardashian.
+				</li>
+			</ul>
+			These students are arranged, uniformly at random, on a line.
+			<br/>
+			Define the event,
+			[defs]
+			  A = "Donald Trump is standing next to Kim Jong Un".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>1/58</answer>
+		<answer>2/58</answer>
+		<answer>1/59</answer>
+		<answer correct="correct">2/59</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Alexa, Tri, and Zoltan each have a uniformly random birthday. (We ignore leap years, so that one
+			year has 365 days.) <br>
+			
+			Define the event
+			[defs]
+			  A = "Alexa, Tri, and Zoltan have different birthdays".
+			[/defs]
+			What is $\text{Pr}(A)$?
+		]]>
+		</question>
+		<answer>$\frac{365^2}{363 \cdot 364}$</answer>
+		<answer>$\frac{363^3}{362 \cdot 363 \cdot 364}$</answer>
+		<answer correct="correct">$\frac{363 \cdot 364}{365^2}$</answer>
+		<answer>$\frac{362 \cdot 363 \cdot 364}{365^3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			This midterm has 17 questions. For each question, four options are given. Assume that you answer each
+			question, by choosing one of the four options uniformly at random. <br>
+			
+			Define the event
+			[defs]
+			  A = "you answer exactly 7 questions correctly".
+			[/defs]
+			What $\Pr(A)$?
+		]]>
+		</question>
+		<answer correct="correct">$\frac{{17 \choose 7} \cdot 3^{10}}{4^{17}}$</answer>
+		<answer>$\frac{{17 \choose 7} \cdot 2^{10}}{4^{17}}$</answer>
+		<answer>$\frac{{17 \choose 7}}{4^{17}}$</answer>
+		<answer>$\frac{4^{17}}{{17 \choose 7}}$</answer>
+	</multiple-choice>
+</quiz>

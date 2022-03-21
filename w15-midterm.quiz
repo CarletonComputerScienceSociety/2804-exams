@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Winter 2015 Midterm"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The Carleton Computer Science Society has a Board of Directors consisting of a President and a
+			seven-person Advisory Board. The President cannot be on the Advisory Board. Let $n$ be the number of
+			students in Carleton's Computer Science program, where $n \geq 8$. In how many ways can a Board of
+			Directors be chosen?
+		]]>
+		</question>
+		<answer>$(n - 7) + {n \choose 7}$</answer>
+		<answer>$n + {n \choose 7}$</answer>
+		<answer correct="correct">$(n - 7) \cdot {n \choose 7}$</answer>
+		<answer>$n \cdot {n \choose 7}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ be a set of 7 elements and let $B$ be a set of 15 elements.
+			How many functions $f : A \rightarrow B$ are there?
+		]]>
+		</question>
+		<answer>$7^{15}$</answer>
+		<answer correct="correct">$15^7$</answer>
+		<answer>$15!/7!$</answer>
+		<answer>${15 \choose 7}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ be a set of 7 elements and let $B$ be a set of 15 elements. How many one-to-one (i.e.,
+			injective) functions $f : A \rightarrow B$ are there?
+		]]>
+		</question>
+		<answer>$8 \cdot 9 \cdot 10 \cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15$</answer>
+		<answer correct="correct">$9 \cdot 10 \cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15$</answer>
+		<answer>$10 \cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15$</answer>
+		<answer>$9 \cdot 10 \cdot 11 \cdot 12 \cdot 13 \cdot 14$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of the characters $a$, $b$, and $c$. Such a string is called <em>valid</em>,
+			if no two consecutive characters are equal. Thus, $abacbac$ is valid, whereas $abaccac$ is not
+			valid. <br>
+			
+			Let $n \geq 1$ be an integer and let $V_n$ be the number of valid strings of length $n$. Which of
+			the following is true?
+		]]>
+		</question>
+		<answer correct="correct">$V_n = 3 \cdot 2^{n-1}$</answer>
+		<answer>$V_n = 3^n - (n - 1) \cdot 3$</answer>
+		<answer>$V_n = 3^n - (n - 1) \cdot 3 \cdot 3^{n-2}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings of length 99 consisting of the characters $a$, $b$, and $c$. How many such strings
+			are there that start with $abc$ or end with $bbb$?
+		]]>
+		</question>
+		<answer>$3^{96} + 3^{96}$</answer>
+		<answer>$3^{99} - 2 \cdot 3^{96}$</answer>
+		<answer correct="correct">$2 \cdot 3^{96} - 3^{93}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Silly}{{\rm S \scriptsize ILLY}}$
+			</div>
+			
+			What does
+			$$
+				\sum_{k=2}^{n-1} (k-1)(n-k)
+			$$
+			count?
+		]]>
+		</question>
+		<answer>The number of 3-element subsets of an $(n-1)$-element set.</answer>
+		<answer correct="correct">The number of 3-element subsets of an $n$-element set.</answer>
+		<answer>The number of 3-element subsets of an $(n+1)$-element set.</answer>
+		<answer>The number of times you fart when running algorithm $\Silly(n)$.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the minimum number of people needed so that we can guarantee that at least three of them
+			have the same birthday? (We ignore leap years; thus, a year has 365 days.)
+		]]>
+		</question>
+		<answer>$365^2$</answer>
+		<answer>$365^2 + 1$</answer>
+		<answer>$2 \cdot 365$</answer>
+		<answer correct="correct">$2 \cdot 365 + 1$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{17}$ in the expansion of $(17 + 2x)^{99}$?
+		]]>
+		</question>
+		<answer>$2^{16} \cdot 17^{82} \cdot {99 \choose 16}$</answer>
+		<answer correct="correct">$2^{17} \cdot 17^{82} \cdot {99 \choose 17}$</answer>
+		<answer>$2^{82} \cdot 17^{17} \cdot {99 \choose 17}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many solutions are there to the equation $x_1 + x_2 + x_3 = 99$, where $x_1 \geq 0$, $x_2 \geq 0$,
+			and $x_3 \geq 0$ are integers?
+		]]>
+		</question>
+		<answer correct="correct">${101 \choose 2}$</answer>
+		<answer>${101 \choose 3}$</answer>
+		<answer>${102 \choose 2}$</answer>
+		<answer>${102 \choose 3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The function $f: \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+			$$
+				\begin{align}
+				f(0) &= 15 \\
+				f(n) &= f(n - 1) +6n - 4\; \ \mathrm{for}\ n \geq 1
+				\end{align}
+			$$
+			What is $f(n)$?
+		]]>
+		</question>
+		<answer>$f(n) = 3n^{2} + 2n + 15$</answer>
+		<answer>$f(n) = 3n^{2} - 2n + 15$</answer>
+		<answer>$f(n) = 3n^{2} + n + 15$</answer>
+		<answer correct="correct">$f(n) = 3n^{2} - n + 15$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider strings consisting of the characters $a$, $b$, and $c$. Such a string is called <em>valid</em>,
+			if it does not contain the substring $aaa$. Let $S_n$ be the number of valid strings of length
+			$n$. Which of the following is true?
+		]]>
+		</question>
+		<answer>$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2}$</answer>
+		<answer>$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2} + S_{n-3}$</answer>
+		<answer>$S_n = 2 \cdot S_{n-1} + S_{n-2} + 2 \cdot S_{n-3}$</answer>
+		<answer correct="correct">$S_n = 2 \cdot S_{n-1} + 2 \cdot S_{n-2} + 2 \cdot S_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $n \geq 1$ be an integer and let $S_n$ be the number of ways in which $n$ can be written as a
+			sum of 1s and 2s, such that
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					the order in which the 1s and 2s occur in the sum matters, and
+				</li>
+				<li>
+					it is not allowed to have two consecutive 1s.
+				</li>
+			</ul>
+			For example, if $n = 7$, then
+			$$
+				7 = 1 + 2 + 1 + 2 + 1
+			$$ is allowed, whereas
+			$$
+				7 = 1 + 2 + 1 + 1 + 2
+			$$
+			is not allowed. <br>
+			
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>$S_n = S_{n-1} + S_{n-2}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-3}$</answer>
+		<answer correct="correct">$S_n = S_{n-2} + S_{n-3}$</answer>
+		<answer>$S_n = S_{n-1} + S_{n-2} + S_{n-3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+			</div>
+			
+			Consider the following recursive algorithm $\Fib$, which takes as input an
+			integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			When running $\Fib(99)$, how many calls are there to $\Fib(95)$?
+		]]>
+		</question>
+		<answer>4</answer>
+		<answer correct="correct">5</answer>
+		<answer>6</answer>
+		<answer>7</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\NationalAnthem}{{\rm N {\scriptsize ATIONAL} A {\scriptsize NTHEM}}}
+				 \newcommand{\elsesp}{\phantom{\mathbf{else}\ }}$
+			</div>
+			
+			Consider the following recursive algorithm $\NationalAnthem$, which takes as input an integer $n \geq 1$,
+			which is a power of 2:
+			
+			<p>
+				$\mathbf{Algorithm}\ \NationalAnthem(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 1$ <br>
+				$\mathbf{then}\ \mathrm{sing}\ {\it O\ Canada}\ \mathrm{once}$ <br>
+				$\mathbf{else}\ \NationalAnthem(n / 2);$ <br>
+				$\elsesp \mathrm{sing}\ {\it O\ Canada}\ \mathrm{once};$ <br>
+				$\elsesp \NationalAnthem(n / 2)$ <br>
+				$\mathbf{endif}$
+			</p>
+			
+			For $n$ a power of 2, let $S(n)$ be the number of times you sing <em>O Canada</em> when running algorithm
+			$\NationalAnthem(n)$. Which of the following is true? <br>
+			(n.b., $\log$ denotes the base-2 logarithm)
+		]]>
+		</question>
+		<answer>$S(n) = 1 + \log n$</answer>
+		<answer>$S(n) = 1 + n \log n$</answer>
+		<answer>$S(n) = 2n + 1$</answer>
+		<answer correct="correct">$S(n) = 2n - 1$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin 5 times. Define the event
+			[defs]
+			  A = "the number of heads is odd".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>3/8</answer>
+		<answer correct="correct">4/8</answer>
+		<answer>5/8</answer>
+		<answer>6/8</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You flip a fair coin 11 times. Define the events
+			[defs]
+			  A = "the number of heads is odd"
+			[/defs]
+			and
+			[defs]
+			  B = "the number of tails is even".
+			[/defs]
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">$\Pr(A) = \Pr(B)$</answer>
+		<answer>$\Pr(A) &lt; \Pr(B)$</answer>
+		<answer>$\Pr(A) &gt; \Pr(B)$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In order to celebrate that the COMP 2804 midterm went well, you go to your neighborhood pub. This
+			pub has 16 different beers on tap:
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					There are 7 beers of the <em>pilsner</em> type.
+				</li>
+				<li>
+					There are 5 beers of the <em>India pale ale</em> type.
+				</li>
+				<li>
+					There are 4 beers of the <em>German wheatbeer</em> type.
+				</li>
+			</ul>
+			You order 4 different beers with at least one beer of each type. What is the number of ways in which
+			you can do this? (The order in which you order the beers does not matter.)
+		]]>
+		</question>
+		<answer>${16 \choose 4}$</answer>
+		<answer correct="correct">${7 \choose 2} \cdot 5 \cdot 4 + 7 \cdot {5 \choose 2} \cdot 4 + 7 \cdot 5 \cdot {4 \choose 2}$</answer>
+		<answer>${16 \choose 4} - {7 \choose 3} - {5 \choose 3} - {4 \choose 3}$</answer>
+		<answer>None of the above.</answer>
+	</multiple-choice>
+</quiz>

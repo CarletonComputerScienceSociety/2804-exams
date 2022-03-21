@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Fall 2013 Final"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ be a set of size 25 and let $B$ be a set of size 17. How many functions $f : A \rightarrow B$
+			are there?
+		]]>
+		</question>
+		<answer>$17!$</answer>
+		<answer>$\frac{25!}{17!}$</answer>
+		<answer correct="correct">$17^{25}$</answer>
+		<answer>$25^{17}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ be a set of size 6 and let $B$ be a set of size 25. How many one-to-one functions
+			$f : A \rightarrow B$ are there?
+		]]>
+		</question>
+		<answer>$25^6$</answer>
+		<answer>$\frac{25!}{6!}$</answer>
+		<answer correct="correct">$\frac{25!}{19!}$</answer>
+		<answer>$\frac{25!}{20!}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ be a set of size 5 and let $B$ be a set of size 14. How many functions $f : A \rightarrow B$
+			are there that are <strong>not</strong> one-to-one?
+		]]>
+		</question>
+		<answer>$14^5 - \frac{14!}{8!}$</answer>
+		<answer correct="correct">$14^5 - \frac{14!}{9!}$</answer>
+		<answer>$\frac{14!}{9!} - 14^5$</answer>
+		<answer>$5^{14} - \frac{14!}{9!}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given 6 distinct books and 5 <em>identical</em> blocks of wood.
+			How many ways are there to arrange these books and blocks in a straight line?
+		]]>
+		</question>
+		<answer>$\frac{11!}{4!}$</answer>
+		<answer correct="correct">$\frac{11!}{5!}$</answer>
+		<answer>$\frac{11!}{6!}$</answer>
+		<answer>${11 \choose 6}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $S$ be a set of size 37, and let $x$ and $y$ be two distinct elements of $S$. How many subsets
+			of $S$ are there that contain $x$ but do not contain $y$?
+		]]>
+		</question>
+		<answer correct="correct">$2^{35}$</answer>
+		<answer>$2^{36}$</answer>
+		<answer>$2^{37} - 2^{35}$</answer>
+		<answer>$2^{35} + 2^{36}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many bitstrings of length 6 start with 10 or end with 01?
+		]]>
+		</question>
+		<answer correct="correct">28</answer>
+		<answer>30</answer>
+		<answer>32</answer>
+		<answer>34</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The number of different strings that can be made by reordering the 10 letters of the word HELLOHELLO
+			is
+		]]>
+		</question>
+		<answer>$10!$</answer>
+		<answer>$4!2!2!2!$</answer>
+		<answer>${10 \choose 4}{6 \choose 2}{4 \choose 2}{3 \choose 2}$</answer>
+		<answer correct="correct">none of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A jar contains 17 red balls and 22 blue balls. How many ways are there to choose, without
+			replacement, 8 balls from the jar?
+		]]>
+		</question>
+		<answer>${17 \choose 8}{22 \choose 8}$</answer>
+		<answer>$\sum_{k=0}^{8} \bigl( {17 \choose k} + {22 \choose 8-k} \bigr)$</answer>
+		<answer correct="correct">${39 \choose 8}$</answer>
+		<answer>${39 \choose 8} 8!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many bitstrings of length 33 are there that start with 1010, end with 0101, and contain exactly
+			11 zeros?
+		]]>
+		</question>
+		<answer correct="correct">${25 \choose 7}$</answer>
+		<answer>${33 \choose 7} - 2^8$</answer>
+		<answer>${33 \choose 7} - 2 \cdot 2^4$</answer>
+		<answer>none of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many solutions are there to the equation $x_1 + x_2 + x_3 = 16$, where $x_1 \geq 0$, $x_2 \geq 0$,
+			$x_3 \geq 0$ are integers?
+		]]>
+		</question>
+		<answer correct="correct">${18 \choose 2}$</answer>
+		<answer>${18 \choose 3}$</answer>
+		<answer>${19 \choose 2}$</answer>
+		<answer>${19 \choose 3}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{111}y^{222}$ in the expansion of $(7x+14y)^{333}$?
+		]]>
+		</question>
+		<answer>${333 \choose 222} (7x)^{222} (14y)^{111}$</answer>
+		<answer>${333 \choose 222} (7x)^{111} (14y)^{222}$</answer>
+		<answer>${333 \choose 222} 7^{222} 14^{111}$</answer>
+		<answer correct="correct">${333 \choose 222} 7^{111} 14^{222}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+			</div>
+			
+			Consider the following recursive algorithm $\Fib$, which takes as input an
+			integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			When running $\Fib(7)$, how many calls are there to $\Fib(3)$?
+		]]>
+		</question>
+		<answer>4</answer>
+		<answer correct="correct">5</answer>
+		<answer>6</answer>
+		<answer>7</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The Fibonacci numbers are defined as follows: $f_0 = 0$, $f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for
+			$n \geq 2$. <br>
+			
+			Consider again the recursive algorithm $\Fib$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			For $n \geq 3$, run algorithm $\Fib(n)$ and let $a_n$ be the number of times that $\Fib(1)$ is called. <br>
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">for all $n \geq 3$, $a_n = f_n$</answer>
+		<answer>for all $n \geq 3$, $a_n = f_{n-1}$</answer>
+		<answer>for all $n \geq 3$, $a_n = f_{n+1}$</answer>
+		<answer>for all $n \geq 3$, $a_n = f_n + 1$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The Fibonacci numbers are defined as follows: $f_0 = 0$, $f_1 = 1$, and $f_{n+1} = f_{n-1} + f_n$ for
+			$n \geq 1$. Which of the following is true?
+		]]>
+		</question>
+		<answer>for all $n \geq 1$: $f^2_1 + f^2_2 + f^2_3 + \dots + f^2_n = (f_n)^2$</answer>
+		<answer>for all $n \geq 1$: $f^2_1 + f^2_2 + f^2_3 + \dots + f^2_n = f_{n-1}f_n$</answer>
+		<answer correct="correct">for all $n \geq 1$: $f^2_1 + f^2_2 + f^2_3 + \dots + f^2_n = f_{n}f_{n+1}$</answer>
+		<answer>none of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider the following recursive function:
+			<table style="margin: 1rem auto;">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">$f(0)$</td>
+						<td>$\;=\;$</td>
+						<td>$7,$</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top;">$f(n + 1)$</td>
+						<td>$\;=\;$</td>
+						<td>$f(n) + 6n + 1\; \ \text{for all}$ $\text{integers}\ n \geq 0.$</td>
+					</tr>
+				</tbody>
+			</table>
+			Which of the following is true?
+		]]>
+		</question>
+		<answer>for all $n \geq 0$: $f(n) = 2n^2 + 2n + 7$</answer>
+		<answer>for all $n \geq 0$: $f(n) = 3n^2 + 2n + 7$</answer>
+		<answer>for all $n \geq 0$: $f(n) = 2n^2 - 2n + 7$</answer>
+		<answer correct="correct">for all $n \geq 0$: $f(n) = 3n^2 - 2n + 7$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A = \{1,2,3,\dots,100\}$. We choose a uniform random element $x$ in $A$ and, independently,
+			choose a uniform random element $y$ in $A$. What is the probability that $x = y$?
+		]]>
+		</question>
+		<answer correct="correct">$\frac{1}{100}$</answer>
+		<answer>$\frac{1}{100 \cdot 99}$</answer>
+		<answer>$\frac{1}{100 \cdot 100}$</answer>
+		<answer>$\frac{1}{{100 \choose 2}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We flip a fair coin (independently) 100 times. What is the probability that the coin comes up heads
+			exactly 37 times?
+		]]>
+		</question>
+		<answer>${100 \choose 37} (1/2)^{37}$</answer>
+		<answer correct="correct">${100 \choose 37} (1/2)^{100}$</answer>
+		<answer>$\frac{1}{{100 \choose 37}}$</answer>
+		<answer>${100 \choose 37}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Assume you answer the first question in this exam by choosing one of the four answers uniformly at
+			random. You answer the second question by choosing, again uniformly at random, one of the three
+			answers you did not choose in the first question. What is the probability that you answer the second
+			question correctly?
+		]]>
+		</question>
+		<answer>$\frac{1}{3}$</answer>
+		<answer correct="correct">$\frac{1}{4}$</answer>
+		<answer>$\frac{1}{4} \cdot \frac{1}{3} + \frac{3}{4} \cdot \frac{1}{4}$</answer>
+		<answer>none of the above.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A jar contains 7 red balls and 9 blue balls. We choose, uniformly at random and without replacement,
+			5 balls. Let $A$ be the event
+			[defs]
+			  A = "exactly 2 of the balls are red or exactly 3 of the balls are blue".
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$\frac{{7 \choose 2}}{{16 \choose 5}}$</answer>
+		<answer>$\frac{2 \cdot {7 \choose 2}{9 \choose 3}}{{16 \choose 5}}$</answer>
+		<answer correct="correct">$\frac{{7 \choose 2}{ 9 \choose 3}}{{16 \choose 5}}$</answer>
+		<answer>$\frac{{7 \choose 2} + {9 \choose 3}}{{16 \choose 5}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A jar contains 7 red balls and 9 blue balls. We choose, uniformly at random and without replacement,
+			3 balls. Define the following two events:
+			[defs]
+			  A = "exactly 2 of the balls are red"
+			  B = "the number of red balls is even"
+			[/defs]
+			What is the conditional probability $\Pr(A|B)$? (Recall that 0 is even.)
+		]]>
+		</question>
+		<answer>$\frac{{9 \choose 3} + 9 \cdot {7 \choose 2}}{9 \cdot {7 \choose 2}}$</answer>
+		<answer>$\frac{9 \cdot {7 \choose 2}}{{16 \choose 3}}$</answer>
+		<answer>$\frac{{9 \choose 3} + 9 \cdot {7 \choose 2}}{{16 \choose 3}}$</answer>
+		<answer correct="correct">$\frac{9 \cdot {7 \choose 2}}{{9 \choose 3} + 9 \cdot {7 \choose 2}}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Assume that a newborn baby is a girl with probability $p$ and a boy with probability $1 - p$. Also
+			assume that the genders of different newborns are independent of each other. Consider a person who
+			has two children. Define the following two events:
+			[defs]
+			  A = "both children are girls"
+			  B = "at least one of the children is a girl"
+			[/defs]
+			What is the conditional probability $\Pr(A|B)$?
+		]]>
+		</question>
+		<answer correct="correct">$\frac{p}{2-p}$</answer>
+		<answer>$\frac{2-p}{p}$</answer>
+		<answer>$p$</answer>
+		<answer>$\frac{1}{p}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We flip a fair coin (independently) three times. Define the following two events:
+			[defs]
+			  A = "the number of tails is odd"
+			  B = "the first coin comes up heads"
+			[/defs]
+			True or false: The events $A$ and $B$ are independent.
+		]]>
+		</question>
+		<answer correct="correct">True</answer>
+		<answer>False</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We flip a fair coin (independently) three times. Define the following two events:
+			[defs]
+			  A = "the number of tails is odd"
+			  B = "the number of heads is even"
+			[/defs]
+			True or false: The events $A$ and $B$ are independent. (Recall that 0 is even.)
+		]]>
+		</question>
+		<answer>True</answer>
+		<answer correct="correct">False</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We flip a fair coin (independently) two times. Define the following three events:
+			[defs]
+			  A = "the number of heads is odd"
+			  B = "the first coin comes up heads"
+			  C = "the second coin comes up tails"
+			[/defs]
+			True or false: The events $A$, $B$ and $C$ are independent.
+		]]>
+		</question>
+		<answer>True</answer>
+		<answer correct="correct">False</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $X$ be a random variable with probability distribution $\Pr(X=0) = 1/2$, $\Pr(X=1) = 1/12$,
+			$\Pr(X=2) = 1/4$, $\Pr(X=3) = 1/6$. What is the expected value $E(X)$ of $X$?
+		]]>
+		</question>
+		<answer>3/2</answer>
+		<answer>12/13</answer>
+		<answer correct="correct">13/12</answer>
+		<answer>3</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			True or false: If $X$ and $Y$ are random variables, then $E(X+Y) = E(X) + E(Y)$, even if $X$ and $Y$
+			are not independent.
+		]]>
+		</question>
+		<answer correct="correct">True</answer>
+		<answer>False</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			We flip a fair coin (independently) three times. Let $X$ be the random variable whose value is the
+			number of times the coin comes up heads. What is the expected value $E(X)$ of $X$?
+		]]>
+		</question>
+		<answer>1</answer>
+		<answer>5/4</answer>
+		<answer correct="correct">3/2</answer>
+		<answer>2</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a coin that comes up heads with probability $p$ and tails with probability $1-p$. We flip
+			this coin (independently) and stop as soon as it comes up heads for the fifth time. Let $X$ be the
+			random variable whose value is the total number of times we flip the coin. What is the expected
+			value $E(X)$ of $X$?
+		]]>
+		</question>
+		<answer correct="correct">$5/p$</answer>
+		<answer>$5p$</answer>
+		<answer>$1/p^{5}$</answer>
+		<answer>$p^{5}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A jar contains 17 red balls and 5 blue balls. Repeat the following 12 times: Choose one ball
+			uniformly at random (and leave it in the jar). Let $X$ be the random variable whose value is the
+			number of blue balls that we choose. What is the expected value $E(X)$ of $X$?
+		]]>
+		</question>
+		<answer correct="correct">$\frac{30}{11}$</answer>
+		<answer>$6$</answer>
+		<answer>$12 \cdot \frac{5}{17}$</answer>
+		<answer>$12 \cdot \frac{17}{5}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A group of $n \geq 3$ people is sitting at a round table, so that each person has two neighbors, one
+			clockwise neighbor and one counter clockwise neighbor. Each person flips a fair and independent
+			coin. A person starts singing if and only if (i) his coin comes up heads, (ii) the coin of his
+			clockwise neighbor comes up tails, and (iii) the coin of his counter clockwise neighbor comes up
+			tails. Let $X$ be the random variable whose value is the number of people that are singing. What is
+			the expected value $E(X)$ of $X$?
+		]]>
+		</question>
+		<answer>$n/2$</answer>
+		<answer>$n/3$</answer>
+		<answer>$n/4$</answer>
+		<answer correct="correct">$n/8$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			True or false: If $X$ and $Y$ are random variables, then
+			$$
+				E(\max(X,Y)) = \max(E(X), E(Y)).
+			$$
+		]]>
+		</question>
+		<answer>True</answer>
+		<answer correct="correct">False</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $K_n$ be the complete graph on $n$ vertices, in which each pair of vertices is connected by an
+			edge. For each edge $e$ of $K_n$, we flip a fair and independent coin; if the coin comes up heads,
+			we color $e$ red, if it comes up tails, we color $e$ blue. <br>
+			
+			Assume that the vertex set of $K_n$ is $\{1,2,3,\dots,n\}$. Let $K'$ be the subgraph of $K_n$
+			induced by the vertices $1,2, \dots,k$ (i.e., an edge $(i,j)$ of $K_n$ is in $K'$ if and only if
+			both $i$ and $j$ are at most $k$). Let $A$ be the event
+			[defs]
+			  A = "all edges of $K'$ have the same color."
+			[/defs]
+			What is $\Pr(A)$?
+		]]>
+		</question>
+		<answer>$1/2^{k \choose 2}$</answer>
+		<answer correct="correct">$2/2^{k \choose 2}$</answer>
+		<answer>$2^{k \choose 2}/2^{n \choose 2}$</answer>
+		<answer>$2 \cdot 2^{k \choose 2}/2^{n \choose 2}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Consider a multiple choice exam with 100 questions, in which for each question, four options are
+			given to choose from. You answer each question by choosing an answer uniformly at random, and
+			independently of the other answers. What is the expected number of correct answers?
+		]]>
+		</question>
+		<answer>$\sum_{k=0}^{100} (1/4)^{k}(3/4)^{100-k}$</answer>
+		<answer>$\sum_{k=0}^{100} k(1/4)^{k}(3/4)^{100-k}$</answer>
+		<answer>$\sum_{k=0}^{100} {100 \choose k}(1/4)^{k}(3/4)^{100-k}$</answer>
+		<answer correct="correct">$\sum_{k=0}^{100} k{100 \choose k}(1/4)^{k}(3/4)^{100-k}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>How do you feel?</question>
+		<answer correct="correct">I need a beer.</answer>
+	</multiple-choice>
+</quiz>

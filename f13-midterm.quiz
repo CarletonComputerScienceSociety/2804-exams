@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quiz
+	lang="en"
+	title="Fall 2013 Midterm"
+	subtitle="(courtesy of Michiel Smid; used with permission)"
+	mathjax="mathjax">
+	
+	<!-- this file should be preprocessed with utils/mathdefs.py -->
+	
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Let $A$ be a set of size 7 and let $B$ be a set of size 13. How many one-to-one functions
+			$f : A \rightarrow B$ are there?
+		]]>
+		</question>
+		<answer>$\frac{6!}{13!}$</answer>
+		<answer>$\frac{13!}{5!}$</answer>
+		<answer correct="correct">$\frac{13!}{6!}$</answer>
+		<answer>$\frac{13!}{7!}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			You are given 5 books and 7 bookshelves. How many ways are there to place these books on the
+			shelves? (The order on the shelves matters.)
+		]]>
+		</question>
+		<answer>${7 \choose 5}$</answer>
+		<answer correct="correct">$\frac{11!}{6!}$</answer>
+		<answer>$\frac{11!}{7!}$</answer>
+		<answer>$\frac{12!}{7!}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			A password consists of 6 or 7 characters, each character being an uppercase letter or a lowercase letter.
+			A password must contain at least one uppercase letter. How many passwords are there?
+		]]>
+		</question>
+		<answer>$52^6 + 52^7$</answer>
+		<answer>$26 \cdot 52^5 + 26 \cdot 52^6$</answer>
+		<answer correct="correct">$52^6 + 52^7 - 26^6 - 26^7$</answer>
+		<answer>none of the above</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			In a group of 20 people,
+			<ul style="margin: 0.5rem 0;">
+				<li>
+					6 are blond,
+				</li>
+				<li>
+					7 have green eyes,
+				</li>
+				<li>
+					11 are not blond and do not have green eyes.
+				</li>
+			</ul>
+			How many people are blond and have green eyes?
+		]]>
+		</question>
+		<answer>3</answer>
+		<answer correct="correct">4</answer>
+		<answer>5</answer>
+		<answer>9</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many bitstrings of length 55 start with 101 or end with 1111?
+		]]>
+		</question>
+		<answer>$2^{52} + 2^{51}$</answer>
+		<answer>$2^{55} - 2^{48}$</answer>
+		<answer>$2^{55} - 2^{52} - 2^{51}$</answer>
+		<answer correct="correct">$2^{52} + 2^{51} - 2^{48}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Each person in a group of $n$ people has a last name consisting of two uppercase letters. For what
+			values of $n$ can we guarantee that there are at least two people with the same last name?
+		]]>
+		</question>
+		<answer>$n \geq 26$</answer>
+		<answer>$n \geq 52$</answer>
+		<answer>$n \geq 676$</answer>
+		<answer correct="correct">$n \geq 677$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many bitstrings of length 13 contain exactly 3 zeros?
+		]]>
+		</question>
+		<answer correct="correct">${13 \choose 10}$</answer>
+		<answer>$13!/3!$</answer>
+		<answer>$2^{13} - {13 \choose 3}$</answer>
+		<answer>$2^{13} - 3$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			What is the coefficient of $x^{12}y^{12}$ in the expansion of $(3x - 7y)^{24}$?
+		]]>
+		</question>
+		<answer>$-3^{12}7^{12} {24 \choose 12}$</answer>
+		<answer>$(3x)^{12}(-7y)^{12} {24 \choose 12}$</answer>
+		<answer correct="correct">$21^{12} {24 \choose 12}$</answer>
+		<answer>$(3x)^{12}(7y)^{12} {24 \choose 12}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">$\sum_{k=0}^n 5^k {n \choose k} = 6^n$</answer>
+		<answer>$\sum_{k=0}^n 4^{n - k}5^k {n \choose k} = 8^n$</answer>
+		<answer>$\sum_{k=0}^n 5^k {n \choose k} = 5^n$</answer>
+		<answer>$\sum_{k=0}^n 4^k 5^{n - k} {n \choose k} = 20^n$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			How many strings can be obtained by rearranging the letters of the word
+			<p style="text-align: center">
+				POOPERSCOOPER
+			</p>
+		]]>
+		</question>
+		<answer>$13!$</answer>
+		<answer correct="correct">${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}{2 \choose 1}$</answer>
+		<answer>${13 \choose 4}{9 \choose 3}{6 \choose 2}{4 \choose 2}$</answer>
+		<answer>$4!3!2!2!1!1!$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The function $f : \mathbb{N} \rightarrow \mathbb{N}$ is defined by
+			$$
+				\begin{align}
+				f(0) &= 14 \\
+				f(n + 1) &= f(n) + 4n - 5\; \ \mathrm{for}\ n \geq 0
+				\end{align}
+			$$
+			What is $f(n)$?
+		]]>
+		</question>
+		<answer>$f(n) = 2n^2 + 6n + 14$</answer>
+		<answer>$f(n) = 2n^2 - 6n + 14$</answer>
+		<answer>$f(n) = 2n^2 + 7n + 14$</answer>
+		<answer correct="correct">$f(n) = 2n^2 - 7n + 14$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Fib}{{\rm F \scriptsize IB}}$
+			</div>
+			
+			Consider the following recursive algorithm $\Fib$, which takes as input an
+			integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			When running $\Fib(5)$, how many calls are there to $\Fib(2)$?
+		]]>
+		</question>
+		<answer>1</answer>
+		<answer>2</answer>
+		<answer correct="correct">3</answer>
+		<answer>4</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			The Fibonacci numbers are defined as follows: $f_0 = 0$, $f_1 = 1$, and $f_n = f_{n-1} + f_{n-2}$ for
+			$n \geq 2$. <br>
+			
+			Consider again the recursive algorithm $\Fib$, which takes as input an integer $n \geq 0$:
+			
+			<p>
+				$\mathbf{Algorithm}\ \Fib(n)\mathrm{:}$ <br>
+				$\mathbf{if}\ n = 0\ \mathrm{or}\ n = 1$ <br>
+				$\mathbf{then}\ f = n$ <br>
+				$\mathbf{else}\ f = \Fib(n - 1) + \Fib(n - 2)$ <br>
+				$\mathbf{endif};$ <br>
+				$\mathbf{return}\ f$ <br>
+			</p>
+			
+			For $n \geq 2$, run algorithm $\Fib(n)$ and let $a_n$ be the number of times that $\Fib(0)$ is called. <br>
+			Which of the following is true?
+		]]>
+		</question>
+		<answer correct="correct">For $n \geq 2$, $a_n = f_{n - 1}$</answer>
+		<answer>For $n \geq 2$, $a_n = f_n$</answer>
+		<answer>For $n \geq 2$, $a_n = f_n - 1$</answer>
+		<answer>For $n \geq 2$, $a_n = f_{n + 1}$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			<div hidden>
+				$\newcommand{\Beer}{{\rm B \scriptsize EER}}$
+			</div>
+			
+			What does the summation $\sum_{k=7}^n {k - 1 \choose 6}$ count?
+		]]>
+		</question>
+		<answer>The number of subsets of $\{1,2,\dots,n\}$ having size 5.</answer>
+		<answer>The number of subsets of $\{1,2,\dots,n\}$ having size 6.</answer>
+		<answer correct="correct">The number of subsets of $\{1,2,\dots,n\}$ having size 7.</answer>
+		<answer>The number of pints of beer you drink when running algorithm $\Beer(n)$.</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			If you flip a fair coin 4 times, what is the probability that the coin comes up heads exactly twice?
+		]]>
+		</question>
+		<answer>$\left. 1 \middle/ {4 \choose 2} \right.$</answer>
+		<answer>$2/2^4$</answer>
+		<answer>$\left. 2^4 \middle/ {4 \choose 2} \right.$</answer>
+		<answer correct="correct">${4 \choose 2}/2^4$</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			If you choose an element $x$ uniformly at random from the set $\{1,2,\dots,100\}$, what is the
+			probability that $x$ is divisible by 4 or 5?
+		]]>
+		</question>
+		<answer>9/100</answer>
+		<answer>1/5</answer>
+		<answer correct="correct">2/5</answer>
+		<answer>45/100</answer>
+	</multiple-choice>
+	<multiple-choice>
+		<question>
+		<![CDATA[
+			If you answer each question in this midterm by choosing an answer uniformly at random, 
+			what is the probability that you get all answers correct?
+		]]>
+		</question>
+		<answer>$1/17^4$</answer>
+		<answer correct="correct">$1/4^{17}$</answer>
+		<answer>$3^{17}/4^{17}$</answer>
+		<answer>$4^{17}/3^{17}$</answer>
+	</multiple-choice>
+</quiz>
